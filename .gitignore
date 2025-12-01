@@ -1,0 +1,8 @@
+.env
+wp-content/debug.log
+.idea
+uploads
+/vendor/
+/node_modules
+wp-admin/false
+false
