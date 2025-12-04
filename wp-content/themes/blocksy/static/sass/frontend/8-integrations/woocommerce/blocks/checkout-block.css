@@ -1,0 +1,10 @@
+.wc-block-checkout .wp-block-woocommerce-checkout-totals-block .wp-block-woocommerce-checkout-order-summary-block .wc-block-components-order-summary-item__quantity {
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: var(--theme-palette-color-1);
+}
+/*# sourceMappingURL=checkout-block.css.map */

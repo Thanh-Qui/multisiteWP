@@ -1,0 +1,56 @@
+.ct-single-palette {
+  container-type: inline-size;
+}
+
+.ct-color-picker-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 8px;
+}
+
+@container (max-width: 260px) {
+  .ct-color-picker-container {
+    gap: 6px;
+  }
+}
+
+.ct-color-picker-single > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-size: 10px 10px;
+  background-image: url("data:image/webp;base64,UklGRjIAAABXRUJQVlA4TCUAAAAvE8AEAA9w7/97/9/7f/7jAYraNmI6AJQ/1xvvMojof2BSvVEBAA==");
+}
+
+.ct-color-picker-single > span span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: inherit;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+          box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.ct-color-picker-single > span span:focus {
+  outline: none;
+}
+/*# sourceMappingURL=color-pill.css.map */

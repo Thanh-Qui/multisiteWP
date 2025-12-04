@@ -1,0 +1,70 @@
+.ct-checkbox, .comment-form input[type="checkbox"], #ship-to-different-address-checkbox, .woocommerce-form__input[type="checkbox"], .woocommerce-form__label-for-checkbox input[type="checkbox"], .woocommerce-input-wrapper input[type="checkbox"], #payment .payment_box input[type="checkbox"], .forminator-ui[data-design="none"] .forminator-checkbox input[type="checkbox"], .wpforms-container:not(.wpforms-container-full) input[type="checkbox"], .ff-inherit-theme-style input[type=checkbox], .wc_payment_method > input[type="radio"], .woocommerce-shipping-methods input[type="radio"], .payment_box input[type="radio"], .mp-ticket-payments input[type="radio"], .forminator-ui[data-design="none"] .forminator-radio input[type="radio"], .wpforms-container:not(.wpforms-container-full) input[type="radio"], .ff-inherit-theme-style input[type=radio] {
+  display: inline-block;
+  vertical-align: baseline;
+  position: relative;
+  top: var(--top, 3px);
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
+  min-height: initial;
+  padding: 0 !important;
+  margin: 0;
+  -webkit-margin-end: 0.7em;
+          margin-inline-end: 0.7em;
+  border-width: var(--form-selection-control-border-width, var(--theme-form-field-border-width, 1px));
+  border-style: solid;
+  cursor: pointer;
+  -webkit-appearance: none;
+  background: transparent;
+  border-color: var(--theme-form-selection-field-initial-color);
+}
+
+.ct-checkbox:before, .comment-form input[type="checkbox"]:before, #ship-to-different-address-checkbox:before, .woocommerce-form__input[type="checkbox"]:before, .woocommerce-form__label-for-checkbox input[type="checkbox"]:before, .woocommerce-input-wrapper input[type="checkbox"]:before, #payment .payment_box input[type="checkbox"]:before, .forminator-ui[data-design="none"] .forminator-checkbox input[type="checkbox"]:before, .wpforms-container:not(.wpforms-container-full) input[type="checkbox"]:before, .ff-inherit-theme-style input[type=checkbox]:before, .wc_payment_method > input[type="radio"]:before, .woocommerce-shipping-methods input[type="radio"]:before, .payment_box input[type="radio"]:before, .mp-ticket-payments input[type="radio"]:before, .forminator-ui[data-design="none"] .forminator-radio input[type="radio"]:before, .wpforms-container:not(.wpforms-container-full) input[type="radio"]:before, .ff-inherit-theme-style input[type=radio]:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  inset: 0;
+  opacity: 0;
+  margin: auto;
+}
+
+.ct-checkbox:checked, .comment-form input[type="checkbox"]:checked, #ship-to-different-address-checkbox:checked, .woocommerce-form__input[type="checkbox"]:checked, .woocommerce-form__label-for-checkbox input[type="checkbox"]:checked, .woocommerce-input-wrapper input[type="checkbox"]:checked, #payment .payment_box input[type="checkbox"]:checked, .forminator-ui[data-design="none"] .forminator-checkbox input[type="checkbox"]:checked, .wpforms-container:not(.wpforms-container-full) input[type="checkbox"]:checked, .ff-inherit-theme-style input[type=checkbox]:checked, .wc_payment_method > input[type="radio"]:checked, .woocommerce-shipping-methods input[type="radio"]:checked, .payment_box input[type="radio"]:checked, .mp-ticket-payments input[type="radio"]:checked, .forminator-ui[data-design="none"] .forminator-radio input[type="radio"]:checked, .wpforms-container:not(.wpforms-container-full) input[type="radio"]:checked, .ff-inherit-theme-style input[type=radio]:checked {
+  border-color: var(--theme-form-selection-field-active-color);
+  background: var(--theme-form-selection-field-active-color);
+}
+
+.ct-checkbox:checked:before, .comment-form input[type="checkbox"]:checked:before, #ship-to-different-address-checkbox:checked:before, .woocommerce-form__input[type="checkbox"]:checked:before, .woocommerce-form__label-for-checkbox input[type="checkbox"]:checked:before, .woocommerce-input-wrapper input[type="checkbox"]:checked:before, #payment .payment_box input[type="checkbox"]:checked:before, .forminator-ui[data-design="none"] .forminator-checkbox input[type="checkbox"]:checked:before, .wpforms-container:not(.wpforms-container-full) input[type="checkbox"]:checked:before, .ff-inherit-theme-style input[type=checkbox]:checked:before, .wc_payment_method > input[type="radio"]:checked:before, .woocommerce-shipping-methods input[type="radio"]:checked:before, .payment_box input[type="radio"]:checked:before, .mp-ticket-payments input[type="radio"]:checked:before, .forminator-ui[data-design="none"] .forminator-radio input[type="radio"]:checked:before, .wpforms-container:not(.wpforms-container-full) input[type="radio"]:checked:before, .ff-inherit-theme-style input[type=radio]:checked:before {
+  opacity: 1;
+}
+
+.ct-checkbox:focus-visible, .comment-form input[type="checkbox"]:focus-visible, #ship-to-different-address-checkbox:focus-visible, .woocommerce-form__input[type="checkbox"]:focus-visible, .woocommerce-form__label-for-checkbox input[type="checkbox"]:focus-visible, .woocommerce-input-wrapper input[type="checkbox"]:focus-visible, #payment .payment_box input[type="checkbox"]:focus-visible, .forminator-ui[data-design="none"] .forminator-checkbox input[type="checkbox"]:focus-visible, .wpforms-container:not(.wpforms-container-full) input[type="checkbox"]:focus-visible, .ff-inherit-theme-style input[type=checkbox]:focus-visible, .wc_payment_method > input[type="radio"]:focus-visible, .woocommerce-shipping-methods input[type="radio"]:focus-visible, .payment_box input[type="radio"]:focus-visible, .mp-ticket-payments input[type="radio"]:focus-visible, .forminator-ui[data-design="none"] .forminator-radio input[type="radio"]:focus-visible, .wpforms-container:not(.wpforms-container-full) input[type="radio"]:focus-visible, .ff-inherit-theme-style input[type=radio]:focus-visible {
+  outline: none;
+  border-color: var(--theme-form-selection-field-active-color);
+}
+
+.ct-checkbox, .comment-form input[type="checkbox"], #ship-to-different-address-checkbox, .woocommerce-form__input[type="checkbox"], .woocommerce-form__label-for-checkbox input[type="checkbox"], .woocommerce-input-wrapper input[type="checkbox"], #payment .payment_box input[type="checkbox"], .forminator-ui[data-design="none"] .forminator-checkbox input[type="checkbox"], .wpforms-container:not(.wpforms-container-full) input[type="checkbox"], .ff-inherit-theme-style input[type=checkbox] {
+  border-radius: var(--theme-form-checkbox-border-radius, 3px);
+}
+
+.ct-checkbox:before, .comment-form input[type="checkbox"]:before, #ship-to-different-address-checkbox:before, .woocommerce-form__input[type="checkbox"]:before, .woocommerce-form__label-for-checkbox input[type="checkbox"]:before, .woocommerce-input-wrapper input[type="checkbox"]:before, #payment .payment_box input[type="checkbox"]:before, .forminator-ui[data-design="none"] .forminator-checkbox input[type="checkbox"]:before, .wpforms-container:not(.wpforms-container-full) input[type="checkbox"]:before, .ff-inherit-theme-style input[type=checkbox]:before {
+  top: -2px;
+  width: 8px;
+  height: 5px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.wc_payment_method > input[type="radio"], .woocommerce-shipping-methods input[type="radio"], .payment_box input[type="radio"], .mp-ticket-payments input[type="radio"], .forminator-ui[data-design="none"] .forminator-radio input[type="radio"], .wpforms-container:not(.wpforms-container-full) input[type="radio"], .ff-inherit-theme-style input[type=radio] {
+  border-radius: 100% !important;
+}
+
+.wc_payment_method > input[type="radio"]:before, .woocommerce-shipping-methods input[type="radio"]:before, .payment_box input[type="radio"]:before, .mp-ticket-payments input[type="radio"]:before, .forminator-ui[data-design="none"] .forminator-radio input[type="radio"]:before, .wpforms-container:not(.wpforms-container-full) input[type="radio"]:before, .ff-inherit-theme-style input[type=radio]:before {
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: inherit;
+}
+/*# sourceMappingURL=checkbox-radio.css.map */

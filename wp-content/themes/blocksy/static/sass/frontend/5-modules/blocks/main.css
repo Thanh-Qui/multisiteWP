@@ -1,0 +1,10 @@
+@use 'search';
+@use 'gallery';
+@use 'query-loop';
+@use 'contact-info';
+@use 'dynamic-data';
+.ct-widget li ul, .ct-widget li ol {
+  -webkit-padding-start: 25px;
+          padding-inline-start: 25px;
+}
+/*# sourceMappingURL=main.css.map */

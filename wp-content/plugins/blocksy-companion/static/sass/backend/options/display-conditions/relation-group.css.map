@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,kBAFiB,CAEhB,AAAA,aAAC,CAAc,KAAK,AAAnB,EAAqB;EACtB,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,KAAK;EACpB,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,wBAAwB;EAC1C,UAAU,EAAE,iCAAiC;EAC7C,UAAU,EAAE,YAAY,CAAC,yCAAyC,EAC/D,UAAU,CAAC,yCAAyC;CACvD",
+    "sources": [
+        "relation-group.scss"
+    ],
+    "names": [],
+    "file": "relation-group.css"
+}

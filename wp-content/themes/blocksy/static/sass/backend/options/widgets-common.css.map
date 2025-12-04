@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAEC,mBAFkB,CAAC,wBAAwB,CAE3C,EAAE,AAAA,uCAAuC,CAAC;EACzC,YAAY,CAAA,EAAC;EACb,UAAU,EAAE,IAAI;CAChB;;AAGF,AAIE,oBAJkB,CAEnB,oCAAoC,CAEnC,wCAAwC,CAAC;EACxC,OAAO,EAAE,IAAI;CACb;;AANH,AAQE,oBARkB,CAEnB,oCAAoC,GAMjC,IAAI,CAAC;EACN,MAAM,EAAE,KAAK;CACb;;AAVH,AAaC,oBAbmB,AAalB,sBAAsB,GAAG,GAAG,AAAA,WAAW,CAAC;EACxC,OAAO,EAAE,EAAE;EACX,UAAU,EAAE,OAAO;CACnB",
+    "sources": [
+        "widgets-common.scss"
+    ],
+    "names": [],
+    "file": "widgets-common.css"
+}

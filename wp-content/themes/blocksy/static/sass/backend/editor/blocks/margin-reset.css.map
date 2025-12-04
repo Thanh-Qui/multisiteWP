@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,iBAFgB,AAEf,WAAW,CAAC;EACZ,aAAa,EAAE,CAAC;CAChB",
+    "sources": [
+        "margin-reset.scss"
+    ],
+    "names": [],
+    "file": "margin-reset.css"
+}

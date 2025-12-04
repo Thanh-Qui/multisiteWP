@@ -1,0 +1,92 @@
+[data-products="type-2"] .product {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  padding-inline: 20px;
+  padding-bottom: 20px;
+  -webkit-box-shadow: var(--theme-box-shadow);
+          box-shadow: var(--theme-box-shadow);
+  border: var(--card-border);
+  border-radius: var(--theme-border-radius, 3px);
+  background: var(--backgroundColor, var(--theme-palette-color-8));
+  --horizontal-alignment: center;
+  --text-horizontal-alignment: center;
+}
+
+[data-products="type-2"] figure .ct-media-container {
+  border-radius: 0;
+}
+
+[data-products="type-2"] figure,
+[data-products="type-2"] .ct-woo-card-actions {
+  width: calc(100% + 40px);
+  margin-inline: -20px;
+}
+
+[data-products="type-2"] .ct-woo-card-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+  border-block: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-products="type-2"] .ct-woo-card-actions:first-child {
+  border-top: 0;
+}
+
+[data-products="type-2"] .ct-woo-card-actions:last-child {
+  border-bottom: none;
+  margin-bottom: -20px;
+}
+
+[data-products="type-2"] .ct-woo-card-actions > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  padding: 5px;
+  min-height: 55px;
+}
+
+[data-products="type-2"] .ct-woo-card-actions .price {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+}
+
+[data-products="type-2"] .ct-woo-card-actions .price:not(:only-child):after {
+  position: absolute;
+  content: '';
+  inset-inline-end: 0;
+  width: 1px;
+  height: 30px;
+  top: calc(50% - 15px);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-products="type-2"] .ct-woo-card-actions .button,
+[data-products="type-2"] .ct-woo-card-actions .added_to_cart {
+  border: none;
+  background-color: transparent;
+}
+/*# sourceMappingURL=type-2.css.map */

@@ -1,0 +1,62 @@
+[class^="ct-option"] input[type="text"],
+[class^="ct-option"] input[type="number"] {
+  height: var(--input-height, 30px) !important;
+  width: var(--input-width, 100%) !important;
+  margin: var(--margin, 0) !important;
+  padding: var(--padding, 3px 8px) !important;
+  min-height: initial;
+  font-size: var(--input-font-size, 12px) !important;
+  color: #555d66;
+  line-height: normal;
+  background-color: var(--background, #fff);
+  border: var(--borderWidth, 1px) solid var(--optionBorderColor, #ddd) !important;
+  border-radius: var(--ui-border-radius, 3px) !important;
+  -webkit-box-shadow: 0 0 0 0 transparent;
+          box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: background 0.1s linear, border-radius 0.1s linear, border-color 0.1s linear, -webkit-box-shadow 0.1s linear;
+  transition: background 0.1s linear, border-radius 0.1s linear, border-color 0.1s linear, -webkit-box-shadow 0.1s linear;
+  transition: box-shadow 0.1s linear, background 0.1s linear, border-radius 0.1s linear, border-color 0.1s linear;
+  transition: box-shadow 0.1s linear, background 0.1s linear, border-radius 0.1s linear, border-color 0.1s linear, -webkit-box-shadow 0.1s linear;
+}
+
+[class^="ct-option"] input[type="text"]:hover, [class^="ct-option"] input[type="text"]:focus,
+[class^="ct-option"] input[type="number"]:hover,
+[class^="ct-option"] input[type="number"]:focus {
+  --optionBorderColor: var(--ui-accent-color) !important;
+}
+
+[class^="ct-option"] input[type="text"]:focus,
+[class^="ct-option"] input[type="number"]:focus {
+  -webkit-box-shadow: 0 0 0 1px var(--ui-accent-color);
+          box-shadow: 0 0 0 1px var(--ui-accent-color);
+}
+
+[class^="ct-option"] input[type="text"]::-webkit-input-placeholder,
+[class^="ct-option"] input[type="number"]::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+[class^="ct-option"] input[type="text"]:-ms-input-placeholder,
+[class^="ct-option"] input[type="number"]:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+[class^="ct-option"] input[type="text"]::-ms-input-placeholder,
+[class^="ct-option"] input[type="number"]::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+[class^="ct-option"] input[type="text"]::placeholder,
+[class^="ct-option"] input[type="number"]::placeholder {
+  opacity: 0.5;
+}
+
+[class^="ct-option"] input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+[class^="ct-option"] input[type="number"]::-webkit-inner-spin-button, [class^="ct-option"] input[type="number"]::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+/*# sourceMappingURL=input.css.map */

@@ -1,0 +1,13 @@
+.shop_table .quantity {
+  font-size: 14px;
+  --quantity-height: 40px;
+}
+
+.shop_table .quantity[data-type="type-1"] {
+  --quantity-width: 70px;
+}
+
+.shop_table .quantity[data-type="type-2"] {
+  --quantity-width: 100px;
+}
+/*# sourceMappingURL=common.css.map */

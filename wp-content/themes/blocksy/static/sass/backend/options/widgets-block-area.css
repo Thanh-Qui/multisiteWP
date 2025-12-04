@@ -1,0 +1,54 @@
+.ct-option-widget-area {
+  min-height: 150px;
+  padding: 0 12px 40px 12px;
+  margin: 15px -12px -30px -12px;
+  background-color: #fff;
+}
+
+.ct-option-widget-area > .customize-pane-child {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative !important;
+  padding: 0 !important;
+  margin-top: 25px !important;
+  border-bottom: none !important;
+  overflow: initial !important;
+}
+
+.ct-option-widget-area > .customize-pane-child .customize-control {
+  --ui-padding: 0 8px;
+}
+
+.ct-option-widget-area > .customize-pane-child .customize-control-sidebar_widgets {
+  -webkit-box-ordinal-group: 101;
+      -ms-flex-order: 100;
+          order: 100;
+}
+
+.ct-option-widget-area.ct-loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+}
+
+.ct-option-widget-area .block-editor-writing-flow {
+  margin-inline: 14px;
+}
+
+.ct-options-container .block-editor-block-inspector {
+  color: #3c434a;
+  background: #fff;
+}
+/*# sourceMappingURL=widgets-block-area.css.map */

@@ -1,0 +1,153 @@
+.ct-image-picker {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: var(--grid-columns, (1fr)[2]);
+      grid-template-columns: var(--grid-columns, repeat(2, 1fr));
+  grid-column-gap: var(--column-gap, 23px);
+  grid-row-gap: var(--row-gap, 23px);
+  margin: 0;
+}
+
+.ct-image-picker[data-columns='3'] {
+  --grid-columns: repeat(3, 1fr);
+  --column-gap: 16px;
+  --row-gap: 16px;
+}
+
+.ct-image-picker[data-columns='4'] {
+  --grid-columns: repeat(4, 1fr);
+  --column-gap: 12px;
+}
+
+.ct-image-picker[data-columns='5'] {
+  --grid-columns: repeat(5, 1fr);
+  --column-gap: 15px;
+}
+
+.ct-image-picker li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  background: var(--image-picker-bg, rgba(221, 224, 226, 0.7));
+  -webkit-transition: background 0.15s ease, -webkit-box-shadow 0.15s ease;
+  transition: background 0.15s ease, -webkit-box-shadow 0.15s ease;
+  transition: background 0.15s ease, box-shadow 0.15s ease;
+  transition: background 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+}
+
+.ct-image-picker li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: inherit;
+}
+
+.ct-image-picker li span svg {
+  fill: #565d66;
+}
+
+.ct-image-picker li:hover {
+  background: #dde0e2;
+}
+
+.ct-image-picker li.active {
+  background: var(--ui-accent-color);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+}
+
+.ct-image-picker li.active span svg {
+  fill: #fff;
+}
+
+.ct-image-picker li > *:first-child {
+  position: absolute;
+  inset: 0;
+}
+
+.ct-image-picker li:before {
+  content: '';
+  width: 100%;
+  height: 0;
+  padding-bottom: var(--ratio, 69.67%);
+}
+
+.ct-image-picker[data-ratio="2:1"] li:before {
+  --ratio: 62%;
+}
+
+.ct-image-picker[data-state='sync'] li:first-child {
+  position: relative;
+}
+
+.ct-image-picker[data-state='sync'] li:first-child:after {
+  background: url(../images/sync.svg);
+  position: absolute;
+  top: calc(50% - 5px);
+  content: '';
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: rotation 3.5s infinite linear;
+          animation: rotation 3.5s infinite linear;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  will-change: transform;
+}
+
+.ct-image-picker[data-state='sync'] li:first-child.active:after {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+/*# sourceMappingURL=image-picker.css.map */

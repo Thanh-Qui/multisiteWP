@@ -1,0 +1,304 @@
+.ct-panel.ct-click-allowed {
+  cursor: pointer;
+  position: relative;
+}
+
+.ct-panel.ct-click-allowed:before {
+  position: absolute;
+  content: '';
+  top: -11px;
+  inset-inline-start: -12px;
+  width: calc(100% + 24px);
+  height: 42px;
+  -webkit-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+}
+
+.ct-panel.ct-click-allowed:hover:before {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.ct-panel.ct-click-allowed:hover > header,
+.ct-panel.ct-click-allowed:hover > section button {
+  color: var(--ui-accent-color);
+}
+
+.ct-panel.ct-click-allowed > header {
+  color: #50575e;
+  -webkit-transition: color 0.15 ease-in-out;
+  transition: color 0.15 ease-in-out;
+}
+
+.ct-panel.ct-click-allowed .ct-customizer-panel-option button {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: opacity 0.2s ease 0.2s, -webkit-transform 0.2s ease 0.2s;
+  transition: opacity 0.2s ease 0.2s, -webkit-transform 0.2s ease 0.2s;
+  transition: opacity 0.2s ease 0.2s, transform 0.2s ease 0.2s;
+  transition: opacity 0.2s ease 0.2s, transform 0.2s ease 0.2s, -webkit-transform 0.2s ease 0.2s;
+}
+
+.ct-panel[data-panel='only-arrow'] .ct-customizer-panel-option button {
+  inset-inline-end: -10px;
+}
+
+.ct-customizer-panel-option {
+  position: relative;
+  cursor: pointer;
+  min-height: 20px;
+}
+
+.ct-customizer-panel-option button {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25px;
+  height: 20px;
+  top: calc(50% - 10px);
+  inset-inline-end: -24px;
+  color: #50575e;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  opacity: 0;
+  pointer-events: none;
+  background: transparent;
+  -webkit-transition: color 0.15 ease-in-out;
+  transition: color 0.15 ease-in-out;
+}
+
+.ct-customizer-panel-option button:after {
+  font-family: dashicons;
+  content: '\f345';
+  width: 12px;
+  height: 12px;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ct-customizer-panel-option button:focus {
+  outline: none;
+}
+
+.ct-customizer-panel-option .ct-option-switch + button {
+  -webkit-transform: translate3d(-7px, 0, 0);
+          transform: translate3d(-7px, 0, 0);
+  -webkit-transition: opacity 0s ease 0s, -webkit-transform 0s ease 0s;
+  transition: opacity 0s ease 0s, -webkit-transform 0s ease 0s;
+  transition: opacity 0s ease 0s, transform 0s ease 0s;
+  transition: opacity 0s ease 0s, transform 0s ease 0s, -webkit-transform 0s ease 0s;
+}
+
+.ct-customizer-panel {
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 99;
+  background: #f0f0f1;
+  inset: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.ct-customizer-panel > * {
+  position: absolute;
+  inset: 0;
+}
+
+.ct-customizer-panel > *:nth-child(2) {
+  display: none;
+}
+
+.ct-customizer-panel.ct-panel-second-level {
+  width: 200%;
+}
+
+.ct-customizer-panel.ct-panel-second-level > * {
+  width: 50%;
+}
+
+.ct-customizer-panel.ct-panel-second-level > *:last-child {
+  inset-inline-start: 50%;
+  display: block;
+}
+
+.ct-panel-open {
+  height: 100% !important;
+  overflow-y: hidden !important;
+  -webkit-transform: translateX(-100%) !important;
+          transform: translateX(-100%) !important;
+}
+
+.customize-panel-back,
+.customize-section-back {
+  color: #3c434a;
+}
+
+.customize-panel-back:is(:focus, :hover),
+.customize-section-back:is(:focus, :hover) {
+  color: var(--ui-accent-color);
+}
+
+.customize-panel-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.customize-panel-actions button {
+  width: 48px;
+  -webkit-padding-end: 24px;
+          padding-inline-end: 24px;
+  background: #fff;
+  cursor: pointer;
+  border: none;
+  -webkit-border-end: 1px solid #ddd;
+          border-inline-end: 1px solid #ddd;
+  -webkit-border-start: 4px solid #fff;
+          border-inline-start: 4px solid #fff;
+}
+
+.customize-panel-actions button:before {
+  font: normal 20px/48px dashicons;
+  content: '\f341';
+  position: relative;
+  inset-inline-start: 9px;
+}
+
+.customize-panel-actions button:focus {
+  outline: none;
+}
+
+.customize-panel-actions h3 {
+  font-size: 20px !important;
+  font-weight: 200;
+  line-height: 26px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #555d66;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  -webkit-padding-start: 14px;
+          padding-inline-start: 14px;
+}
+
+.customize-panel-actions h3 span {
+  font-size: 13px;
+  display: block;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.customizer-panel-content {
+  margin: 0;
+  padding: 0 12px 30px 12px;
+}
+
+.customizer-panel-content > li:first-child {
+  margin-top: 30px;
+}
+
+.customizer-panel-content > li:first-child.customize-control-ct-title {
+  margin-top: 0;
+  border-top: none !important;
+}
+
+.customizer-panel-content > form {
+  margin-inline: -12px;
+}
+
+.ct-tmp-panel-actions {
+  z-index: 999999;
+  position: relative;
+}
+
+.ct-customizer-panel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ct-customizer-panel-container .ct-option-notice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  position: initial;
+}
+
+.ct-customizer-panel-container [data-tooltip-reveal='top:full'] .ct-tooltip {
+  text-align: initial;
+  white-space: initial;
+  padding: 8px 10px;
+  top: 0;
+  inset-inline: 0px;
+  -webkit-transform: translateY(calc(-100% - 8px));
+          transform: translateY(calc(-100% - 8px));
+}
+
+.ct-customizer-panel-container [data-tooltip-reveal='top:full'] .ct-tooltip-trigger {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ct-customizer-panel-container [data-tooltip-reveal='top:full'] .ct-tooltip-trigger:after {
+  opacity: 0;
+  visibility: hidden;
+  content: '';
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 10px;
+  height: 5px;
+  border-inline: 5px solid transparent;
+  border-top: 5px solid #363f42;
+  -webkit-transform: translateY(calc(-100% - 11px));
+          transform: translateY(calc(-100% - 11px));
+  -webkit-transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), -webkit-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), -webkit-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), -webkit-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.ct-customizer-panel-container [data-tooltip-reveal='top:full']:hover .ct-tooltip-trigger:after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(calc(-100% - 15px));
+          transform: translateY(calc(-100% - 15px));
+}
+
+.ct-customizer-panel-container [data-tooltip-reveal='top:full']:hover .ct-tooltip {
+  -webkit-transform: translateY(calc(-100% - 12px));
+          transform: translateY(calc(-100% - 12px));
+}
+/*# sourceMappingURL=ct-panel.css.map */

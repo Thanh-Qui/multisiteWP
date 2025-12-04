@@ -1,0 +1,43 @@
+.hero-section .ct-author-name [class*="ct-media-container"] {
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+.author-box-socials {
+  --theme-icon-size: 12px;
+  --theme-icon-color: #fff;
+}
+
+.author-box-socials span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.author-box-socials span a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: var(--background-color, var(--theme-palette-color-1));
+}
+
+.author-box-socials span a:hover {
+  background: var(--background-hover-color, var(--theme-palette-color-2));
+}
+
+.author-box-socials span a:hover .ct-icon {
+  fill: var(--theme-icon-hover-color, #fff);
+}
+/*# sourceMappingURL=author-page.css.map */

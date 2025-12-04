@@ -1,0 +1,8 @@
+.wp-block-table table:not(.has-border-color) thead, .wp-block-table table:not(.has-border-color) tfoot, .wp-block-table table:not(.has-border-color) td, .wp-block-table table:not(.has-border-color) th {
+  border-color: var(--theme-table-border-color, var(--theme-border-color));
+}
+
+.wp-block-table.is-style-stripes {
+  border: 0;
+}
+/*# sourceMappingURL=table-block.css.map */

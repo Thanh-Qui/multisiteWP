@@ -1,0 +1,9 @@
+.wp-block-buttons .wp-block-button .wp-block-button__link.is-style-outline,
+.wp-block-buttons .wp-block-button.is-style-outline > .wp-block-button__link {
+  padding: var(--theme-button-padding);
+}
+
+.wp-block-button[style*="font-weight"] .wp-block-button__link {
+  font-weight: inherit;
+}
+/*# sourceMappingURL=button.css.map */

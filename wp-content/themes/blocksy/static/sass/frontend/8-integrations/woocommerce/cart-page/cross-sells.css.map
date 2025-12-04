@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACZ,UAAU,EAAE,IAAI;CAiBhB;;AAlBD,AAGC,YAHW,CAGX,EAAE,CAAC;EACF,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,IAAI;CACnB;;AANF,AAQC,YARW,CAQX,SAAS,CAAC;EACT,MAAM,EAAE,CAAC;CACT;;AAVF,AAcE,YAdU,CAYX,mBAAmB,AAEjB,MAAM,CAAC;EACP,OAAO,EAAE,OAAO;CAChB",
+    "sources": [
+        "cross-sells.scss"
+    ],
+    "names": [],
+    "file": "cross-sells.css"
+}

@@ -1,0 +1,24 @@
+[data-column*='copyright'] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: var(--vertical-alignment);
+      -ms-flex-pack: var(--vertical-alignment);
+          justify-content: var(--vertical-alignment);
+  text-align: var(--horizontal-alignment);
+}
+
+.ct-footer-copyright {
+  color: var(--theme-text-color);
+  --theme-content-spacing: 0;
+  --theme-link-initial-color: var(--theme-text-color);
+}
+
+.ct-footer-copyright > *:not(:first-child) {
+  margin-top: 0.5em;
+}
+/*# sourceMappingURL=copyright.css.map */

@@ -1,0 +1,18 @@
+#customize-controls .control-section-sidebar li.customize-control-sidebar_block_editor {
+  --ui-padding: 0;
+  margin-top: -7px;
+}
+
+.ct-customizer-panel .customize-widgets-layout__inspector .customize-section-description-container {
+  display: none;
+}
+
+.ct-customizer-panel .customize-widgets-layout__inspector > form {
+  margin: -12px;
+}
+
+.ct-customizer-panel.ct-panel-second-level > div:last-child {
+  z-index: 10;
+  background: inherit;
+}
+/*# sourceMappingURL=widgets-common.css.map */

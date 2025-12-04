@@ -1,0 +1,17 @@
+.cross-sells {
+  margin-top: 50px;
+}
+
+.cross-sells h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.cross-sells .products {
+  margin: 0;
+}
+
+.cross-sells .add_to_cart_button.added {
+  display: initial;
+}
+/*# sourceMappingURL=cross-sells.css.map */

@@ -1,0 +1,45 @@
+.quantity[data-type="type-1"] {
+  width: var(--quantity-width, 100px);
+}
+
+.quantity[data-type="type-1"] input[type="number"] {
+  padding-block: 0px;
+  -webkit-padding-start: 5px;
+          padding-inline-start: 5px;
+  -webkit-padding-end: calc(25% + 3px);
+          padding-inline-end: calc(25% + 3px);
+  border-width: 1px;
+  border-inline-end-width: 0;
+}
+
+.quantity[data-type="type-1"] .ct-increase,
+.quantity[data-type="type-1"] .ct-decrease {
+  inset-inline-end: 0;
+  border-radius: 0;
+  width: 25%;
+  max-width: 25px;
+}
+
+.quantity[data-type="type-1"] .ct-increase:before,
+.quantity[data-type="type-1"] .ct-decrease:before {
+  content: '\e911';
+  font-size: calc(var(--quantity-height, 55px) / 6.7);
+}
+
+.quantity[data-type="type-1"] .ct-increase {
+  top: 0;
+  height: calc(50% - 1px);
+  border-start-end-radius: var(--theme-form-field-border-radius, 3px);
+}
+
+.quantity[data-type="type-1"] .ct-decrease {
+  bottom: 0;
+  height: 50%;
+  border-end-end-radius: var(--theme-form-field-border-radius, 3px);
+}
+
+.quantity[data-type="type-1"] .ct-decrease:before {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+/*# sourceMappingURL=type-1.css.map */

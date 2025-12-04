@@ -1,0 +1,12 @@
+[data-button-state] .ct-button-loader {
+  display: none;
+}
+
+[data-button-state*="loading"] .ct-button-loader {
+  display: block;
+}
+
+[data-button-state*="loading"] svg:not(.ct-button-loader) {
+  display: none;
+}
+/*# sourceMappingURL=action-button.css.map */

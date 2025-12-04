@@ -1,0 +1,117 @@
+.ct-checkboxes-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+}
+
+.ct-checkboxes-container[data-type*="grid"] {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.ct-checkboxes-container[data-type*="bordered"] > * {
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid rgba(179, 189, 201, 0.3);
+}
+
+.ct-checkboxes-container[data-type*="reversed"] > * {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ct-checkbox-container {
+  --checkMarkColor: #fff;
+  --background: rgba(179, 189, 201, 0.8);
+  --backgroundActive: var(--ui-accent-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-transition: color 0.15s ease;
+  transition: color 0.15s ease;
+}
+
+.ct-checkbox-container:not(.activated) {
+  cursor: pointer;
+}
+
+.ct-checkbox-container:not(.activated):hover .ct-checkbox:not(.active) {
+  --background: var(--backgroundActive);
+}
+
+.ct-checkbox-container.activated {
+  --checkMarkColor: rgba(104, 124, 147, 0.6);
+  --backgroundActive: rgba(179, 189, 201, 0.3);
+}
+
+.ct-checkbox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 18px;
+          flex: 0 0 18px;
+}
+
+.ct-checkbox:before {
+  position: absolute;
+  z-index: 1;
+  content: '';
+  width: 18px;
+  height: 18px;
+  margin: auto;
+  border-radius: 100%;
+  -webkit-box-shadow: inset 0px 0px 0px 2px var(--background);
+          box-shadow: inset 0px 0px 0px 2px var(--background);
+  -webkit-transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.ct-checkbox svg {
+  position: relative;
+  z-index: 2;
+}
+
+.ct-checkbox.active:before {
+  width: 22px;
+  height: 22px;
+  -webkit-box-shadow: inset 0px 0px 0px 12px var(--backgroundActive);
+          box-shadow: inset 0px 0px 0px 12px var(--backgroundActive);
+}
+
+.ct-checkbox .check {
+  fill: none;
+  stroke: var(--checkMarkColor);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 15;
+  stroke-dashoffset: 16;
+  -webkit-transition: stroke 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955), stroke-dashoffset 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: stroke 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955), stroke-dashoffset 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.ct-checkbox.active .check {
+  stroke-dashoffset: 0;
+}
+/*# sourceMappingURL=animated-checkbox.css.map */

@@ -1,0 +1,38 @@
+@use 'background-preview';
+@use 'gradient';
+@use 'image-pattern';
+.ct-background-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale3d(0.95, 0.95, 1);
+          transform: scale3d(0.95, 0.95, 1);
+  -webkit-transition: opacity 0.1s ease, visibility 0.1s ease, -webkit-transform 0.1s ease-out;
+  transition: opacity 0.1s ease, visibility 0.1s ease, -webkit-transform 0.1s ease-out;
+  transition: opacity 0.1s ease, visibility 0.1s ease, transform 0.1s ease-out;
+  transition: opacity 0.1s ease, visibility 0.1s ease, transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
+  --option-modal-arrow-position: calc(100% - 38px);
+}
+
+.ct-background-modal.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.ct-background-modal .ct-image-tab,
+.ct-background-modal .ct-gradient-tab {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 420px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */

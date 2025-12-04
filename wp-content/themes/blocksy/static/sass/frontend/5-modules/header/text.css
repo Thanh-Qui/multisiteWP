@@ -1,0 +1,14 @@
+.ct-header-text {
+  color: var(--theme-text-color);
+  text-align: var(--horizontal-alignment);
+}
+
+.ct-header-text[data-width="stretch"] {
+  width: 100%;
+  max-width: var(--max-width);
+}
+
+.ct-header-text .entry-content {
+  width: 100%;
+}
+/*# sourceMappingURL=text.css.map */

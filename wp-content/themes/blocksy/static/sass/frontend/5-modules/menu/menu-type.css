@@ -1,0 +1,89 @@
+[data-menu] > ul > li > a:before, [data-menu] > ul > li > a:after {
+  position: absolute;
+  left: var(--menu-indicator-left, 0);
+  right: var(--menu-indicator-right, 0);
+  margin: var(--menu-indicator-margin, 0);
+  height: var(--menu-indicator-height, 2px);
+  opacity: var(--menu-indicator-opacity, 0);
+  background-color: var(--menu-indicator-hover-color, var(--theme-palette-color-2));
+  -webkit-transition: opacity 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955), width 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955), height 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955), top 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955), bottom 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955), width 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955), height 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955), top 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955), bottom 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+[data-menu] > ul > li > a:before {
+  top: var(--menu-indicator-y-position, 0);
+}
+
+[data-menu] > ul > li > a:after {
+  bottom: var(--menu-indicator-y-position, 0);
+}
+
+[data-menu] > ul > li[class*="current-menu-"] > a:before, [data-menu] > ul > li[class*="current-menu-"] > a:after {
+  background-color: var(--menu-indicator-active-color, var(--menu-indicator-hover-color, var(--theme-palette-color-2)));
+}
+
+[data-column="start"] [data-items="primary"] [data-menu*="type-1"]:first-child > ul > li:first-child > a {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+[data-column="end"] [data-items="primary"] [data-menu*="type-1"]:last-child > ul > li:last-child {
+  --toggle-ghost-inset-end: 16px;
+}
+
+[data-column="end"] [data-items="primary"] [data-menu*="type-1"]:last-child > ul > li:last-child > a {
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+}
+
+[data-menu*="type-2"] > ul > li > a:after {
+  content: '';
+  width: var(--menu-indicator-width, 100%);
+}
+
+[data-menu*="type-2"] > ul > li:hover > a,
+[data-menu*="type-2"] > ul > li[class*="current-menu-"] > a {
+  --menu-indicator-opacity: 1;
+}
+
+[data-menu="type-2:center"] > ul > li {
+  --menu-indicator-width: 0;
+  --menu-indicator-margin: 0 auto;
+}
+
+[data-menu="type-2:center"] > ul > li:hover > a,
+[data-menu="type-2:center"] > ul > li[class*="current-menu-"] > a {
+  --menu-indicator-width: calc(100% - var(--menu-items-spacing, 25px));
+}
+
+[data-menu="type-2:left"] > ul > li {
+  --menu-indicator-opacity: 1;
+  --menu-indicator-left: calc(var(--menu-items-spacing, 25px) / 2);
+  --menu-indicator-width: 0;
+}
+
+[data-menu="type-2:left"] > ul > li:hover > a,
+[data-menu="type-2:left"] > ul > li[class*="current-menu-"] > a {
+  --menu-indicator-width: calc(100% - var(--menu-items-spacing, 25px));
+}
+
+[data-menu*="type-3"] > ul > li:hover > a {
+  background-color: var(--menu-indicator-hover-color, var(--theme-palette-color-2));
+}
+
+[data-menu*="type-3"] > ul > li[class*="current-menu-"] > a {
+  background-color: var(--menu-indicator-active-color, var(--menu-indicator-hover-color, var(--theme-palette-color-2)));
+}
+
+[data-menu*="type-4"] > ul > li > a:before, [data-menu*="type-4"] > ul > li > a:after {
+  content: '';
+  --menu-indicator-y-position: 10px;
+}
+
+[data-menu*="type-4"] > ul > li:hover > a:before, [data-menu*="type-4"] > ul > li:hover > a:after,
+[data-menu*="type-4"] > ul > li[class*="current-menu-"] > a:before,
+[data-menu*="type-4"] > ul > li[class*="current-menu-"] > a:after {
+  --menu-indicator-opacity: 1;
+  --menu-indicator-y-position: 0px;
+}
+/*# sourceMappingURL=menu-type.css.map */

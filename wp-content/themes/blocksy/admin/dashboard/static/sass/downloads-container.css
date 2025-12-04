@@ -1,0 +1,43 @@
+#ct-dashboard .ct-dashboard-home-downloads ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  margin: 0;
+}
+
+#ct-dashboard .ct-dashboard-home-downloads ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-decoration: none;
+  padding: 35px;
+  margin-bottom: 0;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px dashed rgba(226, 230, 235, 0.7);
+}
+
+#ct-dashboard .ct-dashboard-home-downloads ul h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+#ct-dashboard .ct-dashboard-home-downloads ul p {
+  color: #687c93;
+  margin-bottom: 25px;
+}
+/*# sourceMappingURL=downloads-container.css.map */

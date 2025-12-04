@@ -1,0 +1,209 @@
+.ct-value-changer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 30px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid var(--optionBorderColor, #ddd);
+  background: var(--backgroundColor, #fff);
+  -webkit-transition: background 0.1s ease, border-color 0.1s ease;
+  transition: background 0.1s ease, border-color 0.1s ease;
+}
+
+.ct-value-changer input[type="number"] {
+  --input-width: auto;
+  --input-font-size: 11px;
+  --margin: -1px;
+  --padding: 0 5px;
+  --optionBorderColor: transparent;
+  --background: transparent;
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+.ct-value-changer input[type="number"]:focus {
+  --background: #fff;
+}
+
+.ct-value-changer.no-unit-list .ct-current-value {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.ct-value-changer.active {
+  background: transparent;
+}
+
+.ct-value-changer.active .ct-units-list {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.ct-current-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0 3px;
+  position: relative;
+  cursor: pointer;
+  height: 100%;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: color 0.1s ease, font-weight 0.1s ease;
+  transition: color 0.1s ease, font-weight 0.1s ease;
+}
+
+.ct-current-value:hover {
+  color: var(--ui-accent-color);
+}
+
+.ct-current-value[data-unit='custom'], .ct-current-value[data-style='none'] {
+  grid-column: 1/-1;
+}
+
+.ct-current-value:before {
+  position: absolute;
+  content: '';
+  inset-inline-start: 0;
+  width: 1px;
+  height: 50%;
+  background: var(--optionBorderColor, #ddd);
+}
+
+.ct-units-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-column-gap: 5px;
+  position: absolute;
+  z-index: 2;
+  top: -1px;
+  inset-inline-start: -1px;
+  width: calc(100% + 2px);
+  padding: 0 2px;
+  background: #fff;
+  border-radius: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid var(--optionBorderColor, #ddd);
+  -webkit-box-shadow: var(--option-modal-shadown, 0 15px 15px rgba(0, 0, 0, 0.08));
+          box-shadow: var(--option-modal-shadown, 0 15px 15px rgba(0, 0, 0, 0.08));
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform: scale3d(0.95, 0.95, 1);
+          transform: scale3d(0.95, 0.95, 1);
+  -webkit-transition: opacity 0.1s ease, visibility 0.1s ease, -webkit-transform 0.1s ease-out;
+  transition: opacity 0.1s ease, visibility 0.1s ease, -webkit-transform 0.1s ease-out;
+  transition: opacity 0.1s ease, visibility 0.1s ease, transform 0.1s ease-out;
+  transition: opacity 0.1s ease, visibility 0.1s ease, transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
+}
+
+.ct-units-list span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding: 2px 3px;
+  cursor: pointer;
+  min-height: 24px;
+  color: #555d66;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  background: inherit;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.ct-units-list span:before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 100%;
+  min-height: inherit;
+  border-radius: 2px;
+}
+
+.ct-units-list span:hover {
+  color: #fff;
+}
+
+.ct-units-list span:hover:before {
+  background: var(--ui-accent-color);
+}
+
+.ct-units-list span:not(:last-child) {
+  border-bottom: 1px dashed #eee;
+}
+
+.ct-units-list span:nth-child(1):nth-last-child(2), .ct-units-list span:nth-child(3):nth-last-child(2), .ct-units-list span:nth-child(5):nth-last-child(2) {
+  border-bottom: 0;
+}
+
+.ct-units-list span[data-unit='custom'] {
+  grid-column: 1/-1;
+}
+
+.ct-units-list:after {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: calc(100% - 6px);
+  -webkit-margin-start: 1px;
+          margin-inline-start: 1px;
+  -webkit-border-start: 1px dashed #eee;
+          border-inline-start: 1px dashed #eee;
+}
+/*# sourceMappingURL=value-changer.css.map */

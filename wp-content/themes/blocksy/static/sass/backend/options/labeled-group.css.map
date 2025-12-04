@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAC;EACtB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI;CAYhB;;AAhBD,AAMC,sBANqB,GAMnB,KAAK,CAAC;EACP,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,GAAG;EACZ,iBAAiB,EAAE,IAAI;EACvB,MAAM,EAAE,OAAO;CACf;;AAXF,AAaC,sBAbqB,CAarB,4BAA4B,CAAC;EAC5B,KAAK,EAAE,IAAI;CACX",
+    "sources": [
+        "labeled-group.scss"
+    ],
+    "names": [],
+    "file": "labeled-group.css"
+}

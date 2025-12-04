@@ -1,0 +1,147 @@
+.ct-demo-modal {
+  --modal-width: 500px;
+  height: 100%;
+  -webkit-transition: max-height 0.2s ease;
+  transition: max-height 0.2s ease;
+}
+
+.ct-demo-modal:not(.ct-demo-installer) {
+  --modal-max-height: 620px;
+}
+
+.ct-demo-modal.ct-demo-installer {
+  --modal-max-height: 380px;
+}
+
+.ct-demo-step-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #687c93;
+  text-align: center;
+}
+
+.ct-demo-step-container > *:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+
+.ct-demo-step-container > *:first-child > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ct-demo-step-container .ct-demo-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 85px;
+  height: 85px;
+  margin: 10px auto 20px auto;
+  background: #f3f6f8;
+  border-radius: 100%;
+}
+
+.ct-demo-step-container h2 {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  color: #3e5667;
+  margin-top: 0;
+}
+
+.ct-demo-step-container .ct-checkboxes-container {
+  margin-top: 30px;
+}
+
+.ct-demo-step-controls {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+
+.ct-demo-step-controls button {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+}
+
+.ct-demo-step-controls button.demo-back-btn {
+  inset-inline-start: 0;
+}
+
+.ct-demo-step-controls button.demo-main-btn {
+  inset-inline-end: 0;
+}
+
+.ct-steps-pills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  width: 200px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.ct-steps-pills li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  font-size: 0;
+}
+
+.ct-steps-pills li:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  -webkit-box-shadow: inset 0 0 0 2px rgba(104, 124, 147, 0.8);
+          box-shadow: inset 0 0 0 2px rgba(104, 124, 147, 0.8);
+  -webkit-transition: -webkit-box-shadow 0.2s ease, -webkit-transform 0.2s ease;
+  transition: -webkit-box-shadow 0.2s ease, -webkit-transform 0.2s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, -webkit-box-shadow 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.ct-steps-pills li:not(.active):before {
+  -webkit-transform: scale3d(0.5, 0.5, 1);
+          transform: scale3d(0.5, 0.5, 1);
+  -webkit-box-shadow: inset 0 0 0 10px rgba(104, 124, 147, 0.8);
+          box-shadow: inset 0 0 0 10px rgba(104, 124, 147, 0.8);
+}
+/*# sourceMappingURL=install-steps.css.map */

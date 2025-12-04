@@ -1,0 +1,19 @@
+.component_option_thumbnail button {
+  display: inline-block;
+}
+
+.composite_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.composite_button .single_add_to_cart_button {
+  --theme-button-min-height: 55px;
+}
+
+.composite_button .added_to_cart,
+.composite_button .single_add_to_cart_button {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=composite-products.css.map */

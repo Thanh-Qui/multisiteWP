@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "CAAA,AAAA,AAAA,KAAC,EAAO,QAAQ,AAAf,IAAmB,KAAK,AAAA,WAAW,CAAC;EACpC,gBAAgB,EAAE,WAAW;CAC7B",
+    "sources": [
+        "woocommerce-germanized.scss"
+    ],
+    "names": [],
+    "file": "woocommerce-germanized.css"
+}

@@ -1,0 +1,44 @@
+form.variations_form table.variations {
+  margin-bottom: 1.5em;
+}
+
+form.variations_form table.variations tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+form.variations_form table.variations tr:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+form.variations_form table.variations th, form.variations_form table.variations td {
+  padding: 0;
+  text-align: initial;
+}
+
+form.variations_form table.variations label {
+  display: block;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+form.variations_form table.variations select {
+  width: 100%;
+  max-width: 100%;
+}
+
+form.variations_form .single_variation {
+  display: none;
+}
+
+form.variations_form .single_variation :is(p, .price) {
+  display: block;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=variable.css.map */

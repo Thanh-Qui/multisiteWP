@@ -1,0 +1,33 @@
+.ct-responsive-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 17px;
+  margin: 0;
+}
+
+.ct-responsive-controls li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  color: #CFD1D2;
+}
+
+.ct-responsive-controls li.active {
+  color: var(--ui-accent-color);
+}
+
+.ct-responsive-controls li:not(.active):hover {
+  color: #a5abaf;
+}
+/*# sourceMappingURL=responsive-controls.css.map */

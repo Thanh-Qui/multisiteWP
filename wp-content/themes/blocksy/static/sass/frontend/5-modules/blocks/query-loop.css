@@ -1,0 +1,8 @@
+.ct-query-template-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: var(--grid-columns-gap, 30px);
+  -ms-grid-columns: (minmax(0, 1fr))[var];
+      grid-template-columns: repeat(var(--grid-columns-width), minmax(0, 1fr));
+}
+/*# sourceMappingURL=query-loop.css.map */

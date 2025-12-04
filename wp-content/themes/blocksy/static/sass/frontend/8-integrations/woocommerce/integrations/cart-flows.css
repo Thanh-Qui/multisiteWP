@@ -1,0 +1,25 @@
+#wpfnl-checkout-form form.woocommerce-checkout,
+#wcf-embed-checkout-form form.woocommerce-checkout {
+  grid-column-gap: initial;
+}
+
+#wcf-embed-checkout-form #payment .payment_methods > li > label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wcf-embed-checkout-form input[type="checkbox"],
+#wcf-embed-checkout-form input[type="checkbox"]:before {
+  position: initial;
+  top: initial;
+  height: initial;
+  border: initial;
+  -webkit-transform: initial;
+          transform: initial;
+}
+
+#wcf-embed-checkout-form .wcf-qty {
+  --has-height: var(--false);
+}
+/*# sourceMappingURL=cart-flows.css.map */

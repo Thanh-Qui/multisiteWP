@@ -1,0 +1,26 @@
+.ct-product-reviews-options {
+  padding-top: 40px;
+  border-top: 1px dashed #eee;
+}
+
+.ct-product-reviews-options form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 150px;
+      grid-template-columns: 1fr 1fr 150px;
+  gap: 10px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-top: 25px;
+}
+
+.ct-product-reviews-options .ct-control {
+  --options-vertical-spacing: 0;
+  --options-horizontal-spacing: 0;
+}
+
+.ct-product-reviews-options .ct-control .ct-option-input {
+  --input-height: 35px;
+}
+/*# sourceMappingURL=main.css.map */

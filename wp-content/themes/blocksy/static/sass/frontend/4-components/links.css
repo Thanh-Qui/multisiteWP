@@ -1,0 +1,52 @@
+a {
+  color: var(--theme-link-initial-color);
+  -webkit-text-decoration: var(--has-link-decoration, var(--theme-text-decoration, none));
+          text-decoration: var(--has-link-decoration, var(--theme-text-decoration, none));
+}
+
+a:hover {
+  color: var(--theme-link-hover-color);
+}
+
+[data-link='type-2'] .entry-content p > a, [data-link='type-2'] .entry-content em > a, [data-link='type-2'] .entry-content strong > a, [data-link='type-2'] .entry-content > ul a, [data-link='type-2'] .entry-content > ol a, [data-link='type-2'] .wp-block-table a, [data-link='type-2'] .ct-link-styles {
+  --theme-text-decoration: underline;
+}
+
+[data-link='type-3'] .entry-content p > a, [data-link='type-3'] .entry-content em > a, [data-link='type-3'] .entry-content strong > a, [data-link='type-3'] .entry-content > ul a, [data-link='type-3'] .entry-content > ol a, [data-link='type-3'] .wp-block-table a, [data-link='type-3'] .ct-link-styles,
+[data-link='type-4'] .entry-content p > a,
+[data-link='type-4'] .entry-content em > a,
+[data-link='type-4'] .entry-content strong > a,
+[data-link='type-4'] .entry-content > ul a,
+[data-link='type-4'] .entry-content > ol a,
+[data-link='type-4'] .wp-block-table a,
+[data-link='type-4'] .ct-link-styles,
+[data-link='type-5'] .entry-content p > a,
+[data-link='type-5'] .entry-content em > a,
+[data-link='type-5'] .entry-content strong > a,
+[data-link='type-5'] .entry-content > ul a,
+[data-link='type-5'] .entry-content > ol a,
+[data-link='type-5'] .wp-block-table a,
+[data-link='type-5'] .ct-link-styles {
+  background-position: var(--has-link-decoration, 0% 100%);
+  background-repeat: var(--has-link-decoration, no-repeat);
+}
+
+[data-link='type-4'] .entry-content p > a, [data-link='type-4'] .entry-content em > a, [data-link='type-4'] .entry-content strong > a, [data-link='type-4'] .entry-content > ul a, [data-link='type-4'] .entry-content > ol a, [data-link='type-4'] .wp-block-table a, [data-link='type-4'] .ct-link-styles {
+  background-size: var(--has-link-decoration, 100% 1px);
+  background-image: var(--has-link-decoration, linear-gradient(currentColor, currentColor));
+}
+
+footer.ct-footer [data-link] a,
+[data-link] .ct-posts-shortcode .entry-title a {
+  --has-link-decoration: var(--false);
+}
+
+footer.ct-footer [data-link] a:hover,
+[data-link] .ct-posts-shortcode .entry-title a:hover {
+  color: var(--theme-link-hover-color);
+}
+
+footer.ct-footer [data-link="underline"] a {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=links.css.map */

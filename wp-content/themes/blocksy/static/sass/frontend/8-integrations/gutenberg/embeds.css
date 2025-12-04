@@ -1,0 +1,5 @@
+article > .entry-content > table,
+article > .entry-content > iframe {
+  --theme-block-width: var(--theme-container-width);
+}
+/*# sourceMappingURL=embeds.css.map */

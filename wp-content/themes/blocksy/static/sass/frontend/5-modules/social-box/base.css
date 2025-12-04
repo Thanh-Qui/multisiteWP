@@ -1,0 +1,29 @@
+.ct-social-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: var(--items-direction, row);
+          flex-direction: var(--items-direction, row);
+  -ms-flex-wrap: var(--wrap, wrap);
+      flex-wrap: var(--wrap, wrap);
+  gap: var(--items-spacing, 15px);
+}
+
+.ct-social-box a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ct-social-box .ct-label {
+  -webkit-margin-start: 0.7em;
+          margin-inline-start: 0.7em;
+  -webkit-transition: color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+/*# sourceMappingURL=base.css.map */

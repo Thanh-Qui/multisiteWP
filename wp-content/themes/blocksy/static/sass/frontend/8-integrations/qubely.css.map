@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,eAFc,CAEd,iBAAiB,CAAC;EACjB,SAAS,EAAE,4BAA4B,CAAC,UAAU;EAClD,YAAY,EAAE,YAAY;EAC1B,aAAa,EAAE,YAAY;CAC3B;;AANF,AASE,eATa,AAQb,UAAU,CACV,iBAAiB,CAAC;EACjB,KAAK,EAAE,wBAAwB,CAAC,UAAU;CAC1C;;AAXH,AAcC,eAdc,CAcd,CAAC,AAAA,WAAW,CAAC;EACZ,aAAa,EAAE,YAAY;CAC3B",
+    "sources": [
+        "qubely.scss"
+    ],
+    "names": [],
+    "file": "qubely.css"
+}

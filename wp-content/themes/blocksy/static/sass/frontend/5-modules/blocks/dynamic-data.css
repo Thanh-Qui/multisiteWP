@@ -1,0 +1,49 @@
+.ct-dynamic-data a {
+  --theme-link-initial-color: initial;
+}
+
+.ct-dynamic-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ct-dynamic-media .ct-dynamic-media-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  will-change: transform;
+}
+
+@media (hover: hover) {
+  .ct-dynamic-media .ct-dynamic-media-inner[data-hover] img {
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  .ct-dynamic-media .ct-dynamic-media-inner[data-hover="zoom-in"]:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .ct-dynamic-media .ct-dynamic-media-inner[data-hover="zoom-out"] img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .ct-dynamic-media .ct-dynamic-media-inner[data-hover="zoom-out"]:hover img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.ct-dynamic-data-layer {
+  color: var(--theme-text-color);
+  --theme-link-initial-color: var(--theme-text-color);
+}
+
+.ct-dynamic-data-layer > span {
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+}
+/*# sourceMappingURL=dynamic-data.css.map */

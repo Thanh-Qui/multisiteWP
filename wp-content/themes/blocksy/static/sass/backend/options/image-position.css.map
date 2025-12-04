@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,cAFa,CAEb,+BAA+B,CAAC;EAC/B,aAAa,EAAE,CAAC;CAChB;;AAJF,AAMC,cANa,CAMb,8BAA8B,CAAC;EAC9B,UAAU,EAAE,IAAI;CAChB;;AARF,AAUC,cAVa,CAUb,6BAA6B,CAAC;EAC7B,OAAO,EAAE,aAAa;CACtB",
+    "sources": [
+        "image-position.scss"
+    ],
+    "names": [],
+    "file": "image-position.css"
+}

@@ -1,0 +1,5 @@
+ul, ol {
+  -webkit-padding-start: var(--theme-list-indent);
+          padding-inline-start: var(--theme-list-indent);
+}
+/*# sourceMappingURL=block-list.css.map */

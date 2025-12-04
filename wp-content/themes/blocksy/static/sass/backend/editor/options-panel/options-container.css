@@ -1,0 +1,70 @@
+.ct-components-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: calc(100% - 47px);
+  background: #fcfcfc;
+}
+
+#ct-page-options > .ct-options-container {
+  padding: 0 12px 30px 12px;
+  -webkit-transition: 180ms -webkit-transform cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 180ms -webkit-transform cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 180ms transform cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 180ms transform cubic-bezier(0.645, 0.045, 0.355, 1), 180ms -webkit-transform cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#ct-page-options {
+  --optionBorderColor: #e2e4e7;
+  --tabs-pills-active-background-color: #fcfcfc;
+  --tabs-pills-inactive-background-color: #f1f1f1;
+}
+
+#ct-page-options [data-spacing='custom'] {
+  padding: 0 3px;
+}
+
+#ct-page-options .ct-panel.ct-click-allowed:hover:before {
+  background: #f7f7f7;
+}
+
+#ct-page-options .customize-panel-actions {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f3f4f5;
+  border-bottom-color: #e2e4e7;
+}
+
+#ct-page-options .customize-panel-actions button {
+  width: 47px;
+  height: 47px;
+  background: #f3f4f5;
+  -webkit-border-start: none;
+          border-inline-start: none;
+}
+
+#ct-page-options .customize-panel-actions button:before {
+  font-size: 16px;
+}
+
+#ct-page-options .customize-panel-actions button:hover {
+  color: #0073aa;
+}
+
+#ct-page-options .customize-panel-actions h3 {
+  font-size: 13px !important;
+  font-weight: 600;
+}
+
+#ct-page-options .ct-customizer-panel {
+  background: #fcfcfc;
+  border-top: none;
+  border-bottom: none;
+  overflow: initial;
+}
+/*# sourceMappingURL=options-container.css.map */

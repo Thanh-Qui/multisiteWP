@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACC,cADa,CACb,gCAAgC;AADjC,cAAc,CAEb,qCAAqC;AAFtC,cAAc,CAGb,0BAA0B,CAAC;EAC1B,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;CAClB;;AANF,AAQC,cARa,CAQb,0BAA0B,CAAC,uBAAuB,CAAC,YAAY,CAAC;EAC/D,WAAW,EAAE,CAAC;EACd,YAAY,EAAE,CAAC;CACf;;AAXF,AAaC,cAba,CAab,0BAA0B,CAAC,EAAE,AAAA,kBAAkB,CAAC;EAC/C,WAAW,EAAE,KAAK;EAClB,YAAY,EAAE,KAAK;CACnB",
+    "sources": [
+        "dokan.scss"
+    ],
+    "names": [],
+    "file": "dokan.css"
+}

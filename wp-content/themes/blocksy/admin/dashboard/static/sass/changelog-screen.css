@@ -1,0 +1,207 @@
+.ct-changelog-wrapper > h2 {
+  text-align: center;
+}
+
+.ct-changelog-wrapper ul {
+  margin: 0;
+}
+
+.ct-changelog-wrapper ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+  line-height: 20px;
+}
+
+.ct-changelog-wrapper ul li:last-child {
+  margin-bottom: 0;
+}
+
+.ct-changelog-wrapper ul li a {
+  margin-left: 3px;
+  text-decoration: none;
+}
+
+.ct-changelog-wrapper ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 21px;
+          flex: 0 0 21px;
+  width: 21px;
+  height: 21px;
+  -webkit-margin-end: 12px;
+          margin-inline-end: 12px;
+  border-radius: 100%;
+}
+
+.ct-changelog-wrapper ul li span:before {
+  color: #fff;
+  font-size: 9px;
+  font-weight: 800;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.ct-changelog-wrapper ul li span.new {
+  background: #46bf55;
+}
+
+.ct-changelog-wrapper ul li span.new:before {
+  content: 'N';
+}
+
+.ct-changelog-wrapper ul li span.fix {
+  background: var(--ui-accent-color);
+}
+
+.ct-changelog-wrapper ul li span.fix:before {
+  content: 'F';
+}
+
+.ct-changelog-wrapper ul li span.improvement {
+  background: #ffc568;
+}
+
+.ct-changelog-wrapper ul li span.improvement:before {
+  content: 'I';
+}
+
+.ct-changelog-wrapper code {
+  position: relative;
+  margin: -2px 5px 0 5px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.ct-changelog-wrapper .changelog-info {
+  border-top: none;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+@media (min-width: 783px) {
+  .ct-changelog-wrapper .changelog-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.ct-changelog-wrapper .changelog-info:not(.has-sources) {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ct-changelog-wrapper .changelog-info.has-sources {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ct-changelog-wrapper .changelog-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ct-changelog-wrapper .changelog-info ul li {
+  margin-bottom: 0;
+}
+
+@media (max-width: 782px) {
+  .ct-changelog-wrapper .changelog-explanation li:not(:last-child) {
+    -webkit-margin-end: 15px;
+            margin-inline-end: 15px;
+  }
+}
+
+@media (min-width: 783px) {
+  .ct-changelog-wrapper .changelog-explanation li:not(:last-child) {
+    -webkit-margin-end: 30px;
+            margin-inline-end: 30px;
+  }
+}
+
+@media (max-width: 782px) {
+  .ct-changelog-wrapper .changelog-sources {
+    margin-bottom: 30px;
+  }
+}
+
+.ct-changelog-wrapper .changelog-sources li {
+  cursor: pointer;
+}
+
+.ct-changelog-wrapper .changelog-sources li:not(:last-child) {
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+}
+
+.ct-changelog-wrapper .changelog-sources li:not(:last-child):after {
+  content: '|';
+  color: #687c93;
+  -webkit-margin-start: 15px;
+          margin-inline-start: 15px;
+}
+
+.ct-changelog-wrapper .changelog-sources li.active, .ct-changelog-wrapper .changelog-sources li:hover {
+  color: var(--ui-accent-color);
+}
+
+.ct-changelog-wrapper .changelog-items section:not(:last-of-type) {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(226, 230, 235, 0.7);
+}
+
+.ct-changelog-wrapper .changelog-items section:first-of-type {
+  padding-top: 50px;
+  border-top: 1px solid rgba(226, 230, 235, 0.7);
+}
+
+.ct-changelog-wrapper .changelog-items section > h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 17px;
+  margin: 0 0 20px 0;
+}
+
+@media (max-width: 549px) {
+  .ct-changelog-wrapper .changelog-items section > h2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 550px) {
+  .ct-changelog-wrapper .changelog-items section > h2 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.ct-changelog-wrapper .changelog-items section > h2 span {
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+/*# sourceMappingURL=changelog-screen.css.map */

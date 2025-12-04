@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,IAAI,CAAJ,yBAAI;AAGJ,IAAI,CAAJ,2BAAI;AAGJ,IAAI,CAAJ,oCAAI;AACJ,IAAI,CAAJ,sCAAI",
+    "sources": [
+        "non-critical-styles.scss"
+    ],
+    "names": [],
+    "file": "non-critical-styles.css"
+}

@@ -1,0 +1,55 @@
+@use 'pagination-steps';
+@use 'pagination-footer';
+@use 'response-message';
+@use 'calendar';
+.forminator-ui[data-design="none"] .forminator-label {
+  display: block;
+  font-weight: 500;
+}
+
+.forminator-ui[data-design="none"] .forminator-label .forminator-required {
+  color: #E04562;
+}
+
+.forminator-ui[data-design="none"] .forminator-hidden {
+  display: none !important;
+}
+
+.forminator-ui[data-design="none"] .forminator-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+}
+
+.forminator-ui[data-design="none"] .forminator-description span {
+  text-align: right;
+  margin-left: auto;
+}
+
+.forminator-ui[data-design="none"] .forminator-radio,
+.forminator-ui[data-design="none"] .forminator-checkbox,
+.forminator-ui[data-design="none"] .forminator-checkbox__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  --top: 4px;
+}
+
+.forminator-ui[data-design="none"] .forminator-input-with-icon {
+  position: relative;
+}
+
+.forminator-ui[data-design="none"] .forminator-input-with-icon [class*="forminator-icon-"] {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.forminator-ui[data-design="none"] .forminator-input-with-icon .forminator-input {
+  padding-left: 35px;
+}
+/*# sourceMappingURL=main.css.map */

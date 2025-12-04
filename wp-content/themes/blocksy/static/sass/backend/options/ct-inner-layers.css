@@ -1,0 +1,12 @@
+.ct-inner-layer {
+  --layer-height: 34px;
+}
+
+.ct-inner-layer .ct-layer-label {
+  font-size: 11px;
+}
+
+.ct-inner-layer .ct-layer-content > * {
+  --options-horizontal-spacing: 0 15px 17px 15px;
+}
+/*# sourceMappingURL=ct-inner-layers.css.map */

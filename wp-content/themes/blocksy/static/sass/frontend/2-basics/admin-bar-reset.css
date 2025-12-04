@@ -1,0 +1,18 @@
+@media screen and (max-width: 600px) {
+  .admin-bar {
+    --admin-bar: 0px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 782px) {
+  .admin-bar {
+    --admin-bar: 46px;
+  }
+}
+
+@media screen and (min-width: 783px) {
+  .admin-bar {
+    --admin-bar: 32px;
+  }
+}
+/*# sourceMappingURL=admin-bar-reset.css.map */

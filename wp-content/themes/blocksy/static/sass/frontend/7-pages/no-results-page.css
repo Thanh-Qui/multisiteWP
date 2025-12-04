@@ -1,0 +1,9 @@
+.ct-no-results {
+  --alignment: center;
+}
+
+.ct-no-results .ct-search-form {
+  margin: 0 auto;
+  max-width: 400px;
+}
+/*# sourceMappingURL=no-results-page.css.map */

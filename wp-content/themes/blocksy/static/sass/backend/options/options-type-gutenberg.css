@@ -1,0 +1,110 @@
+.block-editor-block-inspector__tabs:has([data-field-type="image:default"]) .color-block-support-panel {
+  display: none !important;
+}
+
+.block-editor-block-inspector__tabs:has([data-field-type*="image"]) .typography-block-support-panel {
+  display: none !important;
+}
+
+.components-base-control {
+  --ui-accent-color: #1e1e1e;
+  --ui-border-radius: 2px;
+  --optionBorderColor: rgb(148, 148, 148);
+}
+
+.components-base-control .ct-control[data-design="block"] header {
+  margin-bottom: 8px !important;
+}
+
+.components-base-control .ct-control[data-design="block"] header label {
+  font-size: 11px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.components-base-control .ct-ratio-predefined button span:before {
+  border-color: var(--ui-accent-color);
+}
+
+.components-base-control .ct-ratio-predefined button span:after {
+  background: var(--ui-accent-color);
+}
+
+.components-base-control .ct-ratio-predefined button:hover span:before {
+  border-color: transparent;
+}
+
+.components-base-control .ct-ratio-predefined button:hover span:after {
+  background: transparent;
+  border-color: var(--ui-accent-color);
+}
+
+.components-base-control .ct-layer-controls button,
+.components-base-control .ct-layer-controls .ct-layer-label {
+  color: #757575;
+}
+
+.components-base-control .ct-layer {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.components-base-control .ct-buttons-group {
+  gap: 2px;
+  padding: 2px;
+  border-radius: 2px;
+  border: 1px solid var(--optionBorderColor);
+}
+
+.components-base-control .ct-buttons-group li {
+  margin: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 2px;
+}
+
+.components-base-control .ct-buttons-group li:not(.active) {
+  color: #757575;
+}
+
+.components-base-control button.button {
+  background: var(--ui-accent-color);
+  border-color: var(--ui-accent-color);
+  border-radius: var(--ui-border-radius);
+}
+
+.components-base-control .ct-select-input input:hover,
+.components-base-control .ct-option-input input:hover {
+  --ui-accent-color: rgb(148, 148, 148);
+}
+
+.components-base-control .ct-select-input input:focus,
+.components-base-control .ct-option-input input:focus {
+  --ui-accent-color: var(--wp-admin-theme-color);
+}
+
+.components-base-control .ct-tooltip {
+  display: none;
+}
+
+.components-base-control.ct-title:before, .components-base-control.ct-title:after, .components-base-control[class*="ct-divider"]:before, .components-base-control[class*="ct-divider"]:after {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.components-base-control.ct-title:not(:first-child):before, .components-base-control[class*="ct-divider-top"]:not(:first-child):before {
+  content: '';
+  margin-bottom: 24px;
+}
+
+.components-base-control[class*="ct-divider-bottom"]:not(:last-child):after {
+  content: '';
+  margin-top: 24px;
+}
+
+.components-base-control.ct-title:before, .components-base-control.ct-title:after, .components-base-control[class*=":full"]:before, .components-base-control[class*=":full"]:after {
+  width: calc(100% + 32px);
+  margin: 0 -16px;
+}
+/*# sourceMappingURL=options-type-gutenberg.css.map */

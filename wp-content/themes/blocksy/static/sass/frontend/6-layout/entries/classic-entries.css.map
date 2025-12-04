@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "CAAA,AAAA,AAEE,YAFD,CAAa,SAAS,AAAtB,EAAuB,AAAA,WAAC,CAAY,SAAS,AAArB,EACxB,OAAO,AACL,IAAK,CAAA,WAAW,EAAE;EAClB,aAAa,EAAE,6BAA6B;CAC5C",
+    "sources": [
+        "classic-entries.scss"
+    ],
+    "names": [],
+    "file": "classic-entries.css"
+}

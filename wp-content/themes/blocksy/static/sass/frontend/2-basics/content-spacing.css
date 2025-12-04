@@ -1,0 +1,34 @@
+p {
+  -webkit-margin-after: var(--theme-content-spacing);
+          margin-block-end: var(--theme-content-spacing);
+}
+
+ul, ol {
+  -webkit-padding-start: var(--theme-list-indent);
+          padding-inline-start: var(--theme-list-indent);
+  -webkit-margin-after: var(--theme-content-spacing);
+          margin-block-end: var(--theme-content-spacing);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-margin-after: calc(var(--has-theme-content-spacing, 1) * (0.3em + 10px));
+          margin-block-end: calc(var(--has-theme-content-spacing, 1) * (0.3em + 10px));
+}
+
+h1:where(:last-child), h2:where(:last-child), h3:where(:last-child), h4:where(:last-child), h5:where(:last-child), h6:where(:last-child) {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+:is(.is-layout-flow, .is-layout-constrained) > *:where(:not(h1, h2, h3, h4, h5, h6)) {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: var(--theme-content-spacing);
+          margin-block-end: var(--theme-content-spacing);
+}
+
+:is(.is-layout-flow, .is-layout-constrained) :where(h1, h2, h3, h4, h5, h6) {
+  -webkit-margin-after: calc(var(--has-theme-content-spacing, 1) * (0.3em + 10px));
+          margin-block-end: calc(var(--has-theme-content-spacing, 1) * (0.3em + 10px));
+}
+/*# sourceMappingURL=content-spacing.css.map */

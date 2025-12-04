@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,IAAI,CAAJ,qBAAI",
+    "sources": [
+        "admin-rtl.scss"
+    ],
+    "names": [],
+    "file": "admin-rtl.css"
+}

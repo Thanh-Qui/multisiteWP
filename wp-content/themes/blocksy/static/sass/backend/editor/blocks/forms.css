@@ -1,0 +1,104 @@
+.wp-block-search__input,
+.ff-inherit-theme-style .ff-el-form-control,
+.ff-inherit-theme-style select.ff-el-form-control:not([size]):not([multiple]),
+.ct-newsletter-subscribe-form-elements input {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: var(--theme-form-field-height, 40px);
+  padding: var(--has-classic-forms, var(--theme-form-field-padding, 0 15px));
+  font-size: var(--theme-form-font-size, 16px);
+  color: var(--theme-form-text-initial-color, var(--theme-text-color));
+  border-width: var(--theme-form-field-border-width, 1px);
+  border-style: var(--theme-form-field-border-style, solid);
+  border-color: var(--theme-form-field-border-initial-color);
+  border-radius: var(--has-classic-forms, var(--theme-form-field-border-radius, 3px));
+  background-color: var(--has-classic-forms, var(--theme-form-field-background-initial-color));
+  -webkit-transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.wp-block-search__input::-webkit-input-placeholder,
+.ff-inherit-theme-style .ff-el-form-control::-webkit-input-placeholder,
+.ff-inherit-theme-style select.ff-el-form-control:not([size]):not([multiple])::-webkit-input-placeholder,
+.ct-newsletter-subscribe-form-elements input::-webkit-input-placeholder {
+  opacity: 0.6;
+  color: inherit;
+}
+
+.wp-block-search__input:-ms-input-placeholder,
+.ff-inherit-theme-style .ff-el-form-control:-ms-input-placeholder,
+.ff-inherit-theme-style select.ff-el-form-control:not([size]):not([multiple]):-ms-input-placeholder,
+.ct-newsletter-subscribe-form-elements input:-ms-input-placeholder {
+  opacity: 0.6;
+  color: inherit;
+}
+
+.wp-block-search__input::-ms-input-placeholder,
+.ff-inherit-theme-style .ff-el-form-control::-ms-input-placeholder,
+.ff-inherit-theme-style select.ff-el-form-control:not([size]):not([multiple])::-ms-input-placeholder,
+.ct-newsletter-subscribe-form-elements input::-ms-input-placeholder {
+  opacity: 0.6;
+  color: inherit;
+}
+
+.wp-block-search__input::placeholder,
+.ff-inherit-theme-style .ff-el-form-control::placeholder,
+.ff-inherit-theme-style select.ff-el-form-control:not([size]):not([multiple])::placeholder,
+.ct-newsletter-subscribe-form-elements input::placeholder {
+  opacity: 0.6;
+  color: inherit;
+}
+
+.wp-block-search__input:focus,
+.ff-inherit-theme-style .ff-el-form-control:focus,
+.ff-inherit-theme-style select.ff-el-form-control:not([size]):not([multiple]):focus,
+.ct-newsletter-subscribe-form-elements input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: var(--theme-form-field-border-focus-color);
+  background-color: var(--has-classic-forms, var(--theme-form-field-background-focus-color));
+}
+
+.ff-inherit-theme-style textarea {
+  --theme-form-field-height: auto;
+  --theme-form-field-padding: 15px;
+}
+
+.ff-inherit-theme-style input[type="radio"],
+.ff-inherit-theme-style input[type="checkbox"],
+.ct-newsletter-subscribe-block input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  -webkit-margin-end: 0.7em;
+          margin-inline-end: 0.7em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: transparent;
+  border: var(--form-selection-control-border-width, var(--theme-form-field-border-width, 1px)) solid var(--theme-form-selection-field-initial-color);
+}
+
+.ff-inherit-theme-style .ff-el-input--label label {
+  font-size: 15px;
+}
+
+.ff-inherit-theme-style select,
+.ct-search-form .ct-fake-select-container select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-padding-end: 25px;
+          padding-inline-end: 25px;
+  background-image: url("data:image/svg+xml,%3Csvg width='21' height='13' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5.379L20.621 2.5 10.5 12.621.379 2.5 2.5.379l8 8z' fill='%2currentColor' fill-rule='nonzero'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+  background-size: 8px auto, 100%;
+  background-position: right 10px top 50%, 0 0;
+}
+/*# sourceMappingURL=forms.css.map */

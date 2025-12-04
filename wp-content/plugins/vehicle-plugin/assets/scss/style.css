@@ -1,0 +1,99 @@
+.vehicle-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.vehicle-list .vehicle-item {
+  border: 1px solid #f4f4f4;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
+  transition: -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
+}
+
+.vehicle-list .vehicle-item:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-list .vehicle-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.vehicle-list .vehicle-item .vehicle-image-link {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vehicle-list .vehicle-item .vehicle-image-link img.image-vehicle-list {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.vehicle-list .vehicle-item .vehicle-image-link img.image-vehicle-list:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.vehicle-list .vehicle-item p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.vehicle-list .vehicle-item p span {
+  font-weight: 500;
+}
+
+.vehicle-list .vehicle-item p .vehicle-color-swatch {
+  font-size: 18px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.vehicle-list .vehicle-item .view-details-link {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0073aa;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.vehicle-list .vehicle-item .view-details-link:hover {
+  background-color: #005177;
+}
+/*# sourceMappingURL=style.css.map */

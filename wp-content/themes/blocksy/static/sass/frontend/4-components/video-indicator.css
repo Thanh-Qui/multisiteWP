@@ -1,0 +1,48 @@
+.ct-video-indicator {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: opacity 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.ct-video-indicator svg {
+  border-radius: 100%;
+  -webkit-transition: -webkit-transform 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: -webkit-transform 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: transform 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: transform 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955), -webkit-transform 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.ct-video-indicator svg:hover {
+  -webkit-transform: scale3d(1.1, 1.1, 1);
+          transform: scale3d(1.1, 1.1, 1);
+}
+
+.ct-video-indicator .ct-video-loader {
+  visibility: hidden;
+}
+
+.ct-video-indicator.loading svg {
+  background: #fff;
+}
+
+.ct-video-indicator.loading .ct-video-loader {
+  visibility: visible;
+}
+
+.ct-dynamic-media:not([data-state='playing']) .ct-pause-path,
+.ct-media-container:not([data-state='playing']) .ct-pause-path {
+  display: none;
+}
+/*# sourceMappingURL=video-indicator.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACC,iBADgB,CAChB,EAAE,CAAC;EACF,KAAK,EAAE,IAAI;EACX,aAAa,EAAE,KAAK;CACpB;;AAJF,AAMC,iBANgB,CAMhB,UAAU,CAAC;EACV,uBAAuB,CAAA,KAAC;CACxB",
+    "sources": [
+        "gallery-block.scss"
+    ],
+    "names": [],
+    "file": "gallery-block.css"
+}

@@ -1,0 +1,28 @@
+.ct-tools-panel {
+  padding: 16px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.ct-tools-panel-items:not(:empty) {
+  margin-top: 10px;
+}
+
+.ct-tools-panel-items > *:last-child {
+  margin-bottom: 8px;
+}
+
+.ct-tools-panel-items > *:not(:last-child) {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.ct-tools-panel-items .components-base-control:last-child,
+.ct-tools-panel-items .components-base-control__field:last-child {
+  margin-bottom: 0;
+}
+
+.ct-tools-panel-items .components-form-token-field__label:empty {
+  display: none;
+}
+/*# sourceMappingURL=tools-panel-component.css.map */

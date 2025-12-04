@@ -1,0 +1,48 @@
+.alignleft, .alignright {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.alignleft {
+  float: left;
+  -webkit-margin-end: 1.5em;
+          margin-inline-end: 1.5em;
+}
+
+.alignright {
+  float: right;
+  -webkit-margin-start: 1.5em;
+          margin-inline-start: 1.5em;
+}
+
+.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.entry-content > .alignleft {
+  -webkit-margin-start: calc( ( 100% - min(var(--theme-block-max-width), var(--theme-container-width-base)) ) / 2);
+          margin-inline-start: calc( ( 100% - min(var(--theme-block-max-width), var(--theme-container-width-base)) ) / 2);
+}
+
+.entry-content > .alignright {
+  -webkit-margin-end: calc( ( 100% - min(var(--theme-block-max-width), var(--theme-container-width-base)) ) / 2);
+          margin-inline-end: calc( ( 100% - min(var(--theme-block-max-width), var(--theme-container-width-base)) ) / 2);
+}
+
+.entry-content .alignleft {
+  -webkit-margin-end: var(--theme-content-spacing);
+          margin-inline-end: var(--theme-content-spacing);
+}
+
+.entry-content .alignright {
+  -webkit-margin-start: var(--theme-content-spacing);
+          margin-inline-start: var(--theme-content-spacing);
+}
+
+.entry-content:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+/*# sourceMappingURL=alignment.css.map */

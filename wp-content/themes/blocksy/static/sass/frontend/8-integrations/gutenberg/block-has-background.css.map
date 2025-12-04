@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC,MAAO,CAAA,CAAC,AAAA,eAAe,EAAE,eAAe,AAAA,eAAe,EAAE;EAC9D,OAAO,EAAE,4BAA4B;CACrC",
+    "sources": [
+        "block-has-background.scss"
+    ],
+    "names": [],
+    "file": "block-has-background.css"
+}

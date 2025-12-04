@@ -1,0 +1,32 @@
+.edit-widgets-main-block-list > .wp-block {
+  margin-bottom: 20px;
+}
+
+.edit-widgets-main-block-list > .wp-block:first-child {
+  margin-top: 20px;
+}
+
+.wp-block-widget-area__inner-blocks > .block-editor-block-list__layout > .wp-block {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.wp-block-widget-area__inner-blocks > .block-editor-block-list__layout > ul.wp-block-list,
+.wp-block-widget-area__inner-blocks > .block-editor-block-list__layout ul.wp-block-page-list,
+.wp-block-widget-area__inner-blocks > .block-editor-block-list__layout ul.wp-block-categories-list,
+.wp-block-widget-area__inner-blocks > .block-editor-block-list__layout ul.wc-block-product-categories-list {
+  margin-inline: 0;
+  list-style-type: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.wp-block-widget-area__inner-blocks > .block-editor-block-list__layout > ul.wp-block-list ul,
+.wp-block-widget-area__inner-blocks > .block-editor-block-list__layout ul.wp-block-page-list ul,
+.wp-block-widget-area__inner-blocks > .block-editor-block-list__layout ul.wp-block-categories-list ul,
+.wp-block-widget-area__inner-blocks > .block-editor-block-list__layout ul.wc-block-product-categories-list ul {
+  list-style-type: none;
+  -webkit-padding-start: 25px;
+          padding-inline-start: 25px;
+}
+/*# sourceMappingURL=widgets-areas-screen.css.map */

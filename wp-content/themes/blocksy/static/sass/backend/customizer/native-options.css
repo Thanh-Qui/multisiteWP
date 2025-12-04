@@ -1,0 +1,93 @@
+#customize-controls .customize-section-description-container {
+  margin-bottom: 22px;
+}
+
+#customize-controls .customize-pane-child > .customize-control,
+#customize-controls .customize-pane-child .customize-section-description {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: var(--ui-padding, 0 14px);
+}
+
+#customize-controls .customize-pane-child.control-panel-nav_menus .customize-control-title {
+  margin-top: 22px;
+  padding: 0 26px;
+}
+
+#customize-controls .customize-pane-child.control-panel-nav_menus .customize-control-title + li {
+  border-top: none;
+}
+
+#customize-controls .customize-pane-child.control-panel-nav_menus h3.accordion-section-title {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 5px;
+  font-weight: 600;
+}
+
+#customize-controls #accordion-section-add_menu,
+#customize-controls .customize-control-description {
+  padding: 0 26px;
+  margin-inline: 0;
+}
+
+#customize-controls #accordion-section-add_menu {
+  border-block: 1px solid #dcdcde;
+  padding-block: 30px;
+}
+
+#customize-controls #accordion-section-add_menu p {
+  margin-top: 0;
+}
+
+#customize-controls #accordion-section-add_menu h3 {
+  text-align: start;
+}
+
+#customize-controls .control-panel-widgets .panel-meta {
+  margin-bottom: 22px !important;
+}
+
+#customize-controls .control-panel-widgets .control-section-sidebar:nth-child(2) {
+  margin-top: 22px;
+  border-top: none !important;
+}
+
+#customize-controls .control-panel-widgets .control-section-sidebar[id*="widgets-ct-footer-sidebar"] {
+  display: none !important;
+}
+
+#customize-controls .control-section-sidebar .customize-section-title {
+  margin-bottom: 22px;
+}
+
+#customize-controls .control-section-sidebar .customize-control {
+  --ui-padding: 0 8px;
+}
+
+#customize-controls .control-section-sidebar .customize-section-description {
+  --ui-padding: 0 8px;
+  margin-bottom: 15px;
+}
+
+#customize-controls #sub-accordion-section-custom_css .description {
+  --ui-padding: 12px 15px;
+}
+
+#customize-controls #sub-accordion-section-custom_css .customize-control-code_editor {
+  --ui-padding: 0;
+}
+
+#customize-controls #sub-accordion-section-custom_css .customize-control-code_editor .CodeMirror-lint-markers {
+  width: 19px;
+}
+
+#customize-controls #sub-accordion-section-title_tagline .customize-control-description {
+  padding-inline: 0;
+}
+/*# sourceMappingURL=native-options.css.map */

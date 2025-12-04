@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAME,kBANgB,CAGjB,2CAA2C,CAAC,kDAAkD,CAG7F,iDAAiD,CAAC;EACjD,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,4BAA4B;CACxC",
+    "sources": [
+        "checkout-block.scss"
+    ],
+    "names": [],
+    "file": "checkout-block.css"
+}

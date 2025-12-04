@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACd,WAAW,CAAA,OAAC;CAMZ;;AAPD,AAGC,cAHa,CAGb,eAAe,CAAC;EACf,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,KAAK;CAChB",
+    "sources": [
+        "no-results-page.scss"
+    ],
+    "names": [],
+    "file": "no-results-page.css"
+}

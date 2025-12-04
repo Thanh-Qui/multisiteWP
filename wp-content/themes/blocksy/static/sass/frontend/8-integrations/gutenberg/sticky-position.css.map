@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,eAFc,AAEb,mBAAmB,CAAC;EACpB,GAAG,EAAE,iKAAiK;CACtK",
+    "sources": [
+        "sticky-position.scss"
+    ],
+    "names": [],
+    "file": "sticky-position.css"
+}

@@ -1,0 +1,206 @@
+.ct-layers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ct-layers:not(:empty) + button {
+  margin-top: 20px;
+}
+
+.ct-layer {
+  list-style: none;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  z-index: 9999999;
+  margin-bottom: 8px;
+}
+
+.ct-layer:not(.ct-disabled) > .ct-layer-controls .ct-unseen {
+  display: none;
+}
+
+.ct-layer.ct-disabled {
+  opacity: 0.6;
+}
+
+.ct-layer.ct-disabled > .ct-layer-controls .ct-seen {
+  display: none;
+}
+
+.ct-layer.ct-disabled > .ct-layer-controls .ct-clone,
+.ct-layer.ct-disabled > .ct-layer-controls .ct-toggle {
+  pointer-events: none;
+}
+
+.ct-layer.ct-disabled > .ct-layer-content {
+  display: none;
+}
+
+.ct-layer:not(.ct-active) > .ct-layer-controls {
+  border-radius: var(--ui-border-radius, 2px);
+}
+
+.ct-layer:not(.ct-active) > .ct-layer-controls .ct-arrow-up {
+  display: none;
+}
+
+.ct-layer.ct-active > .ct-layer-controls {
+  border-radius: var(--ui-border-radius, 2px) var(--ui-border-radius, 2px) 0 0;
+}
+
+.ct-layer.ct-active > .ct-layer-controls .ct-arrow-down {
+  display: none;
+}
+
+.ct-layer.ct-active > .ct-layer-content {
+  border-radius: 0 0 var(--ui-border-radius, 2px) var(--ui-border-radius, 2px);
+}
+
+.ct-layer.ct-hidden {
+  margin: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.ct-layer-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: var(--layer-height, 36px);
+  background: #fff;
+  border: 1px solid var(--optionBorderColor);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ct-layer-controls button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 var(--layer-height, 36px);
+          flex: 0 0 var(--layer-height, 36px);
+  width: var(--layer-height, 36px);
+  height: 100%;
+  border: none;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  color: #72777c;
+}
+
+.ct-layer-controls button:focus {
+  outline: none;
+}
+
+.ct-layer-controls button.ct-remove:hover {
+  color: #dd4b39;
+}
+
+.ct-layer-controls > *:not(:last-child) {
+  -webkit-border-end: 1px solid var(--optionBorderColor);
+          border-inline-end: 1px solid var(--optionBorderColor);
+}
+
+.ct-layer-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 12px;
+  font-weight: 500;
+  min-width: 0;
+  -webkit-padding-end: 5px;
+          padding-inline-end: 5px;
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+}
+
+.ct-layer-label span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ct-layer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+  border-top: none !important;
+}
+
+.ct-layer-content:not(:empty) {
+  border: 1px solid var(--optionBorderColor);
+}
+
+.ct-layer-content > * {
+  --options-vertical-spacing: 18px;
+  --options-horizontal-spacing: 0 20px 18px 20px;
+}
+
+.ct-layer-content > *:not(:last-child) {
+  border-bottom: 1px solid var(--optionBorderColor);
+}
+
+.ct-add-layer-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7px;
+  padding-bottom: 10px;
+}
+
+.ct-add-layer-controls .ct-select-input {
+  max-width: 100%;
+}
+
+.ct-add-layer-controls button.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 38px;
+          flex: 0 0 38px;
+  padding: 0;
+}
+
+.ct-add-layer-controls button.button svg {
+  fill: currentColor;
+}
+
+.ct-layers-split-layout {
+  min-height: 50px;
+}
+/*# sourceMappingURL=ct-layers.css.map */

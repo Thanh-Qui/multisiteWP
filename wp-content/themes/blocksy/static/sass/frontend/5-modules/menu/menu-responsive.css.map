@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "CAAA,AAAA,AAAA,eAAC,CAAgB,IAAI,AAApB,EAAsB;EACtB,QAAQ,EAAE,MAAM;CAKhB;;CAND,AAAA,AAGC,eAHA,CAAgB,IAAI,AAApB,EAGA,SAAS,CAAC;EACT,OAAO,EAAE,IAAI;CACb",
+    "sources": [
+        "menu-responsive.scss"
+    ],
+    "names": [],
+    "file": "menu-responsive.css"
+}

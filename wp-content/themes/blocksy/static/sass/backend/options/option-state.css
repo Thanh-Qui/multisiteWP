@@ -1,0 +1,9 @@
+[data-state="disabled"] > section {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+[data-state="disabled"].ct-panel > header > label {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=option-state.css.map */

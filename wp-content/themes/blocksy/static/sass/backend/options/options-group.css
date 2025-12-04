@@ -1,0 +1,44 @@
+.ct-controls-group > header {
+  margin-bottom: 10px;
+}
+
+.ct-controls-group > section .ct-control {
+  padding: 0;
+}
+
+.ct-controls-group > section[data-columns="1"] > *:first-child {
+  margin-top: 0;
+}
+
+.ct-controls-group > section[data-columns*="2"] {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: var(--col-gap, 7px);
+}
+
+.ct-controls-group > section[data-columns*="2"] > .ct-control {
+  margin: 0;
+}
+
+.ct-controls-group > section[data-columns*="medium"] {
+  --col-gap: 25px;
+}
+
+.ct-layer-content .ct-controls-group {
+  --title-option-padding-inline: 20px;
+  --title-option-margin-inline: 20px;
+  --title-option-vertical-spacing: 18px;
+  --divider-option-margin-inline: 20px;
+  --divider-option-vertical-spacing: 18px;
+}
+
+.ct-layer-content .ct-controls-group > section > * {
+  padding: 0;
+}
+
+.ct-layer-content .ct-controls-group > section > *:first-child {
+  margin-top: 0;
+}
+/*# sourceMappingURL=options-group.css.map */

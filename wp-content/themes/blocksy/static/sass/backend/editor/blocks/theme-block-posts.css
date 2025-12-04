@@ -1,0 +1,46 @@
+@use '../../../../../static/sass/frontend/1-helpers/functions';
+@use '../../../../../static/sass/frontend/4-components/ratio.scss';
+@use '../../../../../static/sass/frontend/4-components/entry-meta.scss';
+@use '../../../../../static/sass/frontend/4-components/pagination.scss';
+@use '../../../../../static/sass/frontend/4-components/entry-button.scss';
+@use '../../../../../static/sass/frontend/6-layout/entries/main.scss';
+@use '../../../../../static/sass/frontend/5-modules/blocks/query-loop.scss';
+.ct-posts-block p {
+  margin-top: 0;
+}
+
+.ct-posts-block p:last-child {
+  margin-bottom: 0;
+}
+
+.ct-posts-block .ct-media-container img {
+  height: auto;
+  max-width: 100%;
+}
+
+.ct-posts-block .ct-media-container .ct-video-indicator {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ct-posts-block .ct-media-container .ct-video-indicator .ct-pause-path,
+.ct-posts-block .ct-media-container .ct-video-indicator .ct-video-loader {
+  display: none;
+}
+
+.ct-posts-block .entry-button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: var(--theme-button-text-initial-color);
+}
+/*# sourceMappingURL=theme-block-posts.css.map */

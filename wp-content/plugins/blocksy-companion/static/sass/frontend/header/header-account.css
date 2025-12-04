@@ -1,0 +1,20 @@
+.ct-header-account .ct-account-item .ct-media-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 var(--avatar-size, 18px);
+          flex: 0 0 var(--avatar-size, 18px);
+  width: var(--avatar-size, 18px);
+  height: var(--avatar-size, 18px);
+  border-radius: 100%;
+}
+
+.ct-header-account .ct-account-item:not([href]) {
+  cursor: pointer;
+  color: var(--theme-link-initial-color);
+  -webkit-transition: var(--theme-transition);
+  transition: var(--theme-transition);
+}
+
+.ct-header-account .ct-account-item:not([href]):hover {
+  color: var(--theme-link-hover-color);
+}
+/*# sourceMappingURL=header-account.css.map */

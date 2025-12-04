@@ -1,0 +1,46 @@
+.ct-header-cart,
+.ct-header-account,
+.ct-language-switcher[data-type='dropdown'] {
+  position: relative;
+}
+
+.ct-header-cart:hover [data-placement], .ct-header-cart:focus-within [data-placement],
+.ct-header-account:hover [data-placement],
+.ct-header-account:focus-within [data-placement],
+.ct-language-switcher[data-type='dropdown']:hover [data-placement],
+.ct-language-switcher[data-type='dropdown']:focus-within [data-placement] {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.ct-cart-content,
+.ct-header-account > ul,
+.ct-language-switcher[data-type='dropdown'] > ul {
+  position: absolute;
+  z-index: 15;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate3d(0, 10px, 0);
+          transform: translate3d(0, 10px, 0);
+  -webkit-transition: opacity 0.2s ease, visibility 0.2s ease, -webkit-transform 0.2s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease, -webkit-transform 0.2s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.ct-cart-content:not([data-placement]) *,
+.ct-header-account > ul:not([data-placement]) *,
+.ct-language-switcher[data-type='dropdown'] > ul:not([data-placement]) * {
+  -webkit-transition: none;
+  transition: none;
+}
+
+#offcanvas .ct-cart-content,
+#offcanvas .ct-header-account > ul,
+#offcanvas .ct-language-switcher[data-type='dropdown'] > ul {
+  display: none;
+}
+/*# sourceMappingURL=interactions.css.map */

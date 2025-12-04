@@ -1,0 +1,18 @@
+.ct-product-additional-info ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5em;
+}
+
+.ct-product-additional-info ul li:not(:last-child) {
+  margin-bottom: 0.3em;
+}
+
+.ct-product-additional-info ul li svg {
+  fill: var(--theme-palette-color-1);
+}
+/*# sourceMappingURL=additional-info.css.map */

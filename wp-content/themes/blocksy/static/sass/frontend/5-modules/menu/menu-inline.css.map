@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAGC,mBAHkB,CAGlB,EAAE;AAFH,mBAAmB,CAElB,EAAE,CAAC;EACF,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,2BAA2B;EAC5C,OAAO,EAAE,yCAAyC;EAClD,MAAM,EAAE,CAAC,CAAC,8CAA8C;CACxD;;AAKF,AAAA,mBAAmB,CAAC;EACnB,qBAAqB,CAAA,4BAAC;CAKtB;;AAND,AAGC,mBAHkB,CAGlB,EAAE,CAAC;EACF,KAAK,EAAE,sBAAsB;CAC7B",
+    "sources": [
+        "menu-inline.scss"
+    ],
+    "names": [],
+    "file": "menu-inline.css"
+}

@@ -1,0 +1,13 @@
+.ct-builder-conditions-modal {
+  --modal-width: 700px;
+}
+
+.ct-builder-conditions-modal .ct-modal-scroll {
+  padding-block: 30px;
+  border-top: 1px solid var(--optionBorderColor);
+}
+
+.block-editor-page.post-type-ct_size_guide [data-reach-dialog-overlay], .block-editor-page.post-type-ct_product_tab [data-reach-dialog-overlay], .block-editor-page.post-type-ct_content_block [data-reach-dialog-overlay] {
+  --modal-left: 0;
+}
+/*# sourceMappingURL=modal.css.map */

@@ -1,0 +1,14 @@
+.ct-footer .ct-widget {
+  color: var(--theme-text-color);
+  margin: var(--margin);
+  --theme-link-initial-color: var(--theme-text-color);
+}
+
+.ct-footer .ct-widget:not(:first-child) {
+  margin-top: var(--widgets-gap, 40px);
+}
+
+.ct-footer .ct-widget:has(.ct-newsletter-subscribe-block, .wp-block-separator) {
+  width: 100%;
+}
+/*# sourceMappingURL=widgets.css.map */

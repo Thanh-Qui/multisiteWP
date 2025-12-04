@@ -1,0 +1,54 @@
+[data-builder='footer'] .ct-builder-items {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+[data-builder='footer'] .ct-builder-items .ct-pointer {
+  position: absolute;
+}
+
+[data-builder='footer'] .ct-builder-item {
+  width: 100%;
+}
+
+.ct-footer-builder .ct-builder-item.sortable-drag {
+  width: 110px !important;
+}
+
+[data-builder='footer'] .builder-column {
+  position: relative;
+  min-width: 100px;
+  margin: 0;
+}
+
+[data-builder='footer'] .builder-column:not(:last-child) {
+  border-right: 1px dashed #ccc;
+}
+
+[data-builder='footer'] .builder-column:not(:last-child):after {
+  position: absolute;
+  content: '';
+  top: -1px;
+  right: -1px;
+  width: 2px;
+  height: calc(100% + 2px);
+  opacity: 0;
+  visibility: hidden;
+  background: var(--ui-accent-color);
+  -webkit-transition: opacity 0.1s ease, visibility 0.1s ease;
+  transition: opacity 0.1s ease, visibility 0.1s ease;
+}
+
+[data-builder='footer'] .builder-row:hover .builder-column:not(:last-child):after {
+  opacity: 1;
+  visibility: visible;
+}
+
+[data-builder='footer'] .row-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: var(--gridTemplateColummns);
+      grid-template-columns: var(--gridTemplateColummns);
+}
+/*# sourceMappingURL=footer.css.map */

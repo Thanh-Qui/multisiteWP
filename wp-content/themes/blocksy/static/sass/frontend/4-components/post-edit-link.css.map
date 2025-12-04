@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACf,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,4BAA4B;EACxC,0BAA0B,CAAA,wBAAC;CAO3B;;AAZD,AAOC,eAPc,AAOb,OAAO,CAAC;EACR,WAAW,EAAE,WAAW;EACxB,OAAO,EAAE,OAAO;EAChB,iBAAiB,EAAE,GAAG;CACtB",
+    "sources": [
+        "post-edit-link.scss"
+    ],
+    "names": [],
+    "file": "post-edit-link.css"
+}

@@ -1,0 +1,49 @@
+.ct-header-cta {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  --theme-button-line-height: 1.3;
+  --theme-icon-color: currentColor;
+}
+
+.ct-header-cta a {
+  gap: var(--theme-button-gap, 0.5em);
+}
+
+.ct-header-cta [data-size="small"] {
+  --theme-button-min-height: 34px;
+  --theme-button-padding: 5px 15px;
+  --theme-button-font-size: 13px;
+}
+
+.ct-header-cta [data-size="medium"] {
+  --theme-button-min-height: 42px;
+  --theme-button-padding: 5px 20px;
+}
+
+.ct-header-cta [data-size="large"] {
+  --theme-button-min-height: 50px;
+  --theme-button-padding: 5px 30px;
+  --theme-button-font-size: 16px;
+}
+
+.ct-header-cta .ct-button-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: var(--horizontal-alignment);
+}
+
+.ct-header-cta .ct-button-secondary-text {
+  color: var(--theme-button-text-initial-color);
+  -webkit-transition: color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.ct-header-cta a:hover .ct-button-secondary-text {
+  color: var(--theme-button-text-hover-color);
+}
+/*# sourceMappingURL=button.css.map */

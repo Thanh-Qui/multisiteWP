@@ -1,0 +1,48 @@
+.toplevel_page_ct-dashboard,
+.appearance_page_ct-dashboard {
+  background: #fff;
+}
+
+.toplevel_page_ct-dashboard #wpcontent,
+.appearance_page_ct-dashboard #wpcontent {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+#ct-dashboard {
+  font-size: 15px;
+  color: #4f5a68;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#ct-dashboard h1, #ct-dashboard h2, #ct-dashboard h3, #ct-dashboard h4, #ct-dashboard h5, #ct-dashboard h6 {
+  color: #1e1e1e;
+  margin-block: 0 1.3em;
+}
+
+#ct-dashboard h3 {
+  font-size: 18px;
+}
+
+#ct-dashboard p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ct-loading-text {
+  position: absolute;
+  inset-inline: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+}
+/*# sourceMappingURL=general.css.map */

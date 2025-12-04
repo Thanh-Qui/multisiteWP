@@ -1,0 +1,67 @@
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal] {
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    transition-property: opacity, transform, -webkit-transform;
+    -webkit-transition-duration: 1.5s;
+            transition-duration: 1.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.2, 1, 0.2, 1);
+  }
+  [data-reveal][data-reveal*='no'] {
+    opacity: 0.01;
+  }
+  [data-reveal][data-reveal*='yes'] {
+    opacity: 1;
+  }
+  [data-reveal][data-reveal*='bottom'] {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  [class*='entries'] [data-reveal*='2'] {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+  [class*='entries'] [data-reveal*='3'] {
+    -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+  }
+  [class*='entries'] [data-reveal*='4'] {
+    -webkit-transition-delay: 0.9s;
+            transition-delay: 0.9s;
+  }
+  [class*='entries'] [data-reveal*='5'] {
+    -webkit-transition-delay: 1.2s;
+            transition-delay: 1.2s;
+  }
+  [class*='entries'] [data-reveal*='6'] {
+    -webkit-transition-delay: 1.5s;
+            transition-delay: 1.5s;
+  }
+  [class*='entries'] [data-reveal*='7'] {
+    -webkit-transition-delay: 1.8s;
+            transition-delay: 1.8s;
+  }
+  [class*='entries'] [data-reveal*='8'] {
+    -webkit-transition-delay: 2.1s;
+            transition-delay: 2.1s;
+  }
+  [class*='entries'] [data-reveal*='9'] {
+    -webkit-transition-delay: 2.4s;
+            transition-delay: 2.4s;
+  }
+  [class*='entries'] [data-reveal*='10'] {
+    -webkit-transition-delay: 2.7s;
+            transition-delay: 2.7s;
+  }
+  [class*='entries'] [data-reveal*='11'] {
+    -webkit-transition-delay: 3s;
+            transition-delay: 3s;
+  }
+  [class*='entries'] [data-reveal*='12'] {
+    -webkit-transition-delay: 3.3s;
+            transition-delay: 3.3s;
+  }
+}
+/*# sourceMappingURL=reveal-animation.css.map */

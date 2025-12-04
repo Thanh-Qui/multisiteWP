@@ -1,0 +1,68 @@
+.product-type-variable .wcppec-checkout-buttons {
+  position: relative;
+  z-index: 1;
+}
+
+.wcppec-checkout-buttons__separator,
+#wc-square-wallet-divider,
+#wcpay-payment-request-button-separator,
+#wc-stripe-payment-request-button-separator {
+  display: none !important;
+}
+
+div#wc-square-digital-wallet {
+  max-width: 100%;
+}
+
+div.wc-square-wallet-buttons {
+  width: 100%;
+}
+
+.payment_methods li .woocommerce-info {
+  display: block;
+}
+
+.payment_methods fieldset .wc-stripe-elements-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: initial;
+}
+
+.payment_methods fieldset .stripe-source-errors ul {
+  margin-top: 20px;
+}
+
+.payment_methods fieldset .stripe-source-errors ul:last-child {
+  margin-bottom: 0;
+}
+
+.wc-proceed-to-checkout #wc-stripe-payment-request-wrapper {
+  margin-bottom: 15px;
+}
+
+#wc-stripe-payment-request-wrapper {
+  padding-top: 0 !important;
+}
+
+#payment .wc_payment_methods .payment_box #wc-woocommerce_payments-new-payment-method {
+  top: 0;
+}
+
+#payment .wc_payment_methods .payment_method_woocommerce_payments_afterpay_clearpay {
+      grid-template-areas: "li-label";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#payment .wc_payment_methods .payment_method_woocommerce_payments_afterpay_clearpay .spacer {
+  display: none;
+}
+/*# sourceMappingURL=payment-gateways.css.map */

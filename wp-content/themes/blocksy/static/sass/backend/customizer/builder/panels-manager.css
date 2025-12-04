@@ -1,0 +1,63 @@
+.ct-panels-manager {
+  margin-top: 25px;
+  padding: 0 14px;
+}
+
+.ct-panels-manager li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 39px;
+  padding: 0 12px;
+  margin-bottom: 13px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #e0e0e8;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  -webkit-transition: border-color 0.1s linear,  -webkit-box-shadow 0.1s linear;
+  transition: border-color 0.1s linear,  -webkit-box-shadow 0.1s linear;
+  transition: box-shadow 0.1s linear,  border-color 0.1s linear;
+  transition: box-shadow 0.1s linear,  border-color 0.1s linear,  -webkit-box-shadow 0.1s linear;
+}
+
+.ct-panels-manager li:hover, .ct-panels-manager li.active {
+  border-color: var(--ui-accent-color);
+}
+
+.ct-panels-manager li.active {
+  -webkit-box-shadow: 0px 0px 0px 1px var(--ui-accent-color);
+          box-shadow: 0px 0px 0px 1px var(--ui-accent-color);
+}
+
+.ct-panels-manager li.active:after {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.ct-panels-manager li:after {
+  font-family: dashicons;
+  content: '\f345';
+  width: 12px;
+  height: 12px;
+  font-size: 12px;
+  line-height: 13px;
+  color: inherit;
+  opacity: 0.3;
+  pointer-events: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+}
+
+.ct-panel-name {
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: auto;
+}
+/*# sourceMappingURL=panels-manager.css.map */

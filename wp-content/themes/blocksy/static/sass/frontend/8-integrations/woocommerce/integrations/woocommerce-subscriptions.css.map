@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,8BAF6B,CAE7B,qBAAqB;AAFtB,8BAA8B,CAG7B,qBAAqB,GAAG,cAAc,CAAC;EACtC,aAAa,EAAE,KAAK;CACpB;;AAGF,AAKE,0BALwB,CAGzB,MAAM,CAEL,EAAE;AAJJ,8BAA8B,CAE7B,MAAM,CAEL,EAAE,CAAC;EACF,aAAa,EAAE,oDAAoD;CACnE;;AAMH,AAAA,EAAE,AAAA,6BAA6B;AAC/B,EAAE,AAAA,eAAe,AAAA,gBAAgB,CAAC;EACjC,oBAAoB,EAAE,CAAC;CACvB",
+    "sources": [
+        "woocommerce-subscriptions.scss"
+    ],
+    "names": [],
+    "file": "woocommerce-subscriptions.css"
+}

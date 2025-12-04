@@ -1,0 +1,9 @@
+:root :where(.has-background) {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root :where(p.has-background, .wp-block-group.has-background) {
+  padding: var(--theme-content-spacing);
+}
+/*# sourceMappingURL=has-background.css.map */

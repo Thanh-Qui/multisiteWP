@@ -1,0 +1,7 @@
+.ct-module-title:is(p, span):not(:empty) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=module-title.css.map */
