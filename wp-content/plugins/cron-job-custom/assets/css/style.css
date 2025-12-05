@@ -11,14 +11,14 @@
     border-radius: 5px; 
 }
 
-/* Tiêu đề */
+/* title */
 .report-heading { 
     color: #0073aa; 
     border-bottom: 2px solid #eee; 
     padding-bottom: 10px; 
 }
 
-/* Bảng */
+/* table */
 .sales-table { 
     width: 100%; 
     border-collapse: collapse; 
@@ -36,16 +36,15 @@
     color: #555; 
 }
 
-/* Hàng tổng */
+/* colum total */
 .total-row td { 
     background-color: #e6f7ff; 
     font-weight: bold; 
     border-top: 2px solid #0073aa; 
 }
 
-/* Căn chỉnh văn bản */
 .text-right { 
-    text-align: right !important; /* Dùng !important để đảm bảo ghi đè các style mặc định nếu cần */
+    text-align: right !important;
 }
 .site-column {
     width: 70%;
