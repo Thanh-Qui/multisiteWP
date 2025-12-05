@@ -1,0 +1,12 @@
+.ct-order-review {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: var(--order-review-padding);
+  border: var(--order-review-border);
+  border-radius: var(--order-review-border-radius);
+}
+
+.ct-order-review table.shop_table .product-total, .ct-order-review table.shop_table tfoot td {
+  text-align: var(--theme-table-text-align, end);
+}
+/*# sourceMappingURL=order-review.css.map */

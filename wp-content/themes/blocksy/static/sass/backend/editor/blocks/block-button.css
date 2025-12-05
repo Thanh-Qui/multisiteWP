@@ -1,0 +1,73 @@
+.wpforms-submit,
+.wp-element-button,
+.wp-block-button__link,
+.ff-inherit-theme-style .ff-btn-submit {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: var(--theme-button-padding);
+  min-height: var(--theme-button-min-height);
+  border-radius: var(--theme-button-border-radius, 3px);
+  border: var(--theme-button-border);
+  -webkit-transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.wpforms-submit.has-text-align-left,
+.wp-element-button.has-text-align-left,
+.wp-block-button__link.has-text-align-left,
+.ff-inherit-theme-style .ff-btn-submit.has-text-align-left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.wpforms-submit.has-text-align-right,
+.wp-element-button.has-text-align-right,
+.wp-block-button__link.has-text-align-right,
+.ff-inherit-theme-style .ff-btn-submit.has-text-align-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.wpforms-submit,
+.wp-element-button,
+.wp-block-button__link,
+.ff-inherit-theme-style .ff-btn-submit {
+  color: var(--theme-button-text-initial-color);
+  background-color: var(--theme-button-background-initial-color);
+}
+
+.wpforms-submit:hover,
+.wp-element-button:hover,
+.wp-block-button__link:hover,
+.ff-inherit-theme-style .ff-btn-submit:hover {
+  color: var(--theme-button-text-hover-color);
+  background-color: var(--theme-button-background-hover-color);
+  border-color: var(--theme-button-border-hover-color);
+}
+
+.wp-block-button.is-style-outline .wp-element-button {
+  padding: var(--theme-button-padding);
+  border: 2px solid;
+  border-color: var(--theme-button-background-initial-color);
+  background-color: initial;
+}
+
+.wp-block-button.is-style-outline .wp-element-button:not(.has-text-color) {
+  color: var(--theme-button-background-initial-color);
+}
+
+.wp-block-button.is-style-outline .wp-element-button:hover {
+  color: var(--theme-button-text-hover-color);
+  border-color: var(--theme-button-background-hover-color);
+  background-color: var(--theme-button-background-hover-color);
+}
+/*# sourceMappingURL=block-button.css.map */

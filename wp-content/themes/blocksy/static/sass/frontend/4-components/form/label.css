@@ -1,0 +1,15 @@
+label {
+  font-size: 15px;
+  line-height: inherit;
+  cursor: pointer;
+  margin: 0 0 0.5em 0;
+}
+
+:is(.gdpr-confirm-policy, .comment-form-cookies-consent) label {
+  font-size: 13px;
+}
+
+:is(.gdpr-confirm-policy, .comment-form-cookies-consent) label a {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=label.css.map */

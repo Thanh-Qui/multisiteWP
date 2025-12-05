@@ -1,0 +1,13 @@
+.ct-attachment .components-base-control__field {
+  margin-bottom: 0;
+}
+
+.ct-attachment .components-focal-point-picker {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.ct-attachment .focal-point-picker__controls {
+  padding: 1em 0 0.6em 0;
+}
+/*# sourceMappingURL=image-position.css.map */

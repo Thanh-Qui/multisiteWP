@@ -1,0 +1,75 @@
+[class*='ct-button'] {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 7px;
+  min-height: var(--ui-button-height, 35px);
+  padding: 5px var(--ui-button-padding, 15px);
+  font-size: var(--ui-button-font-size, 13px);
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.01em;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: color 0.15s ease,  background 0.15s ease,  border-color 0.15s ease,  -webkit-transform 0.15s ease, -webkit-box-shadow 0.15s ease;
+  transition: color 0.15s ease,  background 0.15s ease,  border-color 0.15s ease,  -webkit-transform 0.15s ease, -webkit-box-shadow 0.15s ease;
+  transition: color 0.15s ease,  background 0.15s ease,  transform 0.15s ease, border-color 0.15s ease,  box-shadow 0.15s ease;
+  transition: color 0.15s ease,  background 0.15s ease,  transform 0.15s ease, border-color 0.15s ease,  box-shadow 0.15s ease,  -webkit-transform 0.15s ease, -webkit-box-shadow 0.15s ease;
+}
+
+[class*='ct-button'][disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.ct-button {
+  color: rgba(46, 68, 83, 0.8);
+  background: #fff;
+  border-color: #e2e6eb;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.ct-button:hover, .ct-button:focus {
+  color: #2e4453;
+  border-color: rgba(190, 196, 203, 0.7);
+}
+
+.ct-button-primary {
+  color: #fff;
+  background: var(--ui-accent-color);
+  border-color: var(--ui-accent-color);
+  -webkit-box-shadow: 0 1px 4px rgba(1, 96, 134, 0.2);
+          box-shadow: 0 1px 4px rgba(1, 96, 134, 0.2);
+}
+
+.ct-button-primary:hover, .ct-button-primary:focus,
+.ct-button[data-hover='blue']:hover,
+.ct-button[data-hover='blue']:focus {
+  color: #fff;
+  background: var(--ui-accent-hover-color, #135e96);
+  border-color: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 4px rgba(1, 96, 134, 0.3);
+          box-shadow: 0 1px 4px rgba(1, 96, 134, 0.3);
+}
+
+.ct-button[data-hover='red']:hover, .ct-button[data-hover='red']:focus {
+  color: #fff;
+  background: #e05757;
+  border-color: #c74848;
+  -webkit-box-shadow: 0 1px 4px rgba(134, 1, 1, 0.4);
+          box-shadow: 0 1px 4px rgba(134, 1, 1, 0.4);
+}
+/*# sourceMappingURL=button.css.map */

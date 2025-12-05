@@ -1,0 +1,74 @@
+@use 'modal';
+@use 'condition-group';
+@use 'condition-relation';
+@use 'relation-group';
+@use 'hovered-indication';
+.ct-display-conditions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  --condition-ui-transition: 0.15s ease;
+}
+
+.ct-conditions-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ct-conditions-actions:not(:only-child) {
+  margin-top: 10px;
+  padding-top: 25px;
+  border-top: 1px dashed var(--optionBorderColor);
+}
+
+.ct-conditions-actions span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.ct-display-conditions .ct-option-input {
+  position: relative;
+}
+
+.ct-display-conditions .ct-option-input .ct-condition-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: calc(50% - 8px);
+  inset-inline-end: 7px;
+}
+
+.ct-display-conditions .ct-option-input .ct-condition-info svg {
+  fill: #cecece;
+}
+
+.ct-display-conditions .ct-option-input .ct-condition-info .ct-tooltip {
+  --tooltip-width: 160px;
+}
+/*# sourceMappingURL=main.css.map */

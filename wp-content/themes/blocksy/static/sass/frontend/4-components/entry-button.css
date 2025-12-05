@@ -1,0 +1,21 @@
+.entry-button {
+  gap: 0.5em;
+  font-size: 15px;
+  -ms-flex-item-align: var(--horizontal-alignment, flex-start);
+      align-self: var(--horizontal-alignment, flex-start);
+}
+
+.entry-button:not([class*="ct-button"]) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.entry-button[class*="ct-button"] {
+  min-height: 40px;
+  padding: 5px 15px;
+}
+/*# sourceMappingURL=entry-button.css.map */

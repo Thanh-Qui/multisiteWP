@@ -1,0 +1,41 @@
+.has-hover-effect img {
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+@media (hover: hover) {
+  [data-hover="zoom-in"] > *:hover .has-hover-effect img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+[data-hover="zoom-out"] .has-hover-effect img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (hover: hover) {
+  [data-hover="zoom-out"] > *:hover .has-hover-effect img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+[data-hover="swap"] .ct-swap {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+@media (hover: hover) {
+  [data-hover="swap"] .has-hover-effect:hover .ct-swap {
+    opacity: 1;
+  }
+  [data-hover="swap"] .has-hover-effect:hover .ct-swap + img {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=image-hover.css.map */

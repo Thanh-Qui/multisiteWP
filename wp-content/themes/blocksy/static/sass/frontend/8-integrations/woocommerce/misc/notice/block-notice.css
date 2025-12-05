@@ -1,0 +1,28 @@
+.woocommerce-page .wc-block-components-notice-banner {
+  margin: 0 0 2rem 0;
+}
+
+.woocommerce-page .wc-block-components-notice-banner:is(.is-info, .is-error, .is-success) {
+  border: none;
+  color: var(--theme-text-color);
+  background-color: var(--background-color);
+}
+
+.woocommerce-page .wc-block-components-notice-banner:is(.is-info, .is-error, .is-success) svg {
+  fill: var(--theme-button-text-initial-color);
+  background-color: var(--theme-button-background-initial-color);
+}
+
+.woocommerce-page .wc-block-components-notice-banner .wc-block-components-notice-banner__content .wc-forward {
+  color: inherit !important;
+  line-height: unset;
+  font-weight: unset;
+  -webkit-text-decoration-line: unset;
+          text-decoration-line: unset;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+  padding: unset;
+  min-height: unset;
+  background-color: unset;
+}
+/*# sourceMappingURL=block-notice.css.map */

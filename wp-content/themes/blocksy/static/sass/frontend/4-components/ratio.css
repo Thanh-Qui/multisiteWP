@@ -1,0 +1,40 @@
+[class*='ct-media-container'] {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  isolation: isolate;
+  vertical-align: middle;
+}
+
+.ct-media-container {
+  position: relative;
+  width: 100%;
+}
+
+.ct-media-container img,
+.ct-media-container picture {
+  width: inherit;
+  border-radius: inherit;
+  -o-object-fit: var(--theme-object-fit, cover);
+     object-fit: var(--theme-object-fit, cover);
+}
+
+.ct-media-container picture {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.ct-media-container picture img {
+  aspect-ratio: inherit;
+}
+
+.ct-media-container-static img {
+  aspect-ratio: 1/1;
+}
+/*# sourceMappingURL=ratio.css.map */

@@ -1,0 +1,27 @@
+.ct-breadcrumbs {
+  color: var(--theme-text-color);
+  --has-link-decoration: var(--false);
+}
+
+.ct-breadcrumbs[data-source="default"] > span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+
+.ct-breadcrumbs[data-source="default"] > span [class*="ct-separator"] {
+  margin: 0 8px;
+}
+
+.ct-breadcrumbs[data-source="default"] .ct-home-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: -0.1em;
+  fill: currentColor;
+}
+/*# sourceMappingURL=breadcrumbs.css.map */

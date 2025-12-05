@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,2BAF0B,GAExB,IAAI,CAAC;EACN,OAAO,EAAE,OAAO;CAChB;;AAJF,AAMC,2BAN0B,CAM1B,MAAM,CAAC;EACN,gBAAgB,EAAE,IAAI;CACtB",
+    "sources": [
+        "sellkit.scss"
+    ],
+    "names": [],
+    "file": "sellkit.css"
+}

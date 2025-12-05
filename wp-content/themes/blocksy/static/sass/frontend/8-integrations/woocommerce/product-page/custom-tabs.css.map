@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,sBAFqB,GAEnB,CAAC,AAAA,WAAW,CAAC;EACd,aAAa,EAAE,CAAC;CAChB",
+    "sources": [
+        "custom-tabs.scss"
+    ],
+    "names": [],
+    "file": "custom-tabs.css"
+}

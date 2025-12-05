@@ -1,0 +1,64 @@
+.ct-more-options-trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+}
+
+.ct-more-options-trigger button {
+  color: #484f56;
+}
+
+.ct-more-options-trigger button:hover {
+  color: var(--ui-accent-color);
+}
+
+.ct-more-options-trigger button svg {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.ct-options-popover {
+  inset-inline-start: 8px !important;
+}
+
+.ct-options-popover .components-popover__content {
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 0 1px var(--optionBorderColor), 0 15px 15px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 0 1px var(--optionBorderColor), 0 15px 15px rgba(0, 0, 0, 0.08);
+}
+
+.ct-options-popover .components-popover__content .components-dropdown-menu__menu .components-menu-group {
+  border-color: var(--optionBorderColor);
+}
+
+.ct-options-popover .components-popover__content .components-dropdown-menu__menu .components-menu-item__button {
+  min-height: 32px;
+}
+
+.ct-options-popover .components-popover__content .components-dropdown-menu__menu .components-menu-item__item {
+  min-width: 100px;
+}
+
+.ct-more-options-trigger .components-button,
+.ct-options-popover .components-button {
+  --wp-components-color-accent: var(--ui-accent-color);
+}
+
+.customize-section-title {
+  position: relative;
+}
+
+.customize-section-title .ct-customize-section-title-actions {
+  position: absolute;
+  top: calc(50% - 12px);
+  inset-inline-end: 14px;
+}
+/*# sourceMappingURL=more-options-trigger.css.map */

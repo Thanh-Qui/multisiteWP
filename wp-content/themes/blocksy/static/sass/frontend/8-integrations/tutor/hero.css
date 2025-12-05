@@ -1,0 +1,42 @@
+[data-prefix="courses_single"] .tutor-course-details-title {
+  max-width: initial;
+  color: var(--theme-heading-color, var(--theme-heading-1-color, var(--theme-headings-color)));
+}
+
+[data-prefix="courses_single"] .tutor-ratings {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+[data-prefix="courses_single"] .tutor-ratings-stars {
+  color: var(--tutor-ratings-stars-color, #ED9700);
+}
+
+[data-prefix="courses_single"] .tutor-course-details-top .tutor-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+[data-prefix="courses_single"] .tutor-meta > * a {
+  color: inherit;
+}
+
+[data-prefix="courses_single"] .tutor-meta > * a:hover,
+[data-prefix="courses_single"] .tutor-course-details-actions > a:hover {
+  color: var(--theme-link-hover-color);
+}
+
+[data-prefix="courses_single"] .tutor-meta > * a,
+[data-prefix="courses_single"] .tutor-ratings-average {
+  font-weight: var(--theme-font-weight);
+}
+
+[data-prefix="courses_single"] .tutor-meta > *,
+[data-prefix="courses_single"] .tutor-ratings-count,
+[data-prefix="courses_single"] .tutor-ratings-average,
+[data-prefix="courses_single"] .tutor-course-details-actions > a {
+  color: var(--theme-text-color);
+}
+/*# sourceMappingURL=hero.css.map */

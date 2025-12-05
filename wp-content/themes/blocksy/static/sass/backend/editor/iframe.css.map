@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,sBAAsB,AAAA,eAAe;AAErC,IAAI,AAAA,IAAK,CAAA,WAAW,EAAE;EACrB,gBAAgB,EAAE,gDAAgD;CAClE",
+    "sources": [
+        "iframe.scss"
+    ],
+    "names": [],
+    "file": "iframe.css"
+}

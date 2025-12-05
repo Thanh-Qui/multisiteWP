@@ -1,0 +1,76 @@
+.ct-icon,
+.ct-icon-container svg {
+  width: var(--theme-icon-size, 15px);
+  height: var(--theme-icon-size, 15px);
+  fill: var(--theme-icon-color, var(--theme-text-color));
+  -webkit-transition: var(--theme-icon-transition, fill 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955));
+  transition: var(--theme-icon-transition, fill 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955));
+}
+
+.ct-icon,
+.ct-icon-container {
+  position: relative;
+}
+
+.ct-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ct-icon-container.ct-left {
+  -webkit-margin-end: 0.5em;
+          margin-inline-end: 0.5em;
+}
+
+.ct-icon-container.ct-right {
+  -webkit-margin-start: 0.5em;
+          margin-inline-start: 0.5em;
+}
+
+[data-icons-type*=":"] .ct-icon-container {
+  width: calc(var(--theme-icon-size, 15px) * 2.5);
+  height: calc(var(--theme-icon-size, 15px) * 2.5);
+  -webkit-transition: background 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955), border-color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: background 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955), border-color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+[data-icons-type*="square"] .ct-icon-container {
+  border-radius: 2px;
+}
+
+[data-icons-type*="rounded"] .ct-icon-container {
+  border-radius: 100%;
+}
+
+[data-icons-type] > * {
+  -webkit-transition: none;
+  transition: none;
+}
+
+[data-icons-type] > *:hover svg {
+  fill: var(--theme-icon-hover-color, var(--theme-palette-color-2));
+}
+
+[data-icons-type*="solid"] .ct-icon-container {
+  background-color: var(--background-color);
+}
+
+[data-icons-type*="solid"] > *:hover .ct-icon-container {
+  background-color: var(--background-hover-color);
+}
+
+[data-icons-type*="outline"] .ct-icon-container {
+  border: 1px solid var(--background-color);
+}
+
+[data-icons-type*="outline"] > *:hover .ct-icon-container {
+  border-color: var(--background-hover-color);
+}
+/*# sourceMappingURL=icons.css.map */

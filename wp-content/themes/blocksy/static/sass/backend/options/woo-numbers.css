@@ -1,0 +1,13 @@
+.ct-woo-columns-and-rows {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 23px;
+}
+
+[data-disabled-last] > *:last-child {
+  opacity: 0.5;
+  pointer-events: none;
+}
+/*# sourceMappingURL=woo-numbers.css.map */

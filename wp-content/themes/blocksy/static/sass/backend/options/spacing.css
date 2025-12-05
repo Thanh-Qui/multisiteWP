@@ -1,0 +1,74 @@
+.ct-option-spacing {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 75px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 75px;
+  grid-column-gap: 4px;
+}
+
+.ct-option-spacing.custom {
+  -ms-grid-columns: 1fr 75px;
+      grid-template-columns: 1fr 75px;
+}
+
+.ct-option-spacing > span input.inactive {
+  color: rgba(50, 55, 60, 0.5);
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.ct-option-spacing > span input:focus + small {
+  opacity: 0.7;
+}
+
+.ct-option-spacing > span:not(:only-of-type) input {
+  text-align: center;
+}
+
+.ct-option-spacing > span small {
+  display: block;
+  margin-top: 5px;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.45;
+  overflow-wrap: anywhere;
+}
+
+.ct-option-spacing .ct-link-unlink-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  cursor: pointer;
+  color: inherit;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
+}
+
+.ct-option-spacing .ct-link-unlink-toggle:hover {
+  color: var(--ui-accent-color);
+}
+
+.ct-option-spacing-wrapper[data-design="inline"] {
+  padding-bottom: 16px;
+}
+
+.ct-option-spacing-wrapper[data-design="inline"] .ct-option-spacing > span {
+  position: relative;
+}
+
+.ct-option-spacing-wrapper[data-design="inline"] .ct-option-spacing > span small {
+  position: absolute;
+  inset-inline: 0;
+  top: var(--input-height, 30px);
+}
+/*# sourceMappingURL=spacing.css.map */

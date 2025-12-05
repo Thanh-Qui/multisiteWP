@@ -1,0 +1,25 @@
+[data-link='type-3'] .entry-content p > a, [data-link='type-3'] .entry-content em > a, [data-link='type-3'] .entry-content strong > a, [data-link='type-3'] .entry-content > ul a, [data-link='type-3'] .entry-content > ol a {
+  background-size: var(--has-link-decoration, 0% 1px);
+  background-image: var(--has-link-decoration, linear-gradient(currentColor, currentColor));
+}
+
+[data-link='type-3'] .entry-content p > a:hover, [data-link='type-3'] .entry-content em > a:hover, [data-link='type-3'] .entry-content strong > a:hover, [data-link='type-3'] .entry-content > ul a:hover, [data-link='type-3'] .entry-content > ol a:hover {
+  background-size: var(--has-link-decoration, 100% 1px);
+}
+
+[data-link='type-4'] .entry-content p > a:hover, [data-link='type-4'] .entry-content em > a:hover, [data-link='type-4'] .entry-content strong > a:hover, [data-link='type-4'] .entry-content > ul a:hover, [data-link='type-4'] .entry-content > ol a:hover {
+  color: var(--has-link-decoration, #fff);
+  background-size: var(--has-link-decoration, 100% 100%);
+  background-image: var(--has-link-decoration, linear-gradient(var(--theme-link-hover-color), var(--theme-link-hover-color)));
+}
+
+[data-link='type-5'] .entry-content p > a, [data-link='type-5'] .entry-content em > a, [data-link='type-5'] .entry-content strong > a, [data-link='type-5'] .entry-content > ul a, [data-link='type-5'] .entry-content > ol a {
+  background-size: var(--has-link-decoration, 0% 100%);
+  background-image: var(--has-link-decoration, linear-gradient(var(--theme-link-hover-color), var(--theme-link-hover-color)));
+}
+
+[data-link='type-5'] .entry-content p > a:hover, [data-link='type-5'] .entry-content em > a:hover, [data-link='type-5'] .entry-content strong > a:hover, [data-link='type-5'] .entry-content > ul a:hover, [data-link='type-5'] .entry-content > ol a:hover {
+  color: var(--has-link-decoration, #fff);
+  background-size: var(--has-link-decoration, 100% 100%);
+}
+/*# sourceMappingURL=links-lazy.css.map */

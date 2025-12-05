@@ -1,0 +1,82 @@
+.ct-revert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  pointer-events: auto;
+  top: var(--revert-button-top, calc(50% - var(--revert-button-size, 15px) / 2 - 1px));
+  inset-inline-start: calc(var(--revert-button-offset, 20px) * -1);
+  width: var(--revert-button-size, 15px);
+  height: var(--revert-button-size, 15px);
+  padding: 0;
+  border: none;
+  color: var(--ui-accent-color);
+  background: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ct-revert:focus {
+  outline: none;
+}
+
+.ct-revert svg {
+  width: var(--revert-icon-size, 10px);
+  height: var(--revert-icon-size, 10px);
+}
+
+.ct-revert svg path,
+.ct-revert svg polygon {
+  opacity: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: opacity 0.15s ease,  -webkit-transform 0.15s ease;
+  transition: opacity 0.15s ease,  -webkit-transform 0.15s ease;
+  transition: opacity 0.15s ease,  transform 0.15s ease;
+  transition: opacity 0.15s ease,  transform 0.15s ease,  -webkit-transform 0.15s ease;
+}
+
+.ct-revert svg path {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.ct-revert svg polygon {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.ct-revert:not([disabled]) {
+  cursor: pointer;
+}
+
+.ct-revert:not([disabled]) svg path {
+  opacity: 1;
+}
+
+.ct-revert:not([disabled]):hover svg path {
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.ct-revert:not([disabled]):hover svg polygon {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+[data-label="no"] .ct-revert {
+  --revert-button-top: calc(100% + 7px);
+}
+
+.ct-layer-content .ct-revert {
+  --revert-icon-size: 8px;
+  --revert-button-offset: 16px;
+}
+/*# sourceMappingURL=revert.css.map */

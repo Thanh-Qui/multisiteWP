@@ -1,0 +1,15 @@
+.jetpack-external-connection-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  min-height: 30px;
+}
+
+.jetpack-external-connection-settings img {
+  width: 20px;
+}
+/*# sourceMappingURL=settings.css.map */

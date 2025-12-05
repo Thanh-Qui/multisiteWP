@@ -1,0 +1,29 @@
+.ct-share-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: var(--horizontal-alignment);
+      -ms-flex-align: var(--horizontal-alignment);
+          align-items: var(--horizontal-alignment);
+}
+
+.ct-share-box[data-location="top"] {
+  margin-bottom: var(--margin, 50px);
+}
+
+.ct-share-box[data-location="bottom"] {
+  margin-top: var(--margin, 50px);
+}
+
+.ct-share-box[data-location="bottom"]:not(:last-child) {
+  margin-bottom: var(--margin, 50px);
+}
+
+.hero-section[data-type="type-1"] + .ct-share-box[data-location="top"] {
+  margin-top: var(--margin, 50px);
+}
+/*# sourceMappingURL=base.css.map */

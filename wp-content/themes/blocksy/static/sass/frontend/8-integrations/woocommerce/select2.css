@@ -1,0 +1,106 @@
+span.select2-container .select2-selection--single,
+span.select2-container .select2-selection--multiple {
+  border-radius: var(--has-classic-forms, var(--theme-form-field-border-radius, 3px));
+  background-color: var(--has-classic-forms, var(--theme-form-field-background-initial-color));
+  border: var(--theme-form-field-border-width, 1px) var(--theme-form-field-border-style, solid) var(--theme-form-field-border-initial-color);
+}
+
+span.select2-container .select2-selection--single .select2-selection__rendered,
+span.select2-container .select2-selection--multiple .select2-selection__rendered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--theme-form-text-initial-color, var(--theme-text-color));
+  padding: var(--has-classic-forms, var(--theme-form-field-padding, 0 15px));
+}
+
+span.select2-container .select2-selection--single {
+  height: var(--theme-form-field-height, 40px);
+}
+
+span.select2-container .select2-selection--single .select2-selection__rendered {
+  height: 100%;
+}
+
+span.select2-container .select2-selection--single .select2-selection__arrow {
+  inset-inline-end: 8px;
+  height: calc(var(--theme-form-field-height, 40px) - 2px);
+}
+
+span.select2-container .select2-selection--single .select2-selection__arrow b {
+  border-top-color: var(--theme-form-text-initial-color, var(--theme-text-color));
+}
+
+span.select2-container .select2-selection--multiple .select2-selection__rendered {
+  min-height: var(--theme-form-field-height, 40px);
+  gap: 4px;
+  padding-block: 6px;
+}
+
+span.select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+span.select2-container .select2-selection--multiple .select2-selection__rendered .select2-search__field {
+  margin: 0;
+  height: auto;
+}
+
+span.select2-container.select2-container--open .select2-selection--single,
+span.select2-container.select2-container--open .select2-selection--multiple {
+  background-color: var(--has-classic-forms, var(--theme-form-select-background-initial-color, #fff));
+}
+
+span.select2-container.select2-container--open .select2-selection--single .select2-selection__arrow b,
+span.select2-container.select2-container--open .select2-selection--multiple .select2-selection__arrow b {
+  border-bottom-color: var(--theme-form-text-initial-color, var(--theme-text-color));
+}
+
+span.select2-dropdown {
+  color: var(--form-field-select-initial-color, var(--theme-text-color));
+  background-color: var(--theme-form-select-background-initial-color, #fff);
+  border-radius: var(--has-classic-forms, var(--theme-form-field-border-radius, 3px));
+  border: var(--theme-form-field-border-width, 1px) var(--theme-form-field-border-style, solid) var(--theme-form-field-border-initial-color);
+}
+
+span.select2-dropdown.select2-dropdown--below {
+  -webkit-box-shadow: 0px 15px 30px -5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 30px -5px rgba(0, 0, 0, 0.05);
+}
+
+span.select2-dropdown .select2-search--dropdown {
+  padding: 12px;
+}
+
+span.select2-dropdown .select2-search--dropdown .select2-search__field {
+  height: 35px;
+  padding: var(--has-classic-forms, 0 10px);
+  border-radius: var(--has-classic-forms, 2px);
+  border: var(--theme-form-field-border-width, 1px) solid var(--theme-form-field-border-initial-color);
+}
+
+span.select2-dropdown .select2-search--dropdown .select2-search__field:focus {
+  border-color: var(--theme-form-select-background-active-color, var(--theme-palette-color-1));
+}
+
+span.select2-dropdown .select2-results__option {
+  margin: 0;
+  padding: 8px 12px;
+}
+
+span.select2-dropdown .select2-results__option[aria-selected="true"], span.select2-dropdown .select2-results__option[data-selected="true"] {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+span.select2-dropdown .select2-results__option.select2-results__option--highlighted[aria-selected], span.select2-dropdown .select2-results__option.select2-results__option--highlighted[data-selected] {
+  color: var(--form-field-select-active-color, #fff);
+  background-color: var(--theme-form-select-background-active-color, var(--theme-palette-color-1));
+}
+/*# sourceMappingURL=select2.css.map */

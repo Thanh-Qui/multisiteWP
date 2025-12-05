@@ -1,0 +1,8 @@
+.ct-header-cart [data-price="no"] .amount {
+  display: none;
+}
+
+.ct-header-cart[data-cart="hide-empty"]:has([data-count="0"]) {
+  display: none;
+}
+/*# sourceMappingURL=cart-header-element.css.map */

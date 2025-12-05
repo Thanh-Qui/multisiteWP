@@ -1,0 +1,21 @@
+.wc-block-cart.is-large table.wc-block-cart-items .wc-block-cart-items__header-image {
+  text-align: start;
+}
+
+.wc-block-cart.is-large table.wc-block-cart-items .wc-block-cart-item__image {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.wc-block-cart.is-large table.wc-block-cart-items tr th:last-child, .wc-block-cart.is-large table.wc-block-cart-items tr td:last-child {
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+}
+
+.wc-block-cart.is-large .wc-block-components-sidebar :is(
+.wc-block-components-panel,
+.wc-block-components-totals-item
+) {
+  padding-inline: 0;
+}
+/*# sourceMappingURL=cart-block.css.map */

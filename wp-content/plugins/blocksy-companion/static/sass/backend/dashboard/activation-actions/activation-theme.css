@@ -1,0 +1,71 @@
+.ct-theme-required {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #fff;
+  padding: 35px;
+  margin-top: 20px;
+  -webkit-margin-end: 20px;
+          margin-inline-end: 20px;
+}
+
+.ct-theme-required h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ct-theme-required span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #1E1E1E;
+  border-radius: 2px;
+}
+
+.ct-theme-required span svg {
+  width: 15px;
+  fill: #fff;
+}
+
+.ct-theme-required p {
+  font-size: 14px;
+  margin: 3px 0 0 0;
+  padding: 0;
+}
+
+.ct-theme-required .button {
+  margin-top: 20px;
+}
+
+.notice-blocksy-theme-version-mismatch {
+  padding: 0;
+  border-left-color: var(--ui-accent-color);
+}
+
+.notice-blocksy-theme-version-mismatch .ct-theme-required {
+  margin-top: 0;
+}
+/*# sourceMappingURL=activation-theme.css.map */

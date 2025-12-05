@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,gBAFe,CAEf,kBAAkB,CAAC;EAClB,UAAU,EAAE,oCAAoC;CAChD;;AAJF,AAOC,gBAPe,AAOd,6BAA6B,CAAC,kBAAkB,CAAC;EACjD,OAAO,EAAE,GAAG;EACZ,SAAS,EAAE,oCAAoC;CAC/C;;AAVF,AAaC,gBAbe,AAad,6BAA6B,CAAC,kBAAkB,CAAC;EACjD,OAAO,EAAE,QAAQ;CACjB;;AAfF,AAoBE,gBApBc,AAkBd,+BAA+B,CAE/B,gCAAgC,CAAC;EAChC,aAAa,EAAE,0CAA0C;EACzD,YAAY,EAAE,4CAA4C;CAK1D;;AA3BH,AAwBG,gBAxBa,AAkBd,+BAA+B,CAE/B,gCAAgC,CAI/B,uBAAuB,CAAC;EACvB,MAAM,EAAE,IAAI;CACZ",
+    "sources": [
+        "search-block.scss"
+    ],
+    "names": [],
+    "file": "search-block.css"
+}

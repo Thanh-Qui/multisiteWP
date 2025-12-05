@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,iBAAiB,CAAC;EAMjB,uBAAuB,CAAA,uCAAC;EACxB,6BAA6B,CAAA,6CAAC;CAC9B;;AARD,AAEC,iBAFgB,CAEhB,WAAW,CAAC;EACX,aAAa,EAAE,sCAAsC;CACrD;;AAOF,AAEC,2BAF0B,AAEzB,UAAU,GAAG,QAAQ,AAAA,IAAK,CAAA,UAAU,EAAE;EACtC,KAAK,EAAE,wBAAwB,CAAC,UAAU;CAC1C",
+    "sources": [
+        "stackable.scss"
+    ],
+    "names": [],
+    "file": "stackable.css"
+}

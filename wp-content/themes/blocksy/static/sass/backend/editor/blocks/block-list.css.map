@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,EAAE,EAAE,EAAE,CAAC;EACN,oBAAoB,EAAE,wBAAwB;CAC9C",
+    "sources": [
+        "block-list.scss"
+    ],
+    "names": [],
+    "file": "block-list.css"
+}

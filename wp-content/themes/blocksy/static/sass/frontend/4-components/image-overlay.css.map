@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "CAMA,AAAA,AACC,UADA,CAAW,OAAO,AAAlB,EAAoB,WAAW,GAAG,mBAAmB,AACpD,MAAM,EADgD,aAAa,CAAA,AAAA,SAAC,CAAD,MAAC,AAAA,IAAsB,MAAM,GAAG,mBAAmB,AACtH,MAAM,CAAC;EACP,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,EAAE;EACX,KAAK,EAAE,CAAC;CACR",
+    "sources": [
+        "image-overlay.scss"
+    ],
+    "names": [],
+    "file": "image-overlay.css"
+}

@@ -1,0 +1,65 @@
+.form-table .ct-term-screen-edit th label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  pointer-events: none;
+  --revert-button-offset: 17px;
+}
+
+.form-table .ct-term-screen-edit .ct-attachment,
+.form-table .ct-term-screen-edit .ct-select-input,
+.form-table .ct-term-screen-edit .ct-option-input,
+.form-table .ct-term-screen-edit .ct-radio-option,
+.form-table .ct-term-screen-edit .ct-color-picker-container {
+  max-width: 95%;
+  margin-bottom: 8px;
+}
+
+.form-table .ct-term-screen-edit .ct-color-picker-container {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.form-table .ct-term-screen-edit .ct-option-switch {
+  -webkit-margin-start: initial;
+          margin-inline-start: initial;
+}
+
+#reviews-filter table.product-reviews .column-comment .ct-review-title {
+  color: #50575e;
+  font-size: 13px;
+  margin: 0 0 10px 0;
+}
+
+#reviews-filter table.product-reviews .column-comment .ct-review-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 15px 10px;
+}
+
+#reviews-filter table.product-reviews .column-comment .ct-review-images figure {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+
+#reviews-filter table.product-reviews .column-comment .ct-review-images figure img {
+  aspect-ratio: 1/1;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2px;
+}
+/*# sourceMappingURL=native-options.css.map */

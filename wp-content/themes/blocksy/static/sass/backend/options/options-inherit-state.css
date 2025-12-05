@@ -1,0 +1,55 @@
+.ct-color-inherit {
+  will-change: transform;
+  background-color: #fff !important;
+}
+
+.ct-color-inherit svg {
+  width: 18px;
+  height: 18px;
+  fill: #555d66;
+  -webkit-animation: spin 4.5s infinite linear;
+          animation: spin 4.5s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.ct-color-picker-single .ct-color-inherit svg {
+  width: 14px;
+  height: 14px;
+}
+
+.ct-no-color {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.ct-no-color:after {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 2px;
+  background: #e60606;
+  border-radius: 2px;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+/*# sourceMappingURL=options-inherit-state.css.map */

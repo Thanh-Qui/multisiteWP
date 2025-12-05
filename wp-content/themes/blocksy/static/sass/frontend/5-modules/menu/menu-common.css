@@ -1,0 +1,25 @@
+nav[class*="menu"] .ct-menu-link {
+  color: var(--theme-link-initial-color);
+  --theme-icon-color: var(--theme-link-initial-color);
+}
+
+nav[class*="menu"] li:hover > .ct-menu-link,
+nav[class*="menu"] li:hover > .ct-sub-menu-parent {
+  color: var(--theme-link-hover-color);
+}
+
+nav[class*="menu"] li:hover > .ct-menu-link svg,
+nav[class*="menu"] li:hover > .ct-sub-menu-parent svg {
+  fill: var(--theme-icon-hover-color, var(--theme-link-hover-color));
+}
+
+nav[class*="menu"] li[class*="current-menu-"] > .ct-menu-link,
+nav[class*="menu"] li[class*="current-menu-"] > .ct-sub-menu-parent {
+  color: var(--theme-link-active-color, var(--theme-link-hover-color));
+}
+
+nav[class*="menu"] li[class*="current-menu-"] > .ct-menu-link svg,
+nav[class*="menu"] li[class*="current-menu-"] > .ct-sub-menu-parent svg {
+  fill: var(--theme-icon-active-color, var(--theme-icon-hover-color, var(--theme-link-active-color, var(--theme-link-hover-color))));
+}
+/*# sourceMappingURL=menu-common.css.map */

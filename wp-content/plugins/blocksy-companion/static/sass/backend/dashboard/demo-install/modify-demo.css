@@ -1,0 +1,13 @@
+.ct-modify-actions {
+  margin-top: 50px;
+}
+
+.ct-modify-actions > *:not(:last-child) {
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+}
+
+.ct-modify-actions .demo-remove {
+  --ct-buttonHoverColor: #e04f4f;
+}
+/*# sourceMappingURL=modify-demo.css.map */

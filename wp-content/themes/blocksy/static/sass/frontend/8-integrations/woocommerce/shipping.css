@@ -1,0 +1,33 @@
+.woocommerce-shipping-totals {
+  --theme-table-text-align: start;
+}
+
+.woocommerce-shipping-totals td {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.woocommerce-shipping-totals td .ct-shipping-heading {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.woocommerce-shipping-totals form button {
+  width: 100%;
+}
+
+.woocommerce-shipping-totals p:last-of-type {
+  margin-bottom: 0;
+}
+
+ul#shipping_method {
+  clear: both;
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+ul#shipping_method li:not(:last-child) {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=shipping.css.map */

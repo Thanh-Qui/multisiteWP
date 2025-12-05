@@ -1,0 +1,73 @@
+[data-archive="default"] .entry-card {
+  text-align: var(--text-horizontal-alignment);
+}
+
+[data-archive="default"] .entry-card .entry-title {
+  --theme-link-initial-color: initial;
+}
+
+[data-archive="default"] .entry-card .entry-divider {
+  border-bottom: var(--entry-divider);
+}
+
+[data-archive="default"] .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+[data-archive="default"] .card-content > * {
+  margin-block: 0 var(--card-element-spacing, 20px);
+}
+
+[data-archive="default"] .card-content > *:last-child {
+  margin-bottom: 0;
+}
+
+[data-cards="boxed"] .entry-card,
+[data-cards="cover"] .entry-card {
+  padding: var(--card-inner-spacing, 30px);
+  border: var(--card-border, none);
+  -webkit-box-shadow: var(--theme-box-shadow);
+          box-shadow: var(--theme-box-shadow);
+  border-radius: var(--theme-border-radius);
+}
+
+[data-archive="default"][data-cards="cover"] .entry-card {
+  position: relative;
+  min-height: var(--card-min-height, 400px);
+  -webkit-box-pack: var(--vertical-alignment);
+      -ms-flex-pack: var(--vertical-alignment);
+          justify-content: var(--vertical-alignment);
+}
+
+[data-archive="default"][data-cards="cover"] .entry-card .ct-media-container {
+  position: absolute;
+  isolation: isolate;
+  inset: 0;
+  margin: 0;
+}
+
+[data-archive="default"][data-cards="cover"] .entry-card .ct-media-container img {
+  height: 100%;
+}
+
+[data-archive="default"][data-cards="cover"] .entry-card > *:not(.ct-media-container) {
+  position: relative;
+  z-index: 1;
+}
+
+[data-archive="default"][data-cards="simple"] .entry-card {
+  padding-bottom: var(--grid-columns-gap, 30px);
+  border-bottom: var(--card-border, none);
+}
+
+.entries:not([data-cards="cover"]) :is(.entry-button, .entry-meta, .ct-media-container):last-child:not(:only-child) {
+  --card-element-margin-start: auto;
+  margin-top: var(--card-element-margin-start);
+}
+/*# sourceMappingURL=entry-card.css.map */

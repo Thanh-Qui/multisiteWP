@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EAChB,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,2BAA2B;EACpC,MAAM,EAAE,0BAA0B;EAClC,aAAa,EAAE,iCAAiC;CAQhD;;AAZD,AAQE,gBARc,CAMf,KAAK,AAAA,WAAW,CAEf,cAAc,EARhB,gBAAgB,CAMf,KAAK,AAAA,WAAW,CAEC,KAAK,CAAC,EAAE,CAAC;EACxB,UAAU,EAAE,kCAAkC;CAC9C",
+    "sources": [
+        "order-review.scss"
+    ],
+    "names": [],
+    "file": "order-review.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,cAFa,CAAA,AAAA,WAAC,CAAY,MAAM,AAAlB,EAEd,6BAA6B,CAAC;EAC7B,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,aAAa;EAC9B,UAAU,EAAE,IAAI;CAChB",
+    "sources": [
+        "pagination-footer.scss"
+    ],
+    "names": [],
+    "file": "pagination-footer.css"
+}

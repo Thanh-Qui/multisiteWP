@@ -1,0 +1,16 @@
+.wp-block-table table {
+  border-width: 1px;
+}
+
+.wp-block-table table:not(.has-border-color) thead, .wp-block-table table:not(.has-border-color) tfoot, .wp-block-table table:not(.has-border-color) td, .wp-block-table table:not(.has-border-color) th {
+  border-color: var(--theme-table-border-color, var(--theme-border-color));
+}
+
+.wp-block-table th:not([class*="has-text-align"]) {
+  text-align: inherit;
+}
+
+.wp-block-table.is-style-stripes {
+  border: 0;
+}
+/*# sourceMappingURL=block-table.css.map */

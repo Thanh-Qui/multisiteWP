@@ -1,0 +1,187 @@
+[class*='ct-attachment'] ul.actions,
+.editor-post-featured-image__container ul.actions,
+[class*='acf-admin'] #set-post-thumbnail ul.actions,
+.woocommerce-admin-page #set-post-thumbnail ul.actions,
+.woocommerce-admin-page #product_images_container ul.actions,
+.post-type-product.block-editor-page #product_images_container ul.actions {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: absolute;
+  top: var(--actions-spacing, 10px) !important;
+  inset-inline-end: var(--actions-spacing, 10px) !important;
+  overflow: hidden;
+  border-radius: 3px;
+  background: #fff;
+  opacity: 0;
+  -webkit-box-shadow: inset 0px 0px 0px 1px var(--optionBorderColor, #ddd), 0 2px 5px rgba(0, 0, 0, 0.02);
+          box-shadow: inset 0px 0px 0px 1px var(--optionBorderColor, #ddd), 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+[class*='ct-attachment'] ul.actions li,
+.editor-post-featured-image__container ul.actions li,
+[class*='acf-admin'] #set-post-thumbnail ul.actions li,
+.woocommerce-admin-page #set-post-thumbnail ul.actions li,
+.woocommerce-admin-page #product_images_container ul.actions li,
+.post-type-product.block-editor-page #product_images_container ul.actions li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+  margin: 0 !important;
+  -webkit-margin-start: -1px !important;
+          margin-inline-start: -1px !important;
+  float: none !important;
+}
+
+[class*='ct-attachment'] ul.actions li > *,
+.editor-post-featured-image__container ul.actions li > *,
+[class*='acf-admin'] #set-post-thumbnail ul.actions li > *,
+.woocommerce-admin-page #set-post-thumbnail ul.actions li > *,
+.woocommerce-admin-page #product_images_container ul.actions li > *,
+.post-type-product.block-editor-page #product_images_container ul.actions li > * {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px !important;
+  height: 28px !important;
+  font-size: 0 !important;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  min-height: initial;
+  text-decoration: none;
+  background: transparent;
+  color: var(--ui-accent-color);
+}
+
+[class*='ct-attachment'] ul.actions li > *:before,
+.editor-post-featured-image__container ul.actions li > *:before,
+[class*='acf-admin'] #set-post-thumbnail ul.actions li > *:before,
+.woocommerce-admin-page #set-post-thumbnail ul.actions li > *:before,
+.woocommerce-admin-page #product_images_container ul.actions li > *:before,
+.post-type-product.block-editor-page #product_images_container ul.actions li > *:before {
+  font-family: 'dashicons';
+  font-size: 14px;
+  line-height: initial !important;
+  color: inherit !important;
+  position: initial !important;
+  background: transparent !important;
+}
+
+[class*='ct-attachment'] ul.actions li > *:hover,
+.editor-post-featured-image__container ul.actions li > *:hover,
+[class*='acf-admin'] #set-post-thumbnail ul.actions li > *:hover,
+.woocommerce-admin-page #set-post-thumbnail ul.actions li > *:hover,
+.woocommerce-admin-page #product_images_container ul.actions li > *:hover,
+.post-type-product.block-editor-page #product_images_container ul.actions li > *:hover {
+  color: #fff;
+  background: var(--ui-accent-color);
+}
+
+[class*='ct-attachment'] ul.actions li > *:focus,
+.editor-post-featured-image__container ul.actions li > *:focus,
+[class*='acf-admin'] #set-post-thumbnail ul.actions li > *:focus,
+.woocommerce-admin-page #set-post-thumbnail ul.actions li > *:focus,
+.woocommerce-admin-page #product_images_container ul.actions li > *:focus,
+.post-type-product.block-editor-page #product_images_container ul.actions li > *:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+[class*='ct-attachment'] ul.actions li:not(:last-child):after,
+.editor-post-featured-image__container ul.actions li:not(:last-child):after,
+[class*='acf-admin'] #set-post-thumbnail ul.actions li:not(:last-child):after,
+.woocommerce-admin-page #set-post-thumbnail ul.actions li:not(:last-child):after,
+.woocommerce-admin-page #product_images_container ul.actions li:not(:last-child):after,
+.post-type-product.block-editor-page #product_images_container ul.actions li:not(:last-child):after {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  width: 1px;
+  height: 50%;
+  inset-inline-end: 0;
+  background: var(--optionBorderColor, #ddd);
+}
+
+[class*='ct-attachment'] ul.actions .edit-button:before,
+.editor-post-featured-image__container ul.actions .edit-button:before,
+[class*='acf-admin'] #set-post-thumbnail ul.actions .edit-button:before,
+.woocommerce-admin-page #set-post-thumbnail ul.actions .edit-button:before,
+.woocommerce-admin-page #product_images_container ul.actions .edit-button:before,
+.post-type-product.block-editor-page #product_images_container ul.actions .edit-button:before {
+  content: '\f464';
+}
+
+[class*='ct-attachment'] ul.actions .delete:before,
+[class*='ct-attachment'] ul.actions .remove-button:before,
+.editor-post-featured-image__container ul.actions .delete:before,
+.editor-post-featured-image__container ul.actions .remove-button:before,
+[class*='acf-admin'] #set-post-thumbnail ul.actions .delete:before,
+[class*='acf-admin'] #set-post-thumbnail ul.actions .remove-button:before,
+.woocommerce-admin-page #set-post-thumbnail ul.actions .delete:before,
+.woocommerce-admin-page #set-post-thumbnail ul.actions .remove-button:before,
+.woocommerce-admin-page #product_images_container ul.actions .delete:before,
+.woocommerce-admin-page #product_images_container ul.actions .remove-button:before,
+.post-type-product.block-editor-page #product_images_container ul.actions .delete:before,
+.post-type-product.block-editor-page #product_images_container ul.actions .remove-button:before {
+  content: '\f335' !important;
+}
+
+[class*='ct-attachment'] ul.actions .ct-media-video-modal-trigger .ct-loader-path,
+.editor-post-featured-image__container ul.actions .ct-media-video-modal-trigger .ct-loader-path,
+[class*='acf-admin'] #set-post-thumbnail ul.actions .ct-media-video-modal-trigger .ct-loader-path,
+.woocommerce-admin-page #set-post-thumbnail ul.actions .ct-media-video-modal-trigger .ct-loader-path,
+.woocommerce-admin-page #product_images_container ul.actions .ct-media-video-modal-trigger .ct-loader-path,
+.post-type-product.block-editor-page #product_images_container ul.actions .ct-media-video-modal-trigger .ct-loader-path {
+  visibility: hidden;
+}
+
+[class*='ct-attachment'] ul.actions .ct-media-video-modal-trigger.loading .ct-play-path,
+.editor-post-featured-image__container ul.actions .ct-media-video-modal-trigger.loading .ct-play-path,
+[class*='acf-admin'] #set-post-thumbnail ul.actions .ct-media-video-modal-trigger.loading .ct-play-path,
+.woocommerce-admin-page #set-post-thumbnail ul.actions .ct-media-video-modal-trigger.loading .ct-play-path,
+.woocommerce-admin-page #product_images_container ul.actions .ct-media-video-modal-trigger.loading .ct-play-path,
+.post-type-product.block-editor-page #product_images_container ul.actions .ct-media-video-modal-trigger.loading .ct-play-path {
+  visibility: hidden;
+}
+
+[class*='ct-attachment'] ul.actions .ct-media-video-modal-trigger.loading .ct-loader-path,
+.editor-post-featured-image__container ul.actions .ct-media-video-modal-trigger.loading .ct-loader-path,
+[class*='acf-admin'] #set-post-thumbnail ul.actions .ct-media-video-modal-trigger.loading .ct-loader-path,
+.woocommerce-admin-page #set-post-thumbnail ul.actions .ct-media-video-modal-trigger.loading .ct-loader-path,
+.woocommerce-admin-page #product_images_container ul.actions .ct-media-video-modal-trigger.loading .ct-loader-path,
+.post-type-product.block-editor-page #product_images_container ul.actions .ct-media-video-modal-trigger.loading .ct-loader-path {
+  visibility: visible;
+}
+
+[class*='ct-attachment'] .thumbnail:hover ul.actions,
+.editor-post-featured-image__container:hover ul.actions,
+[class*='acf-admin'] #set-post-thumbnail:hover ul.actions,
+.woocommerce-admin-page #set-post-thumbnail:hover ul.actions,
+.woocommerce-admin-page #product_images_container ul li:hover ul.actions,
+.post-type-product.block-editor-page #product_images_container ul li:hover ul.actions {
+  opacity: 1;
+}
+
+[class*='acf-admin'] #set-post-thumbnail,
+.woocommerce-admin-page #set-post-thumbnail {
+  position: relative;
+}
+
+.woocommerce-admin-page #product_images_container ul.actions {
+  --actions-spacing: 5px;
+}
+/*# sourceMappingURL=thumbnail-actions.css.map */

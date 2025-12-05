@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,GAAG,OAAO,CAAC;EACxB,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,OAAO;CAClB",
+    "sources": [
+        "divi.scss"
+    ],
+    "names": [],
+    "file": "divi.css"
+}

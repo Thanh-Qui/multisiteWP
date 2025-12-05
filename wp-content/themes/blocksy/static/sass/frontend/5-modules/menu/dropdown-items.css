@@ -1,0 +1,8 @@
+.sub-menu {
+  --menu-item-padding: var(--dropdown-items-spacing, 13px) calc(var(--dropdown-items-spacing, 13px) * 1.5);
+}
+
+.sub-menu .menu-item {
+  border-top: var(--dropdown-divider);
+}
+/*# sourceMappingURL=dropdown-items.css.map */

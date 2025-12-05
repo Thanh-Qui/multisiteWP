@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,IAAI,CAAJ,gEAAI;AAEJ,AAEC,2BAF0B,CAE1B,kBAAkB,CAAC;EAClB,UAAU,EAAE,UAAU;CACtB",
+    "sources": [
+        "theme-block-share-box.scss"
+    ],
+    "names": [],
+    "file": "theme-block-share-box.css"
+}

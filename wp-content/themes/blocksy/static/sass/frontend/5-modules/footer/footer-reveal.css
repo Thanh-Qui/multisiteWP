@@ -1,0 +1,24 @@
+[data-footer*='reveal'] .site-main {
+  -webkit-box-shadow: var(--footer-box-shadow);
+          box-shadow: var(--footer-box-shadow);
+}
+
+[data-footer*='reveal'] .site-main,
+[data-footer*='reveal'] #main-container {
+  background: inherit;
+}
+
+[data-footer*='reveal'] .site-main,
+[data-footer*='reveal'] .ct-trending-block {
+  z-index: 1;
+}
+
+[data-footer*='reveal'] #main-container > [data-block] {
+  z-index: 2;
+}
+
+[data-footer*='reveal'] .ct-footer {
+  position: var(--position);
+  bottom: var(--theme-frame-size, 0px);
+}
+/*# sourceMappingURL=footer-reveal.css.map */

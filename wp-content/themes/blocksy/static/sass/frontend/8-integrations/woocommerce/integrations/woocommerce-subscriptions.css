@@ -1,0 +1,16 @@
+.woocommerce-MyAccount-content .subscription_details,
+.woocommerce-MyAccount-content .subscription_details ~ .order_details {
+  margin-bottom: 2.5em;
+}
+
+.woocommerce-order-details header h2,
+.woocommerce-MyAccount-content header h2 {
+  margin-bottom: calc(var(--has-content-spacing, 1) * (0.3em + 10px));
+}
+
+ul.wcsatt-options-prompt-radios,
+ul.wcsatt-options.overrides_exist {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+/*# sourceMappingURL=woocommerce-subscriptions.css.map */

@@ -1,0 +1,6 @@
+.ct-footer-socials .ct-social-box {
+  -webkit-box-pack: var(--horizontal-alignment);
+      -ms-flex-pack: var(--horizontal-alignment);
+          justify-content: var(--horizontal-alignment);
+}
+/*# sourceMappingURL=socials.css.map */

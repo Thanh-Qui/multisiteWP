@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,eAFc,CAAC,OAAO,GAEpB,MAAO,CAAA,QAAQ,EAAE,SAAS,EAAE;EAC7B,UAAU,EAAE,IAAI;CAKhB;;AARF,AAKE,eALa,CAAC,OAAO,GAEpB,MAAO,CAAA,QAAQ,EAAE,SAAS,EAG3B,gBAAgB,CAAC;EAChB,aAAa,EAAE,IAAI;CACnB",
+    "sources": [
+        "related-upsells.scss"
+    ],
+    "names": [],
+    "file": "related-upsells.css"
+}

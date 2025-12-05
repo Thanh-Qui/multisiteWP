@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EACnB,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,IAAI;EACnB,KAAK,EAAE,4CAA4C;CAUnD;;AAbD,AAKC,mBALkB,AAKjB,IAAK,CAAA,MAAO,CAAA,cAAc,EAAE,cAAc,EAAE,UAAU,EAAE,UAAU,GAAG;EACrE,SAAS,EAAE,gBAAgB;CAC3B;;AAPF,AASC,mBATkB,AASjB,IAAK,CAAA,cAAc,EAAE;EACrB,MAAM,EAAE,GAAG;EACX,gBAAgB,EAAE,YAAY;CAC9B",
+    "sources": [
+        "block-separator.scss"
+    ],
+    "names": [],
+    "file": "block-separator.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,2BAA2B,CAAC,MAAM,CAAC;EAClC,OAAO,EAAE,YAAY;CACrB;;AAED,AAAA,iBAAiB,CAAC;EACjB,OAAO,EAAE,IAAI;CAUb;;AAXD,AAGC,iBAHgB,CAGhB,0BAA0B,CAAC;EAC1B,yBAAyB,CAAA,KAAC;CAC1B;;AALF,AAOC,iBAPgB,CAOhB,cAAc;AAPf,iBAAiB,CAQhB,0BAA0B,CAAC;EAC1B,WAAW,EAAE,IAAI;CACjB",
+    "sources": [
+        "composite-products.scss"
+    ],
+    "names": [],
+    "file": "composite-products.css"
+}

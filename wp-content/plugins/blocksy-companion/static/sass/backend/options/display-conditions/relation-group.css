@@ -1,0 +1,13 @@
+.ct-relation-group[data-relation='AND'] {
+  padding: 10px;
+  margin-inline: -10px;
+  border-radius: 5px;
+  border: 1px solid var(--optionBorderColor);
+  -webkit-box-shadow: inset 0px 0px 0px 1px transparent;
+          box-shadow: inset 0px 0px 0px 1px transparent;
+  -webkit-transition: border-color var(--condition-ui-transition, 0.1s ease), -webkit-box-shadow var(--condition-ui-transition, 0.1s ease);
+  transition: border-color var(--condition-ui-transition, 0.1s ease), -webkit-box-shadow var(--condition-ui-transition, 0.1s ease);
+  transition: border-color var(--condition-ui-transition, 0.1s ease), box-shadow var(--condition-ui-transition, 0.1s ease);
+  transition: border-color var(--condition-ui-transition, 0.1s ease), box-shadow var(--condition-ui-transition, 0.1s ease), -webkit-box-shadow var(--condition-ui-transition, 0.1s ease);
+}
+/*# sourceMappingURL=relation-group.css.map */

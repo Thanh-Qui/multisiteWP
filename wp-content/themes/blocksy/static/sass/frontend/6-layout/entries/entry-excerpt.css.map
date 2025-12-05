@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACd,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,uBAAuB;CAC9B",
+    "sources": [
+        "entry-excerpt.scss"
+    ],
+    "names": [],
+    "file": "entry-excerpt.css"
+}

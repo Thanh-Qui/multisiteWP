@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EACD,UAAU,EAAE,eAAe;CAC3B;;CAED,AAAA,AAAA,WAAC,AAAA,EAAa;EACb,OAAO,EAAE,kBAAkB;EAC3B,SAAS,EAAE,kBAAkB;CAC7B",
+    "sources": [
+        "no-scripts.scss"
+    ],
+    "names": [],
+    "file": "no-scripts.css"
+}

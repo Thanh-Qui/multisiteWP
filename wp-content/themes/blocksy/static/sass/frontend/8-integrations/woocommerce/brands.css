@@ -1,0 +1,23 @@
+.ct-product-brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: var(--horizontal-alignment);
+      -ms-flex-pack: var(--horizontal-alignment);
+          justify-content: var(--horizontal-alignment);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: var(--product-brands-gap, 10px);
+  --theme-link-initial-color: var(--theme-text-color);
+}
+
+.ct-product-brands .ct-media-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 var(--product-brand-logo-size, 60px);
+          flex: 0 0 var(--product-brand-logo-size, 60px);
+  max-width: var(--product-brand-logo-size, 60px);
+}
+/*# sourceMappingURL=brands.css.map */

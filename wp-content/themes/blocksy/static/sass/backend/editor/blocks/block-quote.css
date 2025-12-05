@@ -1,0 +1,89 @@
+blockquote {
+  margin-inline: 0;
+}
+
+blockquote:where(:not(.is-style-plain)):where(:not(.has-text-align-center):not(.has-text-align-right)) {
+  -webkit-border-start: 4px solid var(--theme-palette-color-1);
+          border-inline-start: 4px solid var(--theme-palette-color-1);
+}
+
+blockquote:where(:not(.is-style-plain)).has-text-align-center {
+  padding-block: 1.5em;
+  border-block: 3px solid var(--theme-palette-color-1);
+}
+
+blockquote:where(:not(.is-style-plain)).has-text-align-right {
+  -webkit-border-end: 4px solid var(--theme-palette-color-1);
+          border-inline-end: 4px solid var(--theme-palette-color-1);
+}
+
+blockquote:where(:not(.is-style-plain):not(.has-text-align-center):not(.has-text-align-right)) {
+  -webkit-padding-start: 1.5em;
+          padding-inline-start: 1.5em;
+}
+
+blockquote.has-text-align-right {
+  -webkit-padding-end: 1.5em;
+          padding-inline-end: 1.5em;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote cite {
+  font-size: 14px;
+}
+
+.wp-block-pullquote {
+  position: relative;
+  padding: 70px;
+  text-align: initial;
+  border-width: 10px;
+  border-style: solid;
+  border-color: var(--theme-palette-color-1);
+}
+
+.wp-block-pullquote blockquote {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  isolation: isolate;
+}
+
+.wp-block-pullquote blockquote:before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: var(--quote-icon-size, 70px);
+  height: var(--quote-icon-size, 70px);
+  top: calc(var(--quote-icon-size, 70px) / -3);
+  inset-inline-start: calc(var(--quote-icon-size, 70px) / -3);
+  opacity: 0.15;
+  background-color: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M0,19.04v-8.62c-0.04-1.24,0.14-2.4,0.54-3.49S1.49,4.88,2.2,4.06C2.92,3.23,3.77,2.55,4.76,2C5.76,1.46,6.84,1.11,8,0.96 v3.72C6.58,5.17,5.6,5.89,5.07,6.85C4.55,7.8,4.29,8.98,4.29,10.37H8v8.67H0zM12,19.04v-8.62c-0.04-1.24,0.14-2.4,0.53-3.49 s0.95-2.05,1.66-2.87c0.71-0.83,1.57-1.51,2.56-2.06c0.99-0.54,2.08-0.89,3.24-1.04v3.72c-1.43,0.49-2.4,1.21-2.93,2.17c-0.53,0.96-0.79,2.13-0.79,3.52H20v8.67H12z'/%3E%3C/svg%3E");
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M0,19.04v-8.62c-0.04-1.24,0.14-2.4,0.54-3.49S1.49,4.88,2.2,4.06C2.92,3.23,3.77,2.55,4.76,2C5.76,1.46,6.84,1.11,8,0.96 v3.72C6.58,5.17,5.6,5.89,5.07,6.85C4.55,7.8,4.29,8.98,4.29,10.37H8v8.67H0zM12,19.04v-8.62c-0.04-1.24,0.14-2.4,0.53-3.49 s0.95-2.05,1.66-2.87c0.71-0.83,1.57-1.51,2.56-2.06c0.99-0.54,2.08-0.89,3.24-1.04v3.72c-1.43,0.49-2.4,1.21-2.93,2.17c-0.53,0.96-0.79,2.13-0.79,3.52H20v8.67H12z'/%3E%3C/svg%3E");
+}
+
+.wp-block-pullquote blockquote p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.wp-block-pullquote blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.wp-block-pullquote blockquote cite {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+[data-align="left"] .wp-block-pullquote,
+[data-align="right"] .wp-block-pullquote {
+  max-width: 50%;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+/*# sourceMappingURL=block-quote.css.map */

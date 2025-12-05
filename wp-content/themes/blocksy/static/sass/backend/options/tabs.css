@@ -1,0 +1,118 @@
+.ct-tabs {
+  margin: var(--tabs-container-margin, 25px -12px 0 -12px);
+}
+
+.ct-tabs > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 7px;
+          column-gap: 7px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+  top: var(--tabs-sticky-offset, 0px);
+  margin: 0;
+  padding: var(--tabs-pills-margin, 0 14px);
+  -webkit-box-shadow: inset 0px -1px 0px 0px var(--optionBorderColor);
+          box-shadow: inset 0px -1px 0px 0px var(--optionBorderColor);
+  background: var(--tabs-pills-active-background-color, #f0f0f1);
+}
+
+.ct-tabs > ul > li {
+  position: relative;
+  z-index: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  font-weight: 500;
+  height: var(--tabs-pills-height, 42px);
+  max-width: var(--tabs-pills-max-width);
+  margin: 0;
+  padding: 0px 10px;
+  cursor: pointer;
+  border: 1px solid var(--optionBorderColor);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: var(--tabs-pills-inactive-color, #555);
+  background: var(--tabs-pills-inactive-background-color, #eaeaec);
+}
+
+.ct-tabs > ul > li.active {
+  position: relative;
+  color: var(--tabs-pills-active-color, #3c4248);
+  background: var(--tabs-pills-active-background-color, #f0f0f1);
+}
+
+.ct-tabs > ul > li.active:before, .ct-tabs > ul > li.active:after {
+  position: absolute;
+  content: '';
+}
+
+.ct-tabs > ul > li.active:before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  top: -2px;
+  inset-inline: -1px;
+  background: var(--ui-accent-color);
+}
+
+.ct-tabs > ul > li.active:after {
+  inset-inline-start: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background: var(--tabs-pills-active-background-color, #f0f0f1);
+}
+
+.ct-tabs > ul > li:not(.active):hover {
+  color: var(--tabs-pills-hover-color, #444);
+  background: var(--tabs-pills-hover-background-color, #fff);
+}
+
+.ct-tabs > ul:before, .ct-tabs > ul:after {
+  position: absolute;
+  content: '';
+}
+
+.ct-tabs > ul:before {
+  inset: -15px 0 1px 0;
+  background: var(--tabs-pills-active-background-color, #f0f0f1);
+}
+
+.ct-tabs > ul:after {
+  inset-inline: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 5px;
+  background: var(--tabs-pills-active-background-color, #f0f0f1);
+}
+
+.ct-tabs .ct-current-tab {
+  padding: var(--tabs-content-padding, 0 12px);
+}
+
+.ct-tabs:not(:last-child) > .ct-current-tab {
+  margin-bottom: 20px;
+}
+
+#customize-controls {
+  --tabs-sticky-offset: 14px;
+}
+
+#customize-controls .ct-available-items > .ct-tabs,
+#customize-controls .ct-options-container > .ct-tabs {
+  --tabs-sticky-offset: 2px;
+}
+/*# sourceMappingURL=tabs.css.map */

@@ -107,7 +107,7 @@ define('SCRIPT_DEBUG', $_ENV['SCRIPT_DEBUG']);
 /* Add any custom values between this line and the "stop editing" line. */
 
 define( 'MULTISITE', true );
-define( 'SUBDOMAIN_INSTALL', false );
+define( 'SUBDOMAIN_INSTALL', true );
 define( 'DOMAIN_CURRENT_SITE', 'multisitewp.test:8080' );
 define( 'PATH_CURRENT_SITE', '/' );
 define( 'SITE_ID_CURRENT_SITE', 1 );
@@ -121,6 +121,9 @@ define( 'REQUESTS_SILENCE_PSR0_DEPRECATIONS', true );
 define( 'COOKIE_DOMAIN', false );
 define( 'COOKIEPATH', '/' );
 define( 'SITECOOKIEPATH', '/' );
+
+
+// define('DISABLE_WP_CRON', true);
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */

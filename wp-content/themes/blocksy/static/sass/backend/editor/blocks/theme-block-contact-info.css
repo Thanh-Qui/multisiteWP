@@ -1,0 +1,12 @@
+@use '../../../../../static/sass/frontend/4-components/icons';
+@use '../../../../../static/sass/frontend/5-modules/social-box/main';
+@use '../../../../../static/sass/frontend/5-modules/blocks/contact-info';
+.ct-contact-info-block {
+  cursor: default;
+}
+
+.ct-contact-info-block .ct-icon-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=theme-block-contact-info.css.map */

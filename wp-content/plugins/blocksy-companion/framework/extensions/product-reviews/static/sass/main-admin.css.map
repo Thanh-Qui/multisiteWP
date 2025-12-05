@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,kCAFiC,CAEjC,kBAAkB,CAAC;EAClB,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,GAAG;EACf,UAAU,EAAE,eAAe;CAC3B",
+    "sources": [
+        "main-admin.scss"
+    ],
+    "names": [],
+    "file": "main-admin.css"
+}

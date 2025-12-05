@@ -1,0 +1,96 @@
+[class*="animated-submenu"][data-submenu] {
+  position: relative;
+}
+
+[class*="animated-submenu"] > .sub-menu {
+  position: var(--dropdown-position, absolute);
+  top: 100%;
+  z-index: 10;
+  min-width: 100px;
+  margin-top: var(--sticky-state-dropdown-top-offset, var(--dropdown-top-offset, 0));
+  border-radius: var(--theme-border-radius);
+  width: var(--dropdown-width, 200px);
+  background-color: var(--dropdown-background-color, var(--theme-palette-color-4));
+  -webkit-box-shadow: var(--theme-box-shadow);
+          box-shadow: var(--theme-box-shadow);
+}
+
+[class*="animated-submenu"] > .sub-menu:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--sticky-state-dropdown-top-offset, var(--dropdown-top-offset, 0));
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: height 0.2s ease;
+  transition: height 0.2s ease;
+}
+
+.animated-submenu-block[data-submenu='right'] > .sub-menu {
+  left: var(--theme-submenu-inline-offset, 0);
+}
+
+.animated-submenu-block[data-submenu='left'] > .sub-menu {
+  right: var(--theme-submenu-inline-offset, 0);
+}
+
+.animated-submenu-inline > .sub-menu {
+  top: 0;
+  margin-top: 0;
+}
+
+.animated-submenu-inline > .sub-menu:before {
+  width: var(--dropdown-horizontal-offset, 5px);
+  height: 100%;
+  -webkit-transform: initial;
+          transform: initial;
+}
+
+.animated-submenu-inline[data-submenu='right'] > .sub-menu {
+  left: calc(100% + var(--dropdown-horizontal-offset, 5px));
+}
+
+.animated-submenu-inline[data-submenu='right'] > .sub-menu:before {
+  left: calc(var(--dropdown-horizontal-offset, 5px) * -1);
+  right: initial;
+}
+
+.animated-submenu-inline[data-submenu='left'] > .sub-menu {
+  right: calc(100% + var(--dropdown-horizontal-offset, 5px));
+}
+
+.animated-submenu-inline[data-submenu='left'] > .sub-menu:before {
+  left: initial;
+  right: calc(var(--dropdown-horizontal-offset, 5px) * -1);
+}
+
+.ct-toggle-dropdown-desktop {
+  --theme-icon-size: 8px;
+  --toggle-button-size: 24px;
+  --toggle-button-margin-end: -8px;
+  --toggle-button-margin-start: var(--dropdown-toggle-margin-start, 0.2em);
+}
+
+.animated-submenu-inline [class*='ct-toggle'] {
+  --toggle-button-size: 18px;
+  --dropdown-toggle-margin-start: auto;
+  --toggle-ghost-inset-end: calc(var(--dropdown-items-spacing, 13px) * 1.5 + 16px);
+}
+
+.animated-submenu-inline[data-submenu='left'] > a {
+  --toggle-icon-transform: rotate(90deg);
+}
+
+.animated-submenu-inline[data-submenu='right'] > a {
+  --toggle-icon-transform: rotate(-90deg);
+}
+
+.ct-toggle-dropdown-desktop-ghost {
+  pointer-events: none;
+  inset-inline-end: var(--toggle-ghost-inset-end, calc(var(--menu-items-spacing, 25px) / 2 + 16px));
+  --toggle-button-size: 24px;
+  --toggle-button-margin-end: -24px;
+}
+/*# sourceMappingURL=menu-dropdown.css.map */

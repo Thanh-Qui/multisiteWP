@@ -1,0 +1,103 @@
+#ct-dashboard .ct-dashboard-home-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+}
+
+@media (min-width: 783px) {
+  #ct-dashboard .ct-dashboard-home-container[data-columns="2"] {
+    -ms-grid-columns: 1fr 320px;
+        grid-template-columns: 1fr 320px;
+  }
+}
+
+#ct-dashboard .ct-dashboard-home-container:not(:last-child) {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px dashed rgba(226, 230, 235, 0.7);
+}
+
+#ct-dashboard .ct-dashboard-home-container p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+#ct-dashboard .ct-dashboard-home-container section {
+  container-type: inline-size;
+}
+
+#ct-dashboard .ct-dashboard-home-container section ul {
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  margin: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+}
+
+@container (min-width: 550px) {
+  #ct-dashboard .ct-dashboard-home-container section ul {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#ct-dashboard .ct-dashboard-home-container section ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 25px;
+  border-radius: 3px;
+  border: 1px solid rgba(226, 230, 235, 0.7);
+}
+
+#ct-dashboard .ct-dashboard-home-container section ul li p {
+  margin-bottom: 25px;
+}
+
+#ct-dashboard .ct-dashboard-home-container section ul li .ct-shortcut-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 20px 25px;
+  margin: auto -25px -25px -25px;
+  border-top: 1px solid rgba(226, 230, 235, 0.6);
+}
+
+#ct-dashboard .ct-dashboard-home-container section ul li .ct-shortcut-actions a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+#ct-dashboard .ct-dashboard-home-container section ul li .ct-shortcut-actions a:not(:hover) {
+  opacity: 0.8;
+  color: #727b86;
+}
+
+@container (min-width: 850px) {
+  #ct-dashboard .ct-dashboard-home-container[data-columns="1"] section ul {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=home-screen.css.map */

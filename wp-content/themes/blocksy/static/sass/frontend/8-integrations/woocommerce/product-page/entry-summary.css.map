@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,QAFO,CAAA,AAAA,KAAC,EAAO,SAAS,AAAhB,EAAkB,oBAAoB,GAE5C,CAAC,CAAC;EACH,aAAa,EAAE,oCAAoC;CAKnD;;AARF,AAKE,QALM,CAAA,AAAA,KAAC,EAAO,SAAS,AAAhB,EAAkB,oBAAoB,GAE5C,CAAC,AAGD,WAAW,CAAC;EACZ,aAAa,EAAE,CAAC;CAChB",
+    "sources": [
+        "entry-summary.scss"
+    ],
+    "names": [],
+    "file": "entry-summary.css"
+}

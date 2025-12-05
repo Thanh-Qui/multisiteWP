@@ -1,0 +1,59 @@
+.ct-active-plugin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.ct-active-plugin span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: -2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(179, 189, 201, 0.3);
+}
+
+.ct-active-plugin span:before, .ct-active-plugin span:after {
+  position: absolute;
+  content: '';
+  width: 2px;
+  border-radius: 2px;
+  background: rgba(104, 124, 147, 0.6);
+}
+
+.ct-active-plugin span:before {
+  top: 10px;
+  left: 10px;
+  height: 5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+
+.ct-active-plugin span:after {
+  height: 9px;
+  left: 9px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+/*# sourceMappingURL=plugins.css.map */

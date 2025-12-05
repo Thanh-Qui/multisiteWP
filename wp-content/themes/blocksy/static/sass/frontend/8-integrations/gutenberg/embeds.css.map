@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,OAFM,GAAG,cAAc,GAErB,KAAK;AAFR,OAAO,GAAG,cAAc,GAGrB,MAAM,CAAC;EACR,mBAAmB,CAAA,6BAAC;CACpB",
+    "sources": [
+        "embeds.scss"
+    ],
+    "names": [],
+    "file": "embeds.css"
+}

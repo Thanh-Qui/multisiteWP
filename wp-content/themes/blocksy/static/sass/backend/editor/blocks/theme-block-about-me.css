@@ -1,0 +1,26 @@
+@use '../../../../../static/sass/frontend/5-modules/blocks/about-me';
+.ct-about-me-block {
+  cursor: default;
+}
+
+.ct-about-me-block a {
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.ct-about-me-block .ct-media-container {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.ct-about-me-block .ct-media-container img {
+  height: auto;
+  width: inherit;
+}
+
+.ct-about-me-block .ct-about-me-name {
+  margin-top: 0;
+}
+/*# sourceMappingURL=theme-block-about-me.css.map */

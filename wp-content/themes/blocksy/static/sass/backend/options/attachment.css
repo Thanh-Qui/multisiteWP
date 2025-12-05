@@ -1,0 +1,68 @@
+[class*="ct-attachment"] .thumbnail {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+[class*="ct-attachment"] .thumbnail img {
+  max-width: 100%;
+  border-radius: var(--ui-border-radius, 3px);
+}
+
+[class*="ct-attachment"] .thumbnail p {
+  max-width: 100%;
+  margin: 0;
+  font-style: italic;
+  font-size: 12px;
+  word-wrap: break-word;
+}
+
+.ct-attachment:not([data-type="no-frame"]) .thumbnail {
+  min-height: 50px;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px dashed #c1c4ca;
+  border-radius: var(--ui-border-radius, 3px);
+}
+
+.ct-attachment[data-type="small"] .thumbnail {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ct-attachment[data-type="small"] .thumbnail img {
+  min-height: 32px;
+  max-height: 100px;
+}
+
+.ct-thumbnails-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(80px, 120px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(80px, 120px));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.ct-thumbnails-list .thumbnail img {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+/*# sourceMappingURL=attachment.css.map */

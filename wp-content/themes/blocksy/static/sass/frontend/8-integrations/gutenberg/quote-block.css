@@ -1,0 +1,33 @@
+blockquote:where(:not(.is-style-plain)):where(:not(.has-text-align-center):not(.has-text-align-right)) {
+  -webkit-border-start: 4px solid var(--theme-palette-color-1);
+          border-inline-start: 4px solid var(--theme-palette-color-1);
+}
+
+blockquote:where(:not(.is-style-plain)).has-text-align-center {
+  padding-block: 1.5em;
+  border-block: 3px solid var(--theme-palette-color-1);
+}
+
+blockquote:where(:not(.is-style-plain)).has-text-align-right {
+  -webkit-border-end: 4px solid var(--theme-palette-color-1);
+          border-inline-end: 4px solid var(--theme-palette-color-1);
+}
+
+blockquote:where(:not(.is-style-plain):not(.has-text-align-center):not(.has-text-align-right)) {
+  -webkit-padding-start: 1.5em;
+          padding-inline-start: 1.5em;
+}
+
+blockquote.has-text-align-right {
+  -webkit-padding-end: 1.5em;
+          padding-inline-end: 1.5em;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote cite {
+  font-size: 14px;
+}
+/*# sourceMappingURL=quote-block.css.map */

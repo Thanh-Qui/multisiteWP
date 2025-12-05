@@ -1,0 +1,27 @@
+.ct-product-hero .ct-product-actions-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ct-product-hero .ct-product-actions-group:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.ct-product-hero .ct-product-actions-group .ct-button:not(:last-child) {
+  -webkit-margin-end: 25px;
+          margin-inline-end: 25px;
+}
+
+.ct-product-hero .ct-product-actions-group .ct-icon-container {
+  color: inherit;
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+}
+/*# sourceMappingURL=actions.css.map */

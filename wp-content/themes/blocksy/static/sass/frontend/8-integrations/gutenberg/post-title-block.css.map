@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,oBAFmB,CAEnB,CAAC,CAAC;EACD,0BAA0B,CAAA,QAAC;CAC3B",
+    "sources": [
+        "post-title-block.scss"
+    ],
+    "names": [],
+    "file": "post-title-block.css"
+}

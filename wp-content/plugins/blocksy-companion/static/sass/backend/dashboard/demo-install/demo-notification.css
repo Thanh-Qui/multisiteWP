@@ -1,0 +1,25 @@
+#ct-dashboard .ct-demo-notification {
+  position: relative;
+  padding: 15px 20px 15px 55px;
+  margin-bottom: 40px;
+  color: #0072aa;
+  line-height: 1.5;
+  border: 2px solid rgba(0, 114, 170, 0.3);
+  background: rgba(0, 114, 170, 0.1);
+  border-radius: 5px;
+}
+
+#ct-dashboard .ct-demo-notification:before {
+  font-family: dashicons;
+  content: "\f534";
+  font-size: 20px;
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  color: rgba(0, 114, 170, 0.8);
+}
+
+#ct-dashboard .ct-demo-notification b {
+  font-weight: 700;
+}
+/*# sourceMappingURL=demo-notification.css.map */

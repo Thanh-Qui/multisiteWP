@@ -1,0 +1,16 @@
+@supports not (aspect-ratio: auto) {
+  .ct-media-container img,
+  .ct-media-container video,
+  .ct-media-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .ct-media-container:before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}
+/*# sourceMappingURL=fallbacks.css.map */

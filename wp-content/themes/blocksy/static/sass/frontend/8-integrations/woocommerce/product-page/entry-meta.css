@@ -1,0 +1,26 @@
+.ct-quick-view-card .product_meta > span,
+.product[class*="gallery"] .product_meta > span {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+}
+
+.ct-quick-view-card .product_meta > span:not(:last-child),
+.product[class*="gallery"] .product_meta > span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.ct-quick-view-card .product_meta > span > *,
+.product[class*="gallery"] .product_meta > span > * {
+  opacity: 0.7;
+  font-weight: 500;
+  --theme-link-initial-color: var(--theme-text-color);
+}
+
+.ct-quick-view-card .product_meta > span > a:hover,
+.product[class*="gallery"] .product_meta > span > a:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=entry-meta.css.map */

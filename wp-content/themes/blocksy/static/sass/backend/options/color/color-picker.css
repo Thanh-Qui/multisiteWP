@@ -1,0 +1,101 @@
+.ct-gutenberg-color-picker .components-color-picker {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-block: var(--cpm-pv);
+  padding-inline: var(--cpm-ph);
+}
+
+.ct-gutenberg-color-picker .components-color-picker .react-colorful {
+  width: 100%;
+  overflow: initial;
+}
+
+.ct-gutenberg-color-picker .components-color-picker .react-colorful + div {
+  display: none;
+}
+
+.ct-gutenberg-color-picker .components-color-picker .react-colorful .react-colorful__pointer {
+  width: 14px;
+  height: 14px;
+  background: transparent;
+}
+
+.ct-gutenberg-color-picker .components-color-picker .react-colorful .react-colorful__pointer-fill {
+  -webkit-box-shadow: inset 0px 0px 0px 2px white;
+          box-shadow: inset 0px 0px 0px 2px white;
+}
+
+.ct-gutenberg-color-picker .components-color-picker .react-colorful .react-colorful__saturation {
+  height: 147px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.ct-gutenberg-color-picker .components-color-picker .react-colorful .react-colorful__hue,
+.ct-gutenberg-color-picker .components-color-picker .react-colorful .react-colorful__alpha {
+  width: 100%;
+  height: 18px;
+  margin-bottom: 10px;
+}
+
+.ct-gutenberg-color-picker .components-color-picker .react-colorful .react-colorful__hue .react-colorful__interactive,
+.ct-gutenberg-color-picker .components-color-picker .react-colorful .react-colorful__alpha .react-colorful__interactive {
+  width: calc(100% - 18px);
+  -webkit-margin-start: 9px;
+          margin-inline-start: 9px;
+}
+
+.ct-gutenberg-color-picker .components-color-picker .react-colorful .react-colorful__alpha {
+  margin-bottom: 0;
+  background-size: 10px 10px;
+  background-image: url("data:image/webp;base64,UklGRjIAAABXRUJQVlA4TCUAAAAvE8AEAA9w7/97/9/7f/7jAYraNmI6AJQ/1xvvMojof2BSvVEBAA==");
+}
+
+.ct-gutenberg-color-picker .components-color-picker > *:last-child {
+  margin: 20px calc(var(--cpm-ph) * -1) 0 calc(var(--cpm-ph) * -1);
+  padding: 20px var(--cpm-ph) 1px var(--cpm-ph);
+  border-top: 1px solid #eee;
+}
+
+.ct-gutenberg-color-picker .ct-option-color-value,
+.ct-gutenberg-color-picker .ct-option-color-name,
+.ct-gutenberg-color-picker .ct-option-color-variable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border-top: 1px solid #eee;
+  padding: var(--cpm-pv) var(--cpm-ph);
+}
+
+.ct-gutenberg-color-picker .ct-option-color-value input,
+.ct-gutenberg-color-picker .ct-option-color-name input,
+.ct-gutenberg-color-picker .ct-option-color-variable input {
+  -webkit-padding-end: 30px !important;
+          padding-inline-end: 30px !important;
+}
+
+.ct-gutenberg-color-picker .ct-option-color-value .ct-copy-color,
+.ct-gutenberg-color-picker .ct-option-color-name .ct-copy-color,
+.ct-gutenberg-color-picker .ct-option-color-variable .ct-copy-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  inset-inline-end: calc(var(--cpm-ph));
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.ct-gutenberg-color-picker .ct-option-color-variable input {
+  cursor: initial;
+}
+/*# sourceMappingURL=color-picker.css.map */

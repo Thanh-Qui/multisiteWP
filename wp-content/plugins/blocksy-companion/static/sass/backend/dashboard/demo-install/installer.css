@@ -1,0 +1,122 @@
+.ct-demo-installer .close-button {
+  opacity: 0 !important;
+}
+
+.ct-demo-install {
+  position: relative;
+}
+
+.ct-demo-install > * {
+  position: absolute;
+  inset: 0;
+}
+
+:is(.ct-demo-install, .ct-modify-demo) svg path {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  transform-box: fill-box;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+:is(.ct-demo-install, .ct-modify-demo) .g1 {
+  fill: #44ACDF;
+  -webkit-animation-duration: 5.5s;
+          animation-duration: 5.5s;
+  animation-direction: reverse;
+}
+
+:is(.ct-demo-install, .ct-modify-demo) .g2 {
+  fill: #3497D3;
+  -webkit-animation-duration: 4.5s;
+          animation-duration: 4.5s;
+}
+
+:is(.ct-demo-install, .ct-modify-demo) .g3 {
+  fill: #0C7AB3;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.ct-installer-progress {
+  width: 100%;
+  border-radius: 5px;
+  background: #f3f6f8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ct-installer-progress div {
+  width: var(--progress);
+  height: 4px;
+  border-radius: inherit;
+  background: var(--ui-accent-color);
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.ct-progress-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.ct-install-success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.ct-install-success div {
+  margin-top: 10px;
+}
+
+.ct-install-success a:first-child {
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+}
+/*# sourceMappingURL=installer.css.map */

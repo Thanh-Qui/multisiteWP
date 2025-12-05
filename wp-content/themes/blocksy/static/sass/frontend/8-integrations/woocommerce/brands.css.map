@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EAClB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,2BAA2B;EAC5C,SAAS,EAAE,IAAI;EACf,GAAG,EAAE,+BAA+B;EAEpC,0BAA0B,CAAA,wBAAC;CAM3B;;AAbD,AASC,kBATiB,CASjB,mBAAmB,CAAC;EACnB,IAAI,EAAE,CAAC,CAAC,CAAC,CAAC,oCAAoC;EAC9C,SAAS,EAAE,oCAAoC;CAC/C",
+    "sources": [
+        "brands.scss"
+    ],
+    "names": [],
+    "file": "brands.css"
+}

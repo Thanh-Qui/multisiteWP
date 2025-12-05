@@ -1,0 +1,108 @@
+.ct-color-palettes-modal {
+  --modal-width: 740px;
+}
+
+.ct-color-palettes-modal.ct-no-tabs {
+  --modal-max-height: 650px;
+}
+
+.ct-color-palettes-modal.ct-no-tabs .ct-current-tab {
+  padding-top: 0;
+}
+
+.ct-color-palettes-modal.ct-has-tabs {
+  --modal-min-height: 730px;
+  --modal-max-height: 730px;
+}
+
+.ct-color-palettes-modal.ct-has-tabs .ct-current-tab {
+  padding-block: 30px 0;
+}
+
+.ct-color-palettes-modal .ct-modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.ct-color-palettes-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-top: 2px;
+}
+
+.ct-color-palettes-container .ct-color-palette-preview {
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid var(--optionBorderColor);
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  -webkit-transition: border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+  transition: border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+}
+
+.ct-color-palettes-container .ct-color-palette-preview:hover, .ct-color-palettes-container .ct-color-palette-preview.active {
+  border-color: var(--ui-accent-color);
+  -webkit-box-shadow: 0 0 0 1px var(--ui-accent-color);
+          box-shadow: 0 0 0 1px var(--ui-accent-color);
+}
+
+.ct-color-palettes-container .ct-color-palette-preview:hover label svg {
+  opacity: 1;
+}
+
+.ct-color-palettes-container .ct-single-palette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.ct-color-palettes-container .ct-single-palette label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.ct-color-palettes-container .ct-single-palette label span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+}
+
+.ct-color-palettes-container .ct-single-palette label svg {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
+}
+
+.ct-color-palettes-container .ct-single-palette label svg:hover {
+  fill: #d83428;
+}
+
+.ct-color-palettes-container .ct-color-picker-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+}
+/*# sourceMappingURL=color-palette-presets-modal.css.map */

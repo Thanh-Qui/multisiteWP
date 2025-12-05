@@ -1,0 +1,19 @@
+.mobile-menu-inline ul,
+.footer-menu-inline ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: var(--horizontal-alignment);
+      -ms-flex-pack: var(--horizontal-alignment);
+          justify-content: var(--horizontal-alignment);
+  row-gap: calc(var(--menu-items-spacing, 25px) / 2);
+  margin: 0 calc(var(--menu-items-spacing, 25px) / 2 * -1);
+}
+
+.footer-menu-inline {
+  --menu-item-alignment: var(--horizontal-alignment);
+}
+
+.footer-menu-inline li {
+  width: var(--menu-item-width);
+}
+/*# sourceMappingURL=menu-inline.css.map */

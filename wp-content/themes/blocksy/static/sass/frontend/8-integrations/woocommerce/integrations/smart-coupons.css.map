@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,AAAA,SAAS,CAAC,iBAAiB,CAAC;EAC/B,UAAU,EAAE,cAAc;EAC1B,aAAa,EAAE,YAAY;CAC3B",
+    "sources": [
+        "smart-coupons.scss"
+    ],
+    "names": [],
+    "file": "smart-coupons.css"
+}

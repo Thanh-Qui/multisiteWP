@@ -1,0 +1,177 @@
+/* vehicle search and filter */
+.vehicle-filter {
+    display: flex;
+    gap: 10px; 
+    margin-bottom: 25px;
+}
+
+.vehicle-filter .text-search { 
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.vehicle-filter .text-search:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 5px rgba(0, 115, 170, 0.3);
+    outline: none;
+}
+
+.vehicle-filter button {
+    padding: 10px 20px;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.vehicle-filter button:hover {
+    background-color: #005177;
+}
+
+
+
+/* vehicle list */
+.vehicle-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.vehicle-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.vehicle-item .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-vehicle-list {
+    max-width: 350px;
+    max-height: 150px;
+}
+
+/* pagination */
+.pagination-list-vehicle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-list-vehicle a {
+    margin: 10px;
+}
+
+/* custom title */
+.hidden-title {
+    display: none;
+}
+
+/* page vehicle single */
+
+.vehicle-detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.vehicle-detail-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    max-width: 800px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vehicle-detail-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.vehicle-detail-item h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.image-vehicle {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.vehicle-detail-item .image-vehicle-single {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vehicle-detail-item .feature-vehicle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #555;
+}
+
+.vehicle-detail-item .feature-vehicle span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    justify-content: center;
+}
+
+.vehicle-detail-item .feature-vehicle span {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+    .vehicle-detail-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 30px;
+    }
+    
+    .vehicle-detail-item {
+        max-width: 100%;
+        padding: 30px;
+    }
+    
+    .image-vehicle {
+        max-height: 300px;
+    }
+    
+    .vehicle-detail-item .feature-vehicle {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

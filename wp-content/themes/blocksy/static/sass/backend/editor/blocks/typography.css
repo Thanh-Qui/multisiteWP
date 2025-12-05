@@ -1,0 +1,47 @@
+:root {
+  --theme-font-stack-default: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root body,
+:root h1,
+:root h2,
+:root h3,
+:root h4,
+:root h5,
+:root h6,
+:root pre,
+:root figcaption,
+:root .entry-meta,
+:root .ct-search-box,
+:root .ct-breadcrumbs,
+:root .wp-block-quote,
+:root .wp-block-pullquote {
+  font-family: var(--theme-font-family);
+  font-size: var(--theme-font-size);
+  font-weight: var(--theme-font-weight);
+  font-style: var(--theme-font-style, inherit);
+  line-height: var(--theme-line-height);
+  letter-spacing: var(--theme-letter-spacing);
+  text-transform: var(--theme-text-transform);
+  -webkit-text-decoration: var(--theme-text-decoration);
+          text-decoration: var(--theme-text-decoration);
+}
+
+:root .wp-element-button {
+  font-family: var(--theme-button-font-family, var(--theme-font-family));
+  font-size: var(--theme-button-font-size);
+  font-weight: var(--theme-button-font-weight);
+  font-style: var(--theme-button-font-style);
+  line-height: var(--theme-button-line-height);
+  letter-spacing: var(--theme-button-letter-spacing);
+  text-transform: var(--theme-button-text-transform);
+  -webkit-text-decoration: var(--theme-button-text-decoration);
+          text-decoration: var(--theme-button-text-decoration);
+}
+
+:root .wp-block-button[style*="font-weight"] .wp-element-button {
+  font-weight: inherit;
+}
+/*# sourceMappingURL=typography.css.map */

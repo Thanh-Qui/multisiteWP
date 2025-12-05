@@ -1,0 +1,15 @@
+ul:last-child, ol:last-child,
+ul li:last-child, ol li:last-child,
+label:last-child,
+.ct-widget p:last-child,
+.entry-excerpt *:last-child,
+.wp-block-columns:last-child,
+.ct-dynamic-data p:last-child,
+.ct-woo-card-stock p:last-child,
+[class*="ct-form-notification"] p:last-child,
+.ct-product-description p:last-child,
+.woocommerce-variation-description p:last-child,
+.woocommerce-variation-availability p:last-child {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=margin-reset.css.map */

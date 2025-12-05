@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,cAFa,CAEb,wBAAwB,CAAC;EACxB,SAAS,EAAE,GAAG;EACd,aAAa,EAAE,IAAI;CACnB;;AALF,AAOC,cAPa,CAOb,CAAC,CAAC;EACD,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,OAAO;EACd,eAAe,EAAE,IAAI;EACrB,UAAU,EAAE,IAAI;CAKhB;;AAhBF,AAaE,cAbY,CAOb,CAAC,AAMC,MAAM,CAAC;EACP,KAAK,EAAE,OAAO;CACd",
+    "sources": [
+        "child-theme.scss"
+    ],
+    "names": [],
+    "file": "child-theme.css"
+}

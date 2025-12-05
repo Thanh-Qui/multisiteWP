@@ -1,0 +1,108 @@
+:root {
+  --reach-dialog: 1;
+  --modal-width: 600px;
+  --modal-padding: 50px;
+  --modal-margin: 5vh auto;
+  --modal-radius: 3px;
+  --modal-max-height: 85vh;
+  --modal-min-height: 400px;
+}
+
+.ct-dashboard-overlay-open {
+  overflow: hidden !important;
+}
+
+[data-reach-dialog-overlay] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(245, 247, 249, 0.8);
+  position: fixed;
+  z-index: 9999;
+  inset-block: 0;
+  inset-inline-start: var(--modal-left, 160px);
+  inset-inline-end: 0;
+  overflow: auto;
+}
+
+.ct-admin-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: var(--modal-width);
+  padding: var(--modal-padding);
+  margin: var(--modal-margin);
+  border-radius: var(--modal-radius);
+  max-height: var(--modal-max-height);
+  min-height: var(--modal-min-height);
+  outline: none;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 50px 300px rgba(92, 110, 128, 0.5);
+          box-shadow: 0 50px 300px rgba(92, 110, 128, 0.5);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ct-admin-modal .close-button {
+  display: var(--modal-close-button, flex);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 10px;
+  inset-inline-end: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: #717a84;
+  line-height: 0;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  opacity: 0.4;
+  -webkit-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ct-admin-modal .close-button:hover {
+  opacity: 1;
+}
+
+.ct-admin-modal .close-button:focus {
+  outline: none;
+}
+
+.folded [data-reach-dialog-overlay] {
+  --modal-left: 36px;
+}
+
+@media (max-width: 782px) {
+  .auto-fold [data-reach-dialog-overlay] {
+    --modal-left: 0;
+  }
+}
+
+@media (min-width: 783px) and (max-width: 960px) {
+  .auto-fold [data-reach-dialog-overlay] {
+    --modal-left: 36px;
+  }
+}
+/*# sourceMappingURL=base.css.map */

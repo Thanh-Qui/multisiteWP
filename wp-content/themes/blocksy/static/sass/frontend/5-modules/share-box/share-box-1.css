@@ -1,0 +1,21 @@
+.ct-share-box[data-type="type-1"] > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(50px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  border-top: var(--theme-border);
+  -webkit-border-start: var(--theme-border);
+          border-inline-start: var(--theme-border);
+}
+
+.ct-share-box[data-type="type-1"] a {
+  -webkit-border-end: var(--theme-border);
+          border-inline-end: var(--theme-border);
+  border-bottom: var(--theme-border);
+}
+
+.ct-share-box[data-type="type-1"] .ct-icon-container {
+  min-height: 50px;
+  padding: 10px 0;
+}
+/*# sourceMappingURL=share-box-1.css.map */

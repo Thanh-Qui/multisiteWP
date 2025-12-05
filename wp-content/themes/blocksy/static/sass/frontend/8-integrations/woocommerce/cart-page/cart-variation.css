@@ -1,0 +1,18 @@
+dl.variation {
+  margin-top: 0.5em;
+  --theme-description-list-indent: 0;
+  --theme-description-list-spacing: 0;
+}
+
+dl.variation:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+dl.variation dt {
+  display: inline-block;
+  -webkit-margin-end: 0.25em;
+          margin-inline-end: 0.25em;
+  float: left;
+  clear: both;
+}
+/*# sourceMappingURL=cart-variation.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACZ,QAAQ,EAAE,MAAM;EAChB,GAAG,EAAE,IAAI;CAMT;;AARD,AAIC,YAJW,CAIX,oBAAoB,CAAC;EACpB,WAAW,EAAE,GAAG;EAChB,KAAK,EAAE,2BAA2B;CAClC",
+    "sources": [
+        "reviews-form.scss"
+    ],
+    "names": [],
+    "file": "reviews-form.css"
+}

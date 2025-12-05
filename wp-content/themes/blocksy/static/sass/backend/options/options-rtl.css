@@ -1,0 +1,38 @@
+body.rtl .ct-customizer-panel-option button:after {
+  content: '\f341';
+}
+
+body.rtl .ct-customizer-panel-option .ct-option-switch + button {
+  -webkit-transform: translate3d(7px, 0, 0);
+          transform: translate3d(7px, 0, 0);
+}
+
+body.rtl .ct-panel.ct-click-allowed .ct-customizer-panel-option button {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+body.rtl .ct-panel-open {
+  -webkit-transform: translateX(100%) !important;
+          transform: translateX(100%) !important;
+}
+
+body.rtl .customize-panel-actions button:before {
+  content: '\f345';
+}
+
+body.rtl .ct-option-switch.ct-active span {
+  -webkit-transform: translate3d(-12px, 0, 0);
+          transform: translate3d(-12px, 0, 0);
+}
+
+body.rtl .ct-radio-option[data-type*=alignment] li:first-child:before {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+body.rtl .ct-radio-option[data-type*=alignment] li:last-child:before {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+/*# sourceMappingURL=options-rtl.css.map */

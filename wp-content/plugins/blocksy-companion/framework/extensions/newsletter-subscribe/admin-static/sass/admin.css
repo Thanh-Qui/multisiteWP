@@ -1,0 +1,15 @@
+@use "../../static/sass/main.scss";
+.ct-newsletter-subscribe-block .wp-element-button {
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ct-newsletter-subscribe-block .gdpr-confirm-policy {
+  pointer-events: none;
+}
+
+.ct-newsletter-subscribe-block .gdpr-confirm-policy label {
+  font-size: 13px;
+}
+/*# sourceMappingURL=admin.css.map */

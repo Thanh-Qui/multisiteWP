@@ -1,0 +1,15 @@
+.ct-button-ghost, .wp-block-buttons .wp-block-button .wp-block-button__link.is-style-outline, .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link {
+  --theme-button-text-initial-color: var(--theme-button-background-initial-color);
+  border-width: 2px;
+  border-style: solid;
+  color: var(--theme-button-text-initial-color);
+  border-color: var(--theme-button-background-initial-color);
+  background-color: transparent;
+}
+
+.ct-button-ghost:hover, .wp-block-buttons .wp-block-button .wp-block-button__link.is-style-outline:hover, .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:hover {
+  color: var(--theme-button-text-hover-color);
+  border-color: var(--theme-button-background-hover-color);
+  background-color: var(--theme-button-background-hover-color);
+}
+/*# sourceMappingURL=type-2.css.map */

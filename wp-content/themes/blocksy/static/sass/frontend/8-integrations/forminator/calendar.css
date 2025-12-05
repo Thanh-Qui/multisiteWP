@@ -1,0 +1,86 @@
+@charset "UTF-8";
+.forminator-calendar {
+  font-size: 15px;
+  padding: 25px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+.forminator-calendar .ui-datepicker-header {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.forminator-calendar .ui-datepicker-header .ui-corner-all {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--theme-palette-color-1);
+}
+
+.forminator-calendar .ui-datepicker-header .ui-corner-all.ui-datepicker-prev:before {
+  content: "❮";
+}
+
+.forminator-calendar .ui-datepicker-header .ui-corner-all.ui-datepicker-next {
+  right: 0;
+}
+
+.forminator-calendar .ui-datepicker-header .ui-corner-all.ui-datepicker-next:before {
+  content: "❯";
+}
+
+.forminator-calendar .ui-datepicker-header .ui-corner-all .ui-icon {
+  display: none;
+}
+
+.forminator-calendar .ui-datepicker-header .ui-datepicker-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 55px;
+}
+
+.forminator-calendar .ui-datepicker-header .ui-datepicker-title select {
+  max-width: 47%;
+  font-size: 15px;
+}
+
+.forminator-calendar .ui-datepicker-calendar th, .forminator-calendar .ui-datepicker-calendar td {
+  text-align: center;
+}
+
+.forminator-calendar .ui-datepicker-today,
+.forminator-calendar .ui-datepicker-current-day {
+  background-color: var(--theme-palette-color-1);
+}
+
+.forminator-calendar .ui-datepicker-today a,
+.forminator-calendar .ui-datepicker-current-day a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.forminator-ui[data-design="none"]:not(.forminator-size--small) .forminator-timepicker .forminator-row {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+/*# sourceMappingURL=calendar.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,OAAO;AACP,sBAAsB,CAAC;EAGtB,iBAAiB,EAAE,iIAAiI;CACpJ;;CAED,AAAA,AAAA,WAAC,EAAa,QAAQ,AAArB,EAAuB;EAGvB,0BAA0B,CAAA,sQAAC;CAC3B;;CAED,AAAA,AAAA,WAAC,EAAa,eAAe,AAA5B,EAA8B;EAG9B,0BAA0B,CAAA,iGAAC;CAC3B;;CAED,AAAA,AAAA,WAAC,EAAa,aAAa,AAA1B,EAA4B;EAC5B,0BAA0B,CAAA,IAAC;CAC3B",
+    "sources": [
+        "anchor-links.scss"
+    ],
+    "names": [],
+    "file": "anchor-links.css"
+}

@@ -1,0 +1,12 @@
+.ct-media-container .zoomImg {
+  z-index: 2;
+  cursor: default;
+  -o-object-fit: initial;
+     object-fit: initial;
+  -o-object-position: initial;
+     object-position: initial;
+  -webkit-transition: opacity 0.1s ease !important;
+  transition: opacity 0.1s ease !important;
+  background: var(--zoom-image-background, #fff);
+}
+/*# sourceMappingURL=image-zoom.css.map */

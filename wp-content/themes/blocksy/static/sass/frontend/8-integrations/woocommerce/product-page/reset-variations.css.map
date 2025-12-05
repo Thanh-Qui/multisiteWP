@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAIE,oBAJkB,CAEnB,KAAK,AAAA,WAAW,CAEf,EAAE,CAAC;EACF,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,IAAI;EACf,GAAG,EAAE,IAAI;CACT;;AAIH,AAEC,WAFU,CAEV,GAAI,CAAA,iBAAiB,EAAE,iBAAiB,EAAE;EACzC,SAAS,EAAE,IAAI;EACf,0BAA0B,CAAA,wBAAC;CAC3B;;AALF,AAOC,WAPU,CAOV,iBAAiB,CAAC;EACjB,UAAU,EAAE,MAAM;CAClB",
+    "sources": [
+        "reset-variations.scss"
+    ],
+    "names": [],
+    "file": "reset-variations.css"
+}

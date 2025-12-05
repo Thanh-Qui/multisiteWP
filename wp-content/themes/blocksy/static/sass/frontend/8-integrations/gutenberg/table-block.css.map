@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAKG,eALY,CAEd,KAAK,AAEH,IAAK,CAAA,iBAAiB,EACtB,KAAK,EALR,eAAe,CAEd,KAAK,AAEH,IAAK,CAAA,iBAAiB,EACf,KAAK,EALf,eAAe,CAEd,KAAK,AAEH,IAAK,CAAA,iBAAiB,EACR,EAAE,EALnB,eAAe,CAEd,KAAK,AAEH,IAAK,CAAA,iBAAiB,EACJ,EAAE,CAAC;EACpB,YAAY,EAAE,0DAA0D;CACxE;;AAPJ,AAWC,eAXc,AAWb,iBAAiB,CAAC;EAClB,MAAM,EAAE,CAAC;CACT",
+    "sources": [
+        "table-block.scss"
+    ],
+    "names": [],
+    "file": "table-block.css"
+}

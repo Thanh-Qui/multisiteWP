@@ -1,0 +1,81 @@
+.ct-option-checkbox label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.ct-option-checkbox label:hover input:not(:checked) {
+  border-color: #C3CACF;
+}
+
+.ct-option-checkbox input[type="checkbox"] {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16px;
+          flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  -webkit-margin-end: 8px;
+          margin-inline-end: 8px;
+  border-radius: 2px;
+  border: 2px solid #d5dbde;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.ct-option-checkbox input[type="checkbox"]:checked {
+  border-color: var(--ui-accent-color);
+  background: var(--ui-accent-color);
+}
+
+.ct-option-checkbox input[type="checkbox"]:checked:before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: dashicons;
+  font-size: 15px;
+  content: "\f147";
+  color: #fff !important;
+  width: 16px;
+  height: 16px;
+  margin-top: -2px;
+  -webkit-margin-start: -2px;
+          margin-inline-start: -2px;
+}
+
+.ct-option-checkbox[data-columns] {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 15px;
+}
+
+.ct-option-checkbox[data-columns][data-columns="2"] {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.ct-option-checkbox[data-columns]:not([data-columns*="no-gap"]) {
+  grid-column-gap: 10px;
+}
+/*# sourceMappingURL=checkbox.css.map */

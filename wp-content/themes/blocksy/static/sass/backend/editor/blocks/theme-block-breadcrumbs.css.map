@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,IAAI,CAAJ,8DAAI;AAEJ,AAEC,eAFc,CAEd,CAAC,CAAC;EACD,eAAe,EAAE,IAAI;CACrB",
+    "sources": [
+        "theme-block-breadcrumbs.scss"
+    ],
+    "names": [],
+    "file": "theme-block-breadcrumbs.css"
+}

@@ -1,0 +1,30 @@
+[data-label="bottom"] {
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+[data-label="bottom"] .ct-label {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  line-height: 1;
+}
+
+[data-label="bottom"] .ct-label:not(:only-child) {
+  margin-top: 0.5em;
+}
+
+:is([data-label="left"], [data-label="right"]) {
+  -webkit-column-gap: 0.5em;
+          column-gap: 0.5em;
+}
+
+[data-label="right"] .ct-label {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+/*# sourceMappingURL=labels.css.map */

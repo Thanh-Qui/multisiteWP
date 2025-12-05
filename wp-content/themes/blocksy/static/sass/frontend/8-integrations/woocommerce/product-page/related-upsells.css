@@ -1,0 +1,8 @@
+.single-product article > :where(.related, .up-sells) {
+  margin-top: 50px;
+}
+
+.single-product article > :where(.related, .up-sells) .ct-module-title {
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=related-upsells.css.map */

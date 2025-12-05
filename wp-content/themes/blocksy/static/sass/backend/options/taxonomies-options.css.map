@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEC,wBAFuB,GAErB,EAAE,CAAC,KAAK;AADX,+BAA+B,GAC5B,EAAE,CAAC,KAAK,CAAC;EACV,QAAQ,EAAE,QAAQ;CAClB;;AAJF,AAMC,wBANuB,GAMrB,EAAE,GAAG,CAAC;AALT,+BAA+B,GAK5B,EAAE,GAAG,CAAC,CAAC;EACR,SAAS,EAAE,GAAG;CACd;;AAGF,AAAA,wBAAwB,CAAC,sBAAsB,CAAC;EAC/C,UAAU,EAAE,KAAK;CACjB",
+    "sources": [
+        "taxonomies-options.scss"
+    ],
+    "names": [],
+    "file": "taxonomies-options.css"
+}

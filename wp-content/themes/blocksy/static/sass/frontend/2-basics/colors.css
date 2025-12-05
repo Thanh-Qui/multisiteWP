@@ -1,0 +1,49 @@
+body {
+  color: var(--theme-text-color);
+}
+
+body ::-moz-selection {
+  color: var(--theme-selection-text-color);
+  background-color: var(--theme-selection-background-color);
+}
+
+body ::selection {
+  color: var(--theme-selection-text-color);
+  background-color: var(--theme-selection-background-color);
+}
+
+h1 {
+  color: var(--theme-heading-color, var(--theme-heading-1-color, var(--theme-headings-color)));
+}
+
+h2 {
+  color: var(--theme-heading-color, var(--theme-heading-2-color, var(--theme-headings-color)));
+}
+
+h3 {
+  color: var(--theme-heading-color, var(--theme-heading-3-color, var(--theme-headings-color)));
+}
+
+h4 {
+  color: var(--theme-heading-color, var(--theme-heading-4-color, var(--theme-headings-color)));
+}
+
+h5 {
+  color: var(--theme-heading-color, var(--theme-heading-5-color, var(--theme-headings-color)));
+}
+
+h6 {
+  color: var(--theme-heading-color, var(--theme-heading-6-color, var(--theme-headings-color)));
+}
+
+.ct-module-title:is(p, span),
+.related-entry-title:is(p, span),
+.woocommerce-loop-product__title:is(p, span),
+.woocommerce-loop-category__title:is(p, span) {
+  color: var(--theme-heading-color);
+}
+
+hr {
+  background-color: var(--theme-form-field-border-initial-color);
+}
+/*# sourceMappingURL=colors.css.map */

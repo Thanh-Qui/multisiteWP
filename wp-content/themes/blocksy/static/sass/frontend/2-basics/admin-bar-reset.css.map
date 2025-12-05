@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EADpC,AAAA,UAAU,CAAC;IAET,WAAW,CAAA,IAAC;GAUb;;;AAPA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK,OAAO,SAAS,EAAE,KAAK;EAL3D,AAAA,UAAU,CAAC;IAMT,WAAW,CAAA,KAAC;GAMb;;;AAHA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EATpC,AAAA,UAAU,CAAC;IAUT,WAAW,CAAA,KAAC;GAEb",
+    "sources": [
+        "admin-bar-reset.scss"
+    ],
+    "names": [],
+    "file": "admin-bar-reset.css"
+}

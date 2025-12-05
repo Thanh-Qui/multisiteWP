@@ -1,0 +1,16 @@
+[data-products="type-1"] .ct-woo-card-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: var(--horizontal-alignment);
+      -ms-flex-pack: var(--horizontal-alignment);
+          justify-content: var(--horizontal-alignment);
+  gap: 10px;
+}
+
+[data-products="type-1"] .ct-woo-card-actions[data-alignment="equal"] {
+  margin-top: auto;
+}
+/*# sourceMappingURL=type-1.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EAChB,YAAY,EAAE,CAAC;CACf",
+    "sources": [
+        "spacer-block.scss"
+    ],
+    "names": [],
+    "file": "spacer-block.css"
+}

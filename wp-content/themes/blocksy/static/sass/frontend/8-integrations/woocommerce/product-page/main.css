@@ -1,0 +1,24 @@
+@use 'image-zoom';
+@use 'popup-box';
+@use 'entry-summary';
+@use 'entry-meta';
+@use 'star-rating';
+@use 'sticky-parts';
+@use 'gallery-common';
+@use 'default-gallery';
+@use 'product-divider';
+@use 'payment-methods';
+@use 'additional-info';
+@use 'layer-heading';
+@use 'common';
+@use 'simple';
+@use 'grouped';
+@use 'variable';
+@use 'reset-variations';
+@use 'product-tabs';
+@use 'custom-tabs';
+@use 'product-attributes';
+@use 'reviews';
+@use 'reviews-form';
+@use 'related-upsells';
+/*# sourceMappingURL=main.css.map */

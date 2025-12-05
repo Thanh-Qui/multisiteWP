@@ -1,0 +1,10 @@
+@use '../../1-helpers/functions';
+@use 'footer-container';
+@use 'footer-grid';
+@use 'divider';
+@use 'footer-reveal';
+@use 'common';
+@use 'copyright';
+@use 'socials';
+@use 'widgets';
+/*# sourceMappingURL=main.css.map */

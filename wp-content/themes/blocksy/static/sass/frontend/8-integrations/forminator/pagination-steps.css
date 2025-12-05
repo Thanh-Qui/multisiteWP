@@ -1,0 +1,99 @@
+.forminator-ui[data-design="none"] .forminator-pagination-steps {
+  counter-reset: pagination-steps;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 783px) {
+  .forminator-ui[data-design="none"] .forminator-pagination-steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .forminator-ui[data-design="none"] .forminator-pagination-steps .forminator-break {
+    width: auto;
+    min-width: 20px;
+    height: 1px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0 15px;
+  }
+  .forminator-ui[data-design="none"] .forminator-pagination-steps .forminator-step {
+    height: auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+}
+
+.forminator-ui[data-design="none"] .forminator-break {
+  width: 1px;
+  height: 20px;
+  margin: 0 11px;
+}
+
+.forminator-ui[data-design="none"] .forminator-step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.forminator-ui[data-design="none"] .forminator-step.forminator-current ~ .forminator-step .forminator-step-label {
+  color: var(--theme-text-color);
+}
+
+.forminator-ui[data-design="none"] .forminator-step.forminator-current ~ .forminator-step .forminator-step-dot {
+  color: var(--theme-text-color);
+  background: var(--theme-form-field-border-initial-color);
+}
+
+.forminator-ui[data-design="none"] .forminator-step-label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--theme-palette-color-1);
+}
+
+.forminator-ui[data-design="none"] .forminator-step-dot {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  border-radius: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background: var(--theme-palette-color-1);
+}
+
+.forminator-ui[data-design="none"] .forminator-step-dot:before {
+  display: block;
+  content: counter(pagination-steps);
+  counter-increment: pagination-steps;
+  line-height: 22px;
+  text-align: center;
+}
+
+.forminator-ui[data-design="none"] .forminator-break {
+  background: var(--theme-form-field-border-initial-color);
+}
+
+.forminator-ui[data-design="none"] .forminator-break:first-child, .forminator-ui[data-design="none"] .forminator-break:last-child {
+  display: none;
+}
+/*# sourceMappingURL=pagination-steps.css.map */

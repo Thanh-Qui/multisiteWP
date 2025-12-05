@@ -1,0 +1,25 @@
+.ct-attachment .ct-upload-button {
+  width: 100%;
+  min-height: 50px;
+  padding: 5px 0;
+  font-size: 13px;
+  color: inherit;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px dashed #c1c4ca;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: var(--ui-border-radius, 3px);
+}
+
+.ct-attachment .ct-upload-button.active, .ct-attachment .ct-upload-button:hover {
+  background: #fbfbfc;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.ct-attachment .ct-upload-button:active {
+  -webkit-transform: none;
+          transform: none;
+}
+/*# sourceMappingURL=upload-button.css.map */

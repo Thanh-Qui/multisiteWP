@@ -1,0 +1,19 @@
+.post-edit-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  margin-top: var(--theme-content-spacing);
+  --theme-link-initial-color: var(--theme-text-color);
+}
+
+.post-edit-link:before {
+  font-family: 'dashicons';
+  content: "\f464";
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+}
+/*# sourceMappingURL=post-edit-link.css.map */
