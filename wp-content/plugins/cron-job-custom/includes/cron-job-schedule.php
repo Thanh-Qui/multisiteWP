@@ -7,4 +7,3 @@ function add_fifteen_min_cron_schedule( $schedules ) {
     );
     return $schedules;
 }
-// add_filter( 'cron_schedules', 'add_fifteen_min_cron_schedule' );
