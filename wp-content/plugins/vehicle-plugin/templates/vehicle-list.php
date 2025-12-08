@@ -124,7 +124,7 @@ if ($query->have_posts()) : ?>
 
                 <!-- Title -->
                 <h3><?php the_title(); ?></h3>
-                <a class="vehicle-image-link" href="<?php echo site_url('/single-vehicle/?slug=' . get_post_field('post_name', get_the_ID())); ?>">
+                <a class="vehicle-image-link" href="<?php echo site_url('/vehicle-single/?slug=' . get_post_field('post_name', get_the_ID())); ?>">
                     <?php $image_array = get_post_meta(get_the_ID(), '_vehicle_image');
                     $image_id = !empty($image_array) ? $image_array[0] : 0;
                     $image_url = $image_id ? wp_get_attachment_url($image_id) : '';
@@ -172,7 +172,7 @@ if ($query->have_posts()) : ?>
                 </p>
 
                 <!-- LINK (OPTIONAL) -->
-                <a class="view-details-link" href="<?php echo site_url('/single-vehicle/?slug=' . get_post_field('post_name', get_the_ID())); ?>">View Details</a>
+                <a class="view-details-link" href="<?php echo site_url('/vehicle-single/?slug=' . get_post_field('post_name', get_the_ID())); ?>">View Details</a>
 
             </div>
 
