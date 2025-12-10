@@ -1,5 +1,23 @@
 <?php
 
+class send_email_facade {
+    public static function send_mail($to, $subject, $message) {
+
+        // create headers for html email
+        $headers =  array('Content-Type: text/html; charset=UTF-8');
+
+        $is_send = wp_mail($to, $subject, $message, $headers);
+
+        if ($is_send) {
+            error_log("Successfully sent email");
+        }else {
+            error_log("Failed to send email");
+        }
+
+        return $is_send;
+    }
+}
+
 class Cron_Job_Send_Email implements plugin_cronjob_module
 {
     public function init()
@@ -13,12 +31,6 @@ class Cron_Job_Send_Email implements plugin_cronjob_module
         $subject = 'Email gửi 5 phút 1 lần';
         $message = 'Hello Hello mọi người';
 
-        $mail_sent = wp_mail($to, $subject, $message);
-
-        if ($mail_sent) {
-            error_log('Cron Email 5 phút đã được gửi thành công: ' . date('Y-m-d H:i:s'));
-        } else {
-            error_log('Cron Email 5 phút KHÔNG thể gửi. Vui lòng kiểm tra cấu hình SMTP/gửi mail.');
-        }
+        send_email_facade::send_mail($to, $subject, $message);
     }
 }

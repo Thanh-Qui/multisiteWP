@@ -17,6 +17,7 @@ if (! defined('ABSPATH')) {
 require_once plugin_dir_path(__FILE__) . 'includes/cron-job-send-email.php';
 require_once plugin_dir_path(__FILE__) . 'includes/cron-job-email-product.php';
 require_once plugin_dir_path(__FILE__) . 'includes/cron-job-schedule.php';
+require_once plugin_dir_path(__FILE__) . 'includes/cron-job-factory.php';
 
 interface plugin_cronjob_module
 {
@@ -42,14 +43,12 @@ class Cron_Job_Custom
 	}
 }
 
-$cron_job_send_email = new Cron_Job_Send_Email();
-$cron_job_email_product = new Cron_Job_Email_Product();
-$cron_job_schedule = new Cron_Job_Schedule();
+// use factory to create cron job instances
+$cron_list = [
+	Cron_job_factory::create('send_email'),
+	Cron_job_factory::create('email_product'),
+	Cron_job_factory::create('schedule'),
+];
 
-$cron_plugin = new Cron_Job_Custom(array(
-	$cron_job_send_email,
-	$cron_job_email_product,
-	$cron_job_schedule,
-));
-
+$cron_plugin = new Cron_Job_Custom($cron_list);
 $cron_plugin->init();

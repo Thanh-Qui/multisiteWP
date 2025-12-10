@@ -180,8 +180,7 @@ class Cron_Job_Email_Product implements plugin_cronjob_module
         // send email with report
         $subject = 'Thống kê sản phẩm bán được';
         $body = $this->generate_multisite_sales_report_html($report, $total_all_sites, $total_revenue_all, $total_orders_all);
-        $header = array('Content-Type: text/html; charset=UTF-8');
 
-        wp_mail($to, $subject, $body, $header);
+        send_email_facade::send_mail($to, $subject, $body);
     }
 }
