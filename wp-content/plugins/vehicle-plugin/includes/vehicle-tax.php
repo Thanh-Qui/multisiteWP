@@ -1,50 +1,47 @@
 <?php
+namespace CustomVehiclePlugin;
 
-/* 
-*   taxonomy
-*/
+// vehicle taxonomies
+class Vehicle_Taxonomy implements plugin_vehicle_module {
 
-// register 2 taxonomy for cpt of vehicle is brand and series
-function register_vehicle_tax()
-{
+//   init the taxonomies
+    public function init() {
+        add_action('init', array($this, 'register_taxonomies'));
+    }
 
-    // create brand
-    $brand_labels = array(
-        // dipslay name menu
-        'name'          => __('Brands', 'bluehost-blueprint'),
-        'singular_name' => __('Brand', 'bluehost-blueprint'),
-    );
+    // register the taxonomies
+    public function register_taxonomies() {
+        // Taxonomy configurations
+        $taxonomies = [
+            'vehicle_brand' => [
+                'labels' => [
+                    'name'          => __('Brands', 'bluehost-blueprint'), 'singular_name' => __('Brand', 'bluehost-blueprint'),
+                ],
+                'args' => [
+                    'hierarchical'      => true,
+                    'rewrite'           => ['slug' => 'brand'],
+                    'show_admin_column' => true,
+                ],
+            ],
+            'vehicle_series' => [
+                'labels' => [
+                    'name'          => __('Series', 'bluehost-blueprint'),
+                    'singular_name' => __('Series', 'bluehost-blueprint'),
+                ],
+                'args' => [
+                    'hierarchical'      => true,
+                    'rewrite'           => ['slug' => 'series'],
+                    'show_admin_column' => true,
+                ],
+            ],
+        ];
 
-    register_taxonomy(
-        // slug private of taxonomy
-        'vehicle_brand',
-        // use for vehicle cpt
-        'vehicle',
-        array(
-            'labels'        => $brand_labels,
-            // 
-            'hierarchical'  => true,
-            'rewrite'       => array('slug' => 'brand'),
-            // add column brand at list vehicle
-            'show_admin_column' => true,
-        )
-    );
-
-    // create series
-    $series_labels = array(
-        'name'          => __('Series', 'bluehost-blueprint'),
-        'singular_name' => __('Series', 'bluehost-blueprint'),
-    );
-
-    register_taxonomy(
-        'vehicle_series',
-        'vehicle',
-        array(
-            'labels'        => $series_labels,
-            'hierarchical'  => true,
-            'rewrite'       => array('slug' => 'series'),
-            'show_admin_column' => true,
-        )
-    );
+        foreach ($taxonomies as $taxonomy_slug => $config) {
+            register_taxonomy(
+                $taxonomy_slug,// Taxonomy slug
+                'vehicle',// Associated post type
+                array_merge($config['args'], ['labels' => $config['labels']])
+            );
+        }
+    }
 }
-add_action('init', 'register_vehicle_tax');

@@ -1,5 +1,5 @@
 // variables
-$primary-color: #0073aa;
+$primary-color: #0073aa; // recompiled
 $secondary-color: #222;
 $light-gray: #f4f4f4;
 $border-radius: 8px;
@@ -43,7 +43,7 @@ $gap: 15px;
 
       img.image-vehicle-list {
         width: 100%;
-        height: 600px;
+        height: 300px;
         object-fit: cover;
         display: block;
         transition: transform 0.3s ease;
@@ -80,6 +80,114 @@ $gap: 15px;
 
       &:hover {
         background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+
+// vehicle single
+.vehicle-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.vehicle-detail-item {
+  background-color: #fff;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 800px;
+  width: 100%;
+  animation: fadeInUp 0.6s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    color: $secondary-color;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 2px solid $primary-color;
+    padding-bottom: 10px;
+  }
+
+  .image-vehicle-single {
+    margin-bottom: 25px;
+    text-align: center;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    .image-vehicle {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease, filter 0.4s ease;
+
+      &:hover {
+        transform: scale(1.02);
+        filter: brightness(1.05);
+      }
+    }
+  }
+
+  .feature-vehicle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: $light-gray;
+    border-radius: $border-radius;
+
+    span {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: $secondary-color;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      i {
+        font-size: 1.5rem;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+    text-align: justify;
+  }
+
+  .vehicle-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+
+    p {
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }

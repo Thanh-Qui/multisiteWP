@@ -1,7 +1,7 @@
 <?php
 
 // get slug to url
-$slug = isset($_GET['slug']) ? sanitize_title($_GET['slug']) : '' ;
+$slug = isset($_GET['slug']) ? sanitize_title($_GET['slug']) : '';
 
 // check exists data
 if (empty($slug)) {
@@ -56,12 +56,12 @@ if ($query->have_posts()) {
                 </div>
 
                 <!-- get content -->
-                <p>
+                <div class="vehicle-content">
                     <?php
                     $content = get_post_field('post_content', get_the_ID());
-                    echo esc_html($content);
+                    echo apply_filters('the_content', $content);
                     ?>
-                </p>
+                </div>
             </div>
 
         <?php endwhile; ?>
