@@ -43,11 +43,8 @@ define( 'DB_CHARSET', $_ENV['DB_CHARSET'] );
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', $_ENV['DB_COLLATE'] );
 
-if ( !defined('WP_CLI') ) {
-    define( 'WP_SITEURL', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] );
-    define( 'WP_HOME',    $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] );
-}
-
+define( 'WP_HOME', 'http://multisiteWP.test:8080' );
+define( 'WP_SITEURL', 'http://multisiteWP.test:8080' );
 
 
 /**#@+
@@ -106,14 +103,14 @@ define('SCRIPT_DEBUG', $_ENV['SCRIPT_DEBUG']);
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+// Multisite network
+define('WP_ALLOW_MULTISITE', true);
 define( 'MULTISITE', true );
 define( 'SUBDOMAIN_INSTALL', true );
 define( 'DOMAIN_CURRENT_SITE', 'multisitewp.test:8080' );
 define( 'PATH_CURRENT_SITE', '/' );
 define( 'SITE_ID_CURRENT_SITE', 1 );
 define( 'BLOG_ID_CURRENT_SITE', 1 );
-
-define('WP_ALLOW_MULTISITE', true);
 
 
 define( 'REQUESTS_SILENCE_PSR0_DEPRECATIONS', true );
@@ -122,6 +119,7 @@ define( 'COOKIE_DOMAIN', false );
 define( 'COOKIEPATH', '/' );
 define( 'SITECOOKIEPATH', '/' );
 
+define('FEATURE_QUICK_VIEW', true);
 
 // define('DISABLE_WP_CRON', true);
 /* That's all, stop editing! Happy publishing. */

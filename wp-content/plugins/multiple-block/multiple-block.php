@@ -60,3 +60,43 @@ require_once plugin_dir_path( __FILE__ ) . 'common/js/api/product-list.php';
 new ProductList();
 
 add_action( 'init', 'create_block_multiple_block_block_init' );
+
+add_action('enqueue_block_assets', 'enqueue_multiple_block_scripts');
+
+function enqueue_multiple_block_scripts() {
+	$handle = 'create-block-multiple-block-editor-script';
+
+	wp_localize_script(
+		$handle,
+		'productListData',
+		[
+			'enableQuickView' => defined('FEATURE_QUICK_VIEW') ? FEATURE_QUICK_VIEW : false,
+		]
+	);
+}
+
+add_action('enqueue_block_assets', 'add_to_cart_with_nonce');
+function add_to_cart_with_nonce() {
+	$handle = 'create-block-multiple-block-editor-script';
+
+	wp_localize_script(
+		$handle,
+		'addToCart',
+		[
+			'ajaxUrl' => admin_url('admin-ajax.php'),
+			'nonce'   => wp_create_nonce('add-to-cart-nonce'),
+		]
+	);
+}
+
+add_action( 'wp_ajax_test_nonce_process', 'handle_react_add_to_cart' );
+add_action( 'wp_ajax_nopriv_test_nonce_process', 'handle_react_add_to_cart' );
+
+function handle_react_add_to_cart() {
+    if ( ! isset( $_POST['security'] ) || ! wp_verify_nonce( $_POST['security'], 'add-to-cart-nonce' ) ) {
+        wp_send_json_error( 'Nonce không hợp lệ!' );
+    }
+
+    $product_id = isset($_POST['product_id']) ? intval($_POST['product_id']) : 0;
+    wp_send_json_success( 'Nonce chuẩn! Đã nhận ID sản phẩm: ' . $product_id );
+}
