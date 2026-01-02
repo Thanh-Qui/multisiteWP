@@ -8,7 +8,7 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'product-list',
 		'category' => 'widgets',
-		'icon' => 'smiley',
+		'icon' => 'grid-view',
 		'description' => 'Example block scaffolded with Create Block tool.',
 		'example' => array(
 			

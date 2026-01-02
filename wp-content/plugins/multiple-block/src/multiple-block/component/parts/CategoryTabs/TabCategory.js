@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { getCategories } from '../../../../../common/js/api/product-list';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductList from '../ProductList/ProductList';
+import SortByPrice from './SortByPrice';
 
 export default function TabCategory({ onSelectCategory }) {
     const [categoryList, setCategoryList] = useState([]);
     const [tabSelected, setTabSelected] = useState(null);
+    const [sortOrder, setSortOrder] = useState(null);
 
     useEffect(() => {
         async function fecthCategories() {
@@ -22,6 +24,10 @@ export default function TabCategory({ onSelectCategory }) {
     const handleCategoryClick = (category) => {
         setTabSelected(category.id);
         onSelectCategory(category.id);
+    };
+
+    const handleSortChange = (order) => {
+        setSortOrder(order);
     };
 
     return (
@@ -47,7 +53,8 @@ export default function TabCategory({ onSelectCategory }) {
                     </li>
                 ))}
             </ul>
-            <ProductList selectedCategory={tabSelected} />
+            <SortByPrice onSortChange={handleSortChange} />
+            <ProductList selectedCategory={tabSelected} sortOrder={sortOrder} />
         </>
     )
 }
