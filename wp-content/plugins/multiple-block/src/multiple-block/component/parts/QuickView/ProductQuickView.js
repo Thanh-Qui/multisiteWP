@@ -48,19 +48,19 @@ export default function ProductQuickView ({ product }) {
             try {
                 const data = JSON.parse(text);
                 if (data.success) {
-                    message.success(`Thành công: ${data.data}`);
+                    message.success(`success: ${data.data}`);
                 } else {
-                    message.error(`Lỗi: ${data.data}`);
+                    message.error(`error: ${data.data}`);
                 }
             } catch (parseError) {
                 console.error('JSON parse error:', parseError);
                 console.error('Response text:', text);
-                message.error("Response từ server không hợp lệ.");
+                message.error("Invalid response to the server.");
             }
         })
         .catch(error => {
             console.error('Error:', error);
-            message.error(`Có lỗi xảy ra khi gửi request: ${error.message}`);
+            message.error(`error request: ${error.message}`);
         })
         .finally(() => {
             setLoadingAddTocart(false);

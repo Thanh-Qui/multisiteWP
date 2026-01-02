@@ -61,20 +61,26 @@ new ProductList();
 
 add_action( 'init', 'create_block_multiple_block_block_init' );
 
+// example read environment variable to php
 add_action('enqueue_block_assets', 'enqueue_multiple_block_scripts');
-
 function enqueue_multiple_block_scripts() {
-	$handle = 'create-block-multiple-block-editor-script';
+	$data = [
+        'enableQuickView' => defined('FEATURE_QUICK_VIEW') ? FEATURE_QUICK_VIEW : false,
+    ];
 
-	wp_localize_script(
-		$handle,
-		'productListData',
-		[
-			'enableQuickView' => defined('FEATURE_QUICK_VIEW') ? FEATURE_QUICK_VIEW : false,
-		]
-	);
+	$handles = [
+        'create-block-multiple-block-editor-script',
+        'create-block-multiple-block-view-script',
+    ];
+
+	foreach ($handles as $handle) {
+        if (wp_script_is($handle, 'enqueued') || wp_script_is($handle, 'registered')) {
+            wp_localize_script($handle, 'productListData', $data);
+        }
+    }
 }
 
+//  example nonce
 add_action('enqueue_block_assets', 'add_to_cart_with_nonce');
 function add_to_cart_with_nonce() {
 	$handle = 'create-block-multiple-block-editor-script';

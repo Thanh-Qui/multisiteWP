@@ -121,6 +121,13 @@ define( 'SITECOOKIEPATH', '/' );
 
 define('FEATURE_QUICK_VIEW', true);
 
+// redis setup
+define('WP_CACHE', true);
+define('WP_REDIS_HOST', $_ENV['REDIS_HOST'] ?? '127.0.0.1');
+define('WP_REDIS_PORT', $_ENV['REDIS_PORT'] ?? 6379);
+define('WP_REDIS_PASSWORD', $_ENV['REDIS_PASSWORD'] ?? '');
+define('WP_REDIS_PREFIX', $_ENV['REDIS_PREFIX'] ?? 'wp_cache_');
+
 // define('DISABLE_WP_CRON', true);
 /* That's all, stop editing! Happy publishing. */
 
